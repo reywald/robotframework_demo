@@ -1,0 +1,10 @@
+[project]
+name = "robotframework-demo"
+version = "0.1.0"
+description = "Learn Robot Framework from the QA Automation Experts"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "robotframework>=7.3.2",
+    "robotframework-browser>=19.12.0",
+]
