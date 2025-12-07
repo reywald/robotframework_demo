@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-07T01:27:40.318026" rpa="false" schemaversion="5">
+<suite id="s1" name="Robotframework Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo">
+<suite id="s1-s1" name="Test Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\test_demo.robot">
+<test id="s1-s1-t1" name="Validate Unsuccessful Login" line="13">
+<kw name="Open the Browser with URL">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-12-07T01:27:40.609177" level="INFO">{"browser": "chromium", "headless": false, "args": ["--start-maximized"], "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\489cfe1b-139c-4649-845f-1d54545e53f2"}</msg>
+<msg time="2025-12-07T01:27:40.671913" level="INFO">Starting Browser process c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:49700</msg>
+<msg time="2025-12-07T01:27:42.726463" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"args":["--start-maximized"],"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\489cfe1b-139c-4649-845f-1d54545e53f2"}</msg>
+<arg>${BROWSER}</arg>
+<arg>headless=False</arg>
+<arg>args=["--start-maximized"]</arg>
+<arg>executablePath=${EXECUTABLE_PATH}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-12-07T01:27:40.609177" elapsed="2.119367"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-12-07T01:27:49.715207" level="INFO">Successfully initialized new page object and opened url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
+<msg time="2025-12-07T01:27:49.715207" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-12-07T01:27:42.728544" elapsed="6.987663"/>
+</kw>
+<status status="PASS" start="2025-12-07T01:27:40.609177" elapsed="9.107030"/>
+</kw>
+<kw name="Fill the login form">
+<kw name="Type Text" owner="Browser">
+<msg time="2025-12-07T01:27:49.719689" level="INFO">Types the text 'Admin' in the given field.</msg>
+<arg>css=input[name="username"]</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-12-07T01:27:49.718689" elapsed="0.466964"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-12-07T01:27:50.185653" level="INFO">Types the text 'Admin' in the given field.</msg>
+<arg>css=input[name="password"]</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-12-07T01:27:50.185653" elapsed="0.036616"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-12-07T01:27:50.222269" level="INFO">Clicks the element 'css=.orangehrm-login-button'.</msg>
+<arg>css=.orangehrm-login-button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-07T01:27:50.222269" elapsed="0.113222"/>
+</kw>
+<status status="PASS" start="2025-12-07T01:27:49.717648" elapsed="0.617843"/>
+</kw>
+<kw name="Verify error message is correct">
+<kw name="Get Text" owner="Browser">
+<msg time="2025-12-07T01:27:51.740641" level="INFO">Text: 'Invalid credentials'</msg>
+<msg time="2025-12-07T01:27:51.741640" level="INFO">${result} = Invalid credentials</msg>
+<var>${result}</var>
+<arg>css=.oxd-alert-content-text</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-07T01:27:50.335491" elapsed="1.406149"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>Invalid credentials</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-12-07T01:27:51.741640" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2025-12-07T01:27:50.335491" elapsed="1.407148"/>
+</kw>
+<msg time="2025-12-07T01:27:51.765640" level="INFO">Switching context to context=6ef59b06-cc96-491c-a688-06d954f68ef8 in CURRENT</msg>
+<msg time="2025-12-07T01:27:51.774614" level="INFO">Successfully changed active context: context=6ef59b06-cc96-491c-a688-06d954f68ef8</msg>
+<msg time="2025-12-07T01:27:51.834608" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-12-07T01:27:40.600486" elapsed="11.142153"/>
+</test>
+<doc>To validate the Login Form</doc>
+<status status="PASS" start="2025-12-07T01:27:40.351353" elapsed="11.492589"/>
+</suite>
+<status status="PASS" start="2025-12-07T01:27:40.321025" elapsed="11.608464"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robotframework Demo" id="s1" pass="1" fail="0" skip="0">Robotframework Demo</stat>
+<stat name="Test Demo" id="s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Test Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
