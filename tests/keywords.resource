@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation       To validate the Login Form in headless mode
+Documentation       This resource file contains keywords for browser operations
 
 Library             Browser
 
@@ -8,25 +8,20 @@ Library             Browser
 ${URL}                          https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 ${USERNAME}                     Admin
 ${PASSWORD}                     Admin
+${VALID_USERNAME}               Admin
+${VALID_PASSWORD}               admin123
 ${CHROME_EXECUTABLE_PATH}       C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe
 ${FIREFOX_EXECUTABLE_PATH}      C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\firefox-1488\\firefox\\firefox.exe
 
 
-*** Test Cases ***
-Validate Unsuccessful Login Headless Chrome
-    [Documentation]    To validate unsuccessful login using the Login Form in headless chrome mode
-    Open The Browser Headlessly With URL    BROWSER=chromium    EXEC_PATH=${CHROME_EXECUTABLE_PATH}
-    Fill The Login Form
-    Verify Error Message Is Correct
-
-Validate Unsuccessful Login Headless Firefox
-    [Documentation]    To validate unsuccessful login using the Login Form in headless firefox mode
-    Open The Browser Headlessly With URL    BROWSER=firefox    EXEC_PATH=${FIREFOX_EXECUTABLE_PATH}
-    Fill The Login Form
-    Verify Error Message Is Correct
-
-
 *** Keywords ***
+Open The Browser With URL
+    [Documentation]    Opens the browser and navigates to the specified URL
+    [Arguments]    ${BROWSER}    ${EXEC_PATH}
+    [Timeout]    20
+    New Browser    ${BROWSER}    headless=False    args=["--start-maximized"]    executablePath=${EXEC_PATH}
+    New Page    ${URL}
+
 Open The Browser Headlessly With URL
     [Documentation]    Opens the browser in headless mode and navigates to the specified URL
     [Arguments]    ${BROWSER}    ${EXEC_PATH}
@@ -39,7 +34,17 @@ Fill The Login Form
     Type Text    css=input[name="password"]    ${PASSWORD}
     Click    css=.orangehrm-login-button
 
+Fill The Login Form Successfully
+    [Documentation]    Fills the login form with provided username and password
+    Type Text    css=input[name="username"]    ${VALID_USERNAME}
+    Type Text    css=input[name="password"]    ${VALID_PASSWORD}
+    Click    css=.orangehrm-login-button
+
 Verify Error Message Is Correct
     [Documentation]    Verifies that the error message displayed is correct
     ${result}=    Get Text    css=.oxd-alert-content-text
     Should Be Equal    ${result}    Invalid credentials
+
+Close Browser Session
+    [Documentation]    Closes the browser's page, context and window
+    Close Browser    CURRENT
