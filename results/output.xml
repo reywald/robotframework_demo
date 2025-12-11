@@ -1,548 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-09T00:07:32.308705" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-11T10:05:36.398892" rpa="false" schemaversion="5">
 <suite id="s1" name="Robotframework Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo">
 <suite id="s1-s1" name="Tests" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests">
-<suite id="s1-s1-s1" name="Test Variables" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests\test_variables.robot">
-<test id="s1-s1-s1-t1" name="Validate Successful Login" line="21">
+<suite id="s1-s1-s1" name="Radio Button Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests\radio_button_demo.robot">
+<test id="s1-s1-s1-t1" name="Select An Option Of Radio Button" line="16">
 <kw name="Open The Browser With URL" owner="keywords">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-12-09T00:07:32.678488" level="INFO">{"browser": "firefox", "headless": false, "args": ["--start-maximized"], "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\firefox-1488\\firefox\\firefox.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\6907f1a0-3752-4acb-9dfe-184a5eef0ca0"}</msg>
-<msg time="2025-12-09T00:07:32.763177" level="INFO">Starting Browser process c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:64114</msg>
-<msg time="2025-12-09T00:07:34.861230" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"args":["--start-maximized"],"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\firefox-1488\\firefox\\firefox.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\6907f1a0-3752-4acb-9dfe-184a5eef0ca0"}</msg>
+<msg time="2025-12-11T10:05:36.916958" level="INFO">{"browser": "chromium", "headless": false, "args": ["--start-maximized"], "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\f37edeae-01fc-4fa8-b3dd-cc222483f569"}</msg>
+<msg time="2025-12-11T10:05:36.978292" level="INFO">Starting Browser process c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:57271</msg>
+<msg time="2025-12-11T10:05:38.668448" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"args":["--start-maximized"],"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\f37edeae-01fc-4fa8-b3dd-cc222483f569"}</msg>
 <arg>${BROWSER}</arg>
 <arg>headless=False</arg>
-<arg>args=["--start-maximized"]</arg>
 <arg>executablePath=${EXEC_PATH}</arg>
+<arg>args=["--start-maximized"]</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-12-09T00:07:32.678488" elapsed="2.184143"/>
+<status status="PASS" start="2025-12-11T10:05:36.916958" elapsed="1.751995"/>
 </kw>
+<if>
+<branch type="IF" condition="$WEB_URL">
 <kw name="New Page" owner="Browser">
-<msg time="2025-12-09T00:07:41.106337" level="INFO">Successfully initialized new page object and opened url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
-<msg time="2025-12-09T00:07:41.106337" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-12-11T10:05:46.402331" level="INFO">Successfully initialized new page object and opened url: https://demo.automationtesting.in/Register.html</msg>
+<msg time="2025-12-11T10:05:46.402331" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${WEB_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-12-11T10:05:38.670034" elapsed="7.733344"/>
+</kw>
+<status status="PASS" start="2025-12-11T10:05:38.668953" elapsed="7.735409"/>
+</branch>
+<branch type="ELSE">
+<kw name="New Page" owner="Browser">
 <arg>${URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-12-09T00:07:34.862631" elapsed="6.243706"/>
+<status status="NOT RUN" start="2025-12-11T10:05:46.405331" elapsed="0.000998"/>
 </kw>
-<arg>BROWSER=firefox</arg>
-<arg>EXEC_PATH=${FIREFOX_EXECUTABLE_PATH}</arg>
+<status status="NOT RUN" start="2025-12-11T10:05:46.404362" elapsed="0.001967"/>
+</branch>
+<status status="PASS" start="2025-12-11T10:05:38.668953" elapsed="7.738376"/>
+</if>
+<arg>BROWSER=${BROWSER}</arg>
+<arg>EXEC_PATH=${CHROME_EXECUTABLE_PATH}</arg>
+<arg>WEB_URL=${WEB_URL}</arg>
 <doc>Opens the browser and navigates to the specified URL</doc>
 <timeout value="20 seconds"/>
-<status status="PASS" start="2025-12-09T00:07:32.678488" elapsed="8.427849"/>
+<status status="PASS" start="2025-12-11T10:05:36.916958" elapsed="9.490371"/>
 </kw>
-<kw name="Fill The Login Form Successfully" owner="keywords">
-<kw name="Type Text" owner="Browser">
-<msg time="2025-12-09T00:07:41.106337" level="INFO">Types the text 'Admin' in the given field.</msg>
-<arg>css=input[name="username"]</arg>
-<arg>${VALID_USERNAME}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:41.106337" elapsed="0.929786"/>
-</kw>
-<kw name="Type Text" owner="Browser">
-<msg time="2025-12-09T00:07:42.036123" level="INFO">Types the text 'admin123' in the given field.</msg>
-<arg>css=input[name="password"]</arg>
-<arg>${VALID_PASSWORD}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:42.036123" elapsed="0.057734"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2025-12-09T00:07:42.093857" level="INFO">Clicks the element 'css=.orangehrm-login-button'.</msg>
-<arg>css=.orangehrm-login-button</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:42.093857" elapsed="1.636699"/>
-</kw>
-<doc>Fills the login form with provided username and password</doc>
-<status status="PASS" start="2025-12-09T00:07:41.106337" elapsed="2.624219"/>
-</kw>
-<kw name="Verify Dashboard Page Opens">
-<kw name="Get Text" owner="Browser">
-<msg time="2025-12-09T00:07:44.720318" level="INFO">Text: 'Dashboard'</msg>
-<arg>css=.oxd-topbar-header-breadcrumb-module</arg>
-<arg>==</arg>
-<arg>Dashboard</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:43.730556" elapsed="0.991041"/>
-</kw>
-<doc>Verifies that the dashboard page opens after successful login</doc>
-<status status="PASS" start="2025-12-09T00:07:43.730556" elapsed="0.991041"/>
-</kw>
-<kw name="Verify Items In Dashboard Page">
-<variable name="@{expected_list}">
-<msg time="2025-12-09T00:07:44.722607" level="INFO">@{expected_list} = [ Admin | PIM | Leave | Time | Recruitment | My Info | Performance | Dashboard | Directory | Maintenance | Claim | Buzz ]</msg>
-<var>Admin</var>
-<var>PIM</var>
-<var>Leave</var>
-<var>Time</var>
-<var>Recruitment</var>
-<var>My Info</var>
-<var>Performance</var>
-<var>Dashboard</var>
-<var>Directory</var>
-<var>Maintenance</var>
-<var>Claim</var>
-<var>Buzz</var>
-<status status="PASS" start="2025-12-09T00:07:44.722607" elapsed="0.000998"/>
-</variable>
-<kw name="Get Elements" owner="Browser">
-<msg time="2025-12-09T00:07:44.738722" level="INFO">Found locator('.oxd-main-menu-item--name').first(),locator('.oxd-main-menu-item--name').nth(1),locator('.oxd-main-menu-item--name').nth(2),locator('.oxd-main-menu-item--name').nth(3),locator('.oxd-main-menu-item--name').nth(4),locator('.oxd-main-menu-item--name').nth(5),locator('.oxd-main-menu-item--name').nth(6),locator('.oxd-main-menu-item--name').nth(7),locator('.oxd-main-menu-item--name').nth(8),locator('.oxd-main-menu-item--name').nth(9),locator('.oxd-main-menu-item--name').nth(10),locator('.oxd-main-menu-item--name').nth(11) Locators successfully.</msg>
-<msg time="2025-12-09T00:07:44.738722" level="INFO">@{elements} = [ css=.oxd-main-menu-item--name &gt;&gt; nth=0 | css=.oxd-main-menu-item--name &gt;&gt; nth=1 | css=.oxd-main-menu-item--name &gt;&gt; nth=2 | css=.oxd-main-menu-item--name &gt;&gt; nth=3 | css=.oxd-main-menu-item--name &gt;&gt; n...</msg>
-<var>@{elements}</var>
-<arg>selector=css=.oxd-main-menu-item--name</arg>
+<kw name="Select Impressive Option From 3 Radio Buttons">
+<kw name="Get Element By Role" owner="Browser">
+<msg time="2025-12-11T10:05:46.509176" level="INFO">Locator found successfully.</msg>
+<msg time="2025-12-11T10:05:46.510090" level="INFO">${radio} = internal:role=radio[name="Male"s]</msg>
+<var>${radio}</var>
+<arg>RADIO</arg>
+<arg>name=Male</arg>
+<arg>exact=True</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.723605" elapsed="0.016114"/>
+for the matched element by ``role`` or a list of references if ``all_elements`` is set to ``True``.</doc>
+<status status="PASS" start="2025-12-11T10:05:46.411089" elapsed="0.099001"/>
 </kw>
-<kw name="Create List" owner="BuiltIn">
-<msg time="2025-12-09T00:07:44.739719" level="INFO">@{actual_list} = [ ]</msg>
-<var>@{actual_list}</var>
-<doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.739719" elapsed="0.001001"/>
+<kw name="Click" owner="Browser">
+<msg time="2025-12-11T10:05:46.514091" level="INFO">Clicks the element 'internal:role=radio[name="Male"s]'.</msg>
+<arg>selector=${radio}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-11T10:05:46.511085" elapsed="0.088131"/>
 </kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-09T00:07:44.740720" level="INFO">['css=.oxd-main-menu-item--name &gt;&gt; nth=0', 'css=.oxd-main-menu-item--name &gt;&gt; nth=1', 'css=.oxd-main-menu-item--name &gt;&gt; nth=2', 'css=.oxd-main-menu-item--name &gt;&gt; nth=3', 'css=.oxd-main-menu-item--name &gt;&gt; nth=4', 'css=.oxd-main-menu-item--name &gt;&gt; nth=5', 'css=.oxd-main-menu-item--name &gt;&gt; nth=6', 'css=.oxd-main-menu-item--name &gt;&gt; nth=7', 'css=.oxd-main-menu-item--name &gt;&gt; nth=8', 'css=.oxd-main-menu-item--name &gt;&gt; nth=9', 'css=.oxd-main-menu-item--name &gt;&gt; nth=10', 'css=.oxd-main-menu-item--name &gt;&gt; nth=11']</msg>
-<arg>${elements}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.740720" elapsed="0.000995"/>
+<doc>Select radio button</doc>
+<status status="PASS" start="2025-12-11T10:05:46.408329" elapsed="0.191973"/>
 </kw>
-<for flavor="IN">
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-09T00:07:44.743718" level="INFO">css=.oxd-main-menu-item--name &gt;&gt; nth=0</msg>
-<arg>${element}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.743718" elapsed="0.001000"/>
+<kw name="Verify That The Radio Button Is Selected">
+<kw name="Get Element By Role" owner="Browser">
+<msg time="2025-12-11T10:05:46.618367" level="INFO">Locator found successfully.</msg>
+<msg time="2025-12-11T10:05:46.618367" level="INFO">${radio} = internal:role=radio[checked=true]</msg>
+<var>${radio}</var>
+<arg>RADIO</arg>
+<arg>checked=True</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for the matched element by ``role`` or a list of references if ``all_elements`` is set to ``True``.</doc>
+<status status="PASS" start="2025-12-11T10:05:46.602229" elapsed="0.016138"/>
 </kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2025-12-09T00:07:44.770269" level="INFO">Text: 'Admin'</msg>
-<msg time="2025-12-09T00:07:44.770269" level="INFO">${text} = Admin</msg>
-<var>${text}</var>
-<arg>${element}</arg>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-12-11T10:05:46.680967" level="INFO">Attribute is: 'Male'</msg>
+<arg>${radio}</arg>
+<arg>value</arg>
+<arg>==</arg>
+<arg>Male</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.744718" elapsed="0.025551"/>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-11T10:05:46.618367" elapsed="0.062600"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${text}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.770269" elapsed="0.001003"/>
-</kw>
-<kw name="Append To List" owner="Collections">
-<arg>${actual_list}</arg>
-<arg>${text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.771272" elapsed="0.000995"/>
-</kw>
-<var name="${element}">css=.oxd-main-menu-item--name &gt;&gt; nth=0</var>
-<status status="PASS" start="2025-12-09T00:07:44.742719" elapsed="0.029548"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-09T00:07:44.772267" level="INFO">css=.oxd-main-menu-item--name &gt;&gt; nth=1</msg>
-<arg>${element}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.772267" elapsed="0.001000"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2025-12-09T00:07:44.802742" level="INFO">Text: 'PIM'</msg>
-<msg time="2025-12-09T00:07:44.803763" level="INFO">${text} = PIM</msg>
-<var>${text}</var>
-<arg>${element}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.773267" elapsed="0.030496"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${text}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.803763" elapsed="0.000983"/>
-</kw>
-<kw name="Append To List" owner="Collections">
-<arg>${actual_list}</arg>
-<arg>${text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.804746" elapsed="0.000996"/>
-</kw>
-<var name="${element}">css=.oxd-main-menu-item--name &gt;&gt; nth=1</var>
-<status status="PASS" start="2025-12-09T00:07:44.772267" elapsed="0.033475"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-09T00:07:44.805742" level="INFO">css=.oxd-main-menu-item--name &gt;&gt; nth=2</msg>
-<arg>${element}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.805742" elapsed="0.001025"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2025-12-09T00:07:44.834755" level="INFO">Text: 'Leave'</msg>
-<msg time="2025-12-09T00:07:44.835772" level="INFO">${text} = Leave</msg>
-<var>${text}</var>
-<arg>${element}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.806767" elapsed="0.029005"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${text}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.835772" elapsed="0.000982"/>
-</kw>
-<kw name="Append To List" owner="Collections">
-<arg>${actual_list}</arg>
-<arg>${text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.836754" elapsed="0.001014"/>
-</kw>
-<var name="${element}">css=.oxd-main-menu-item--name &gt;&gt; nth=2</var>
-<status status="PASS" start="2025-12-09T00:07:44.805742" elapsed="0.032026"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-09T00:07:44.837768" level="INFO">css=.oxd-main-menu-item--name &gt;&gt; nth=3</msg>
-<arg>${element}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.837768" elapsed="0.000000"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2025-12-09T00:07:44.867632" level="INFO">Text: 'Time'</msg>
-<msg time="2025-12-09T00:07:44.867632" level="INFO">${text} = Time</msg>
-<var>${text}</var>
-<arg>${element}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.837768" elapsed="0.029864"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${text}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.868632" elapsed="0.001001"/>
-</kw>
-<kw name="Append To List" owner="Collections">
-<arg>${actual_list}</arg>
-<arg>${text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.869633" elapsed="0.000000"/>
-</kw>
-<var name="${element}">css=.oxd-main-menu-item--name &gt;&gt; nth=3</var>
-<status status="PASS" start="2025-12-09T00:07:44.837768" elapsed="0.031865"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-09T00:07:44.870633" level="INFO">css=.oxd-main-menu-item--name &gt;&gt; nth=4</msg>
-<arg>${element}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.870633" elapsed="0.000000"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2025-12-09T00:07:44.901632" level="INFO">Text: 'Recruitment'</msg>
-<msg time="2025-12-09T00:07:44.901632" level="INFO">${text} = Recruitment</msg>
-<var>${text}</var>
-<arg>${element}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.871654" elapsed="0.029978"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${text}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.902671" elapsed="0.000964"/>
-</kw>
-<kw name="Append To List" owner="Collections">
-<arg>${actual_list}</arg>
-<arg>${text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.903635" elapsed="0.000000"/>
-</kw>
-<var name="${element}">css=.oxd-main-menu-item--name &gt;&gt; nth=4</var>
-<status status="PASS" start="2025-12-09T00:07:44.869633" elapsed="0.034002"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-09T00:07:44.903635" level="INFO">css=.oxd-main-menu-item--name &gt;&gt; nth=5</msg>
-<arg>${element}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.903635" elapsed="0.001092"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2025-12-09T00:07:44.943914" level="INFO">Text: 'My Info'</msg>
-<msg time="2025-12-09T00:07:44.945899" level="INFO">${text} = My Info</msg>
-<var>${text}</var>
-<arg>${element}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.904727" elapsed="0.041172"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${text}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.945899" elapsed="0.002010"/>
-</kw>
-<kw name="Append To List" owner="Collections">
-<arg>${actual_list}</arg>
-<arg>${text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.947909" elapsed="0.000000"/>
-</kw>
-<var name="${element}">css=.oxd-main-menu-item--name &gt;&gt; nth=5</var>
-<status status="PASS" start="2025-12-09T00:07:44.903635" elapsed="0.045267"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-09T00:07:44.948902" level="INFO">css=.oxd-main-menu-item--name &gt;&gt; nth=6</msg>
-<arg>${element}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.948902" elapsed="0.000000"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2025-12-09T00:07:44.975981" level="INFO">Text: 'Performance'</msg>
-<msg time="2025-12-09T00:07:44.976985" level="INFO">${text} = Performance</msg>
-<var>${text}</var>
-<arg>${element}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.950414" elapsed="0.027573"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${text}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.978990" elapsed="0.000989"/>
-</kw>
-<kw name="Append To List" owner="Collections">
-<arg>${actual_list}</arg>
-<arg>${text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.979979" elapsed="0.001011"/>
-</kw>
-<var name="${element}">css=.oxd-main-menu-item--name &gt;&gt; nth=6</var>
-<status status="PASS" start="2025-12-09T00:07:44.948902" elapsed="0.032088"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-09T00:07:44.980990" level="INFO">css=.oxd-main-menu-item--name &gt;&gt; nth=7</msg>
-<arg>${element}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.980990" elapsed="0.000999"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2025-12-09T00:07:45.048480" level="INFO">Text: 'Dashboard'</msg>
-<msg time="2025-12-09T00:07:45.048480" level="INFO">${text} = Dashboard</msg>
-<var>${text}</var>
-<arg>${element}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:44.981989" elapsed="0.066491"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${text}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.048480" elapsed="0.001317"/>
-</kw>
-<kw name="Append To List" owner="Collections">
-<arg>${actual_list}</arg>
-<arg>${text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.050803" elapsed="0.000000"/>
-</kw>
-<var name="${element}">css=.oxd-main-menu-item--name &gt;&gt; nth=7</var>
-<status status="PASS" start="2025-12-09T00:07:44.980990" elapsed="0.069813"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-09T00:07:45.051822" level="INFO">css=.oxd-main-menu-item--name &gt;&gt; nth=8</msg>
-<arg>${element}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.051822" elapsed="0.000000"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2025-12-09T00:07:45.074714" level="INFO">Text: 'Directory'</msg>
-<msg time="2025-12-09T00:07:45.075715" level="INFO">${text} = Directory</msg>
-<var>${text}</var>
-<arg>${element}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.051822" elapsed="0.023893"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${text}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.075715" elapsed="0.002003"/>
-</kw>
-<kw name="Append To List" owner="Collections">
-<arg>${actual_list}</arg>
-<arg>${text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.078716" elapsed="0.000000"/>
-</kw>
-<var name="${element}">css=.oxd-main-menu-item--name &gt;&gt; nth=8</var>
-<status status="PASS" start="2025-12-09T00:07:45.050803" elapsed="0.027913"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-09T00:07:45.079716" level="INFO">css=.oxd-main-menu-item--name &gt;&gt; nth=9</msg>
-<arg>${element}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.079716" elapsed="0.001369"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2025-12-09T00:07:45.106509" level="INFO">Text: 'Maintenance'</msg>
-<msg time="2025-12-09T00:07:45.106509" level="INFO">${text} = Maintenance</msg>
-<var>${text}</var>
-<arg>${element}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.081085" elapsed="0.025424"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${text}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.106509" elapsed="0.000997"/>
-</kw>
-<kw name="Append To List" owner="Collections">
-<arg>${actual_list}</arg>
-<arg>${text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.107506" elapsed="0.001001"/>
-</kw>
-<var name="${element}">css=.oxd-main-menu-item--name &gt;&gt; nth=9</var>
-<status status="PASS" start="2025-12-09T00:07:45.079716" elapsed="0.028791"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-09T00:07:45.109911" level="INFO">css=.oxd-main-menu-item--name &gt;&gt; nth=10</msg>
-<arg>${element}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.108507" elapsed="0.002427"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2025-12-09T00:07:45.139380" level="INFO">Text: 'Claim'</msg>
-<msg time="2025-12-09T00:07:45.139380" level="INFO">${text} = Claim</msg>
-<var>${text}</var>
-<arg>${element}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.110934" elapsed="0.029444"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${text}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.140378" elapsed="0.001017"/>
-</kw>
-<kw name="Append To List" owner="Collections">
-<arg>${actual_list}</arg>
-<arg>${text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.141395" elapsed="0.000000"/>
-</kw>
-<var name="${element}">css=.oxd-main-menu-item--name &gt;&gt; nth=10</var>
-<status status="PASS" start="2025-12-09T00:07:45.108507" elapsed="0.033872"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-09T00:07:45.143385" level="INFO">css=.oxd-main-menu-item--name &gt;&gt; nth=11</msg>
-<arg>${element}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.142379" elapsed="0.002004"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2025-12-09T00:07:45.169901" level="INFO">Text: 'Buzz'</msg>
-<msg time="2025-12-09T00:07:45.170901" level="INFO">${text} = Buzz</msg>
-<var>${text}</var>
-<arg>${element}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.144383" elapsed="0.026518"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${text}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.170901" elapsed="0.001001"/>
-</kw>
-<kw name="Append To List" owner="Collections">
-<arg>${actual_list}</arg>
-<arg>${text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.171902" elapsed="0.000000"/>
-</kw>
-<var name="${element}">css=.oxd-main-menu-item--name &gt;&gt; nth=11</var>
-<status status="PASS" start="2025-12-09T00:07:45.142379" elapsed="0.030522"/>
-</iter>
-<var>${element}</var>
-<value>@{elements}</value>
-<status status="PASS" start="2025-12-09T00:07:44.741715" elapsed="0.431186"/>
-</for>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-12-09T00:07:45.172901" level="INFO">['Admin', 'PIM', 'Leave', 'Time', 'Recruitment', 'My Info', 'Performance', 'Dashboard', 'Directory', 'Maintenance', 'Claim', 'Buzz']</msg>
-<arg>${actual_list}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.172901" elapsed="0.000000"/>
-</kw>
-<kw name="Lists Should Be Equal" owner="Collections">
-<arg>${expected_list}</arg>
-<arg>${actual_list}</arg>
-<doc>Fails if given lists are unequal.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.173917" elapsed="0.000000"/>
-</kw>
-<doc>Verfifies that all elements are visible in the Dashboard</doc>
-<status status="PASS" start="2025-12-09T00:07:44.722607" elapsed="0.451310"/>
+<doc>Verify the selected radio button</doc>
+<status status="PASS" start="2025-12-11T10:05:46.601234" elapsed="0.079733"/>
 </kw>
 <kw name="Close Browser Session" owner="keywords" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2025-12-09T00:07:46.072367" level="INFO">Closed browser</msg>
+<msg time="2025-12-11T10:05:47.112748" level="INFO">Closed browser</msg>
 <arg>CURRENT</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-12-09T00:07:45.177927" elapsed="0.894440"/>
+<status status="PASS" start="2025-12-11T10:05:46.694132" elapsed="0.418616"/>
 </kw>
 <doc>Closes the browser's page, context and window</doc>
-<status status="PASS" start="2025-12-09T00:07:45.174924" elapsed="0.898511"/>
+<status status="PASS" start="2025-12-11T10:05:46.680967" elapsed="0.431781"/>
 </kw>
-<doc>To validate successful login using the Login Form</doc>
-<status status="PASS" start="2025-12-09T00:07:32.670220" elapsed="13.403215"/>
+<doc>Select a radio button</doc>
+<status status="PASS" start="2025-12-11T10:05:36.916958" elapsed="10.197800"/>
 </test>
-<doc>Test suite for variable handling in Browser library</doc>
-<status status="PASS" start="2025-12-09T00:07:32.359491" elapsed="13.726933"/>
+<doc>To handle the Male and Female radio buttons on a form</doc>
+<status status="PASS" start="2025-12-11T10:05:36.470206" elapsed="10.661175"/>
 </suite>
-<status status="PASS" start="2025-12-09T00:07:32.353540" elapsed="13.744627"/>
+<status status="PASS" start="2025-12-11T10:05:36.457133" elapsed="10.688031"/>
 </suite>
-<status status="PASS" start="2025-12-09T00:07:32.317097" elapsed="13.784901"/>
+<status status="PASS" start="2025-12-11T10:05:36.411598" elapsed="10.741397"/>
 </suite>
 <statistics>
 <total>
@@ -553,7 +134,7 @@ for all matched elements by ``selector``.</doc>
 <suite>
 <stat name="Robotframework Demo" id="s1" pass="1" fail="0" skip="0">Robotframework Demo</stat>
 <stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests</stat>
-<stat name="Test Variables" id="s1-s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests.Test Variables</stat>
+<stat name="Radio Button Demo" id="s1-s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests.Radio Button Demo</stat>
 </suite>
 </statistics>
 <errors>

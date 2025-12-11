@@ -17,15 +17,16 @@ ${FIREFOX_EXECUTABLE_PATH}      C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\
 *** Keywords ***
 Open The Browser With URL
     [Documentation]    Opens the browser and navigates to the specified URL
-    [Arguments]    ${BROWSER}    ${EXEC_PATH}
+    [Arguments]    ${BROWSER}    ${EXEC_PATH}    ${WEB_URL}
     [Timeout]    20
-    New Browser    ${BROWSER}    headless=False    args=["--start-maximized"]    executablePath=${EXEC_PATH}
-    New Page    ${URL}
+    New Browser    ${BROWSER}    headless=False    executablePath=${EXEC_PATH}    args=["--start-maximized"]
+
+    IF    $WEB_URL    New Page    ${WEB_URL}    ELSE    New Page    ${URL}
 
 Open The Browser Headlessly With URL
     [Documentation]    Opens the browser in headless mode and navigates to the specified URL
     [Arguments]    ${BROWSER}    ${EXEC_PATH}
-    New Browser    ${BROWSER}    headless=True    args=["--start-maximized"]    executablePath=${EXEC_PATH}
+    New Browser    ${BROWSER}    headless=True    executablePath=${EXEC_PATH}    args=["--start-maximized"]
     New Page    ${URL}
 
 Fill The Login Form
@@ -42,7 +43,7 @@ Fill The Login Form Successfully
 
 Verify Error Message Is Correct
     [Documentation]    Verifies that the error message displayed is correct
-    ${result}=    Get Text    css=.oxd-alert-content-text
+    ${result}    Get Text    css=.oxd-alert-content-text
     Should Be Equal    ${result}    Invalid credentials
 
 Close Browser Session
