@@ -4,6 +4,9 @@ Documentation       To validate the Login Form
 Library             Browser
 Resource            keywords.resource
 
+Test Setup          Set Browser Timeout    30
+Test Teardown       Close Browser Session
+
 
 *** Variables ***
 ${BROWSER}      chromium
@@ -12,6 +15,6 @@ ${BROWSER}      chromium
 *** Test Cases ***
 Validate Unsuccessful Login
     [Documentation]    To validate unsuccessful login using the Login Form
-    Open The Browser With URL    BROWSER=${BROWSER}    EXEC_PATH=${CHROME_EXECUTABLE_PATH}
+    Open The Browser With URL    BROWSER=${BROWSER}
     Fill The Login Form
     Verify Error Message Is Correct

@@ -1,35 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-11T10:05:36.398892" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-12T00:25:38.710513" rpa="false" schemaversion="5">
 <suite id="s1" name="Robotframework Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo">
 <suite id="s1-s1" name="Tests" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests">
-<suite id="s1-s1-s1" name="Radio Button Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests\radio_button_demo.robot">
-<test id="s1-s1-s1-t1" name="Select An Option Of Radio Button" line="16">
+<suite id="s1-s1-s1" name="Checkbox Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests\checkbox_demo.robot">
+<test id="s1-s1-s1-t1" name="Select An Option Of Checkbox" line="17">
+<kw name="Set Browser Timeout" owner="Browser" type="SETUP">
+<msg time="2025-12-12T00:25:39.415489" level="INFO">Starting Browser process c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:53592</msg>
+<arg>60 seconds</arg>
+<arg>Test</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2025-12-12T00:25:39.351437" elapsed="1.153475"/>
+</kw>
 <kw name="Open The Browser With URL" owner="keywords">
+<if>
+<branch type="IF" condition="$BROWSER == 'chromium'">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-12-11T10:05:36.916958" level="INFO">{"browser": "chromium", "headless": false, "args": ["--start-maximized"], "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\f37edeae-01fc-4fa8-b3dd-cc222483f569"}</msg>
-<msg time="2025-12-11T10:05:36.978292" level="INFO">Starting Browser process c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:57271</msg>
-<msg time="2025-12-11T10:05:38.668448" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"args":["--start-maximized"],"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\f37edeae-01fc-4fa8-b3dd-cc222483f569"}</msg>
-<arg>${BROWSER}</arg>
+<msg time="2025-12-12T00:25:40.508768" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\e1bdf70b-0258-4e5d-93f8-1623fe850dbb"}</msg>
+<msg time="2025-12-12T00:25:41.165762" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\e1bdf70b-0258-4e5d-93f8-1623fe850dbb"}</msg>
+<arg>browser=${BROWSER}</arg>
 <arg>headless=False</arg>
-<arg>executablePath=${EXEC_PATH}</arg>
-<arg>args=["--start-maximized"]</arg>
+<arg>executablePath=${CHROME_EXECUTABLE_PATH}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-12-11T10:05:36.916958" elapsed="1.751995"/>
+<status status="PASS" start="2025-12-12T00:25:40.508768" elapsed="0.657814"/>
 </kw>
+<status status="PASS" start="2025-12-12T00:25:40.508768" elapsed="0.659322"/>
+</branch>
+<branch type="ELSE IF" condition="$BROWSER == 'firefox'">
+<kw name="New Browser" owner="Browser">
+<arg>browser=${BROWSER}</arg>
+<arg>headless=False</arg>
+<arg>executablePath=${FIREFOX_EXECUTABLE_PATH}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="NOT RUN" start="2025-12-12T00:25:41.168090" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-12-12T00:25:41.168090" elapsed="0.001346"/>
+</branch>
+<status status="PASS" start="2025-12-12T00:25:40.508768" elapsed="0.660668"/>
+</if>
 <if>
 <branch type="IF" condition="$WEB_URL">
 <kw name="New Page" owner="Browser">
-<msg time="2025-12-11T10:05:46.402331" level="INFO">Successfully initialized new page object and opened url: https://demo.automationtesting.in/Register.html</msg>
-<msg time="2025-12-11T10:05:46.402331" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-12-12T00:25:49.005750" level="INFO">Successfully initialized new page object and opened url: https://demo.automationtesting.in/Register.html</msg>
+<msg time="2025-12-12T00:25:49.005750" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${WEB_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-12-11T10:05:38.670034" elapsed="7.733344"/>
+<status status="PASS" start="2025-12-12T00:25:41.169436" elapsed="7.837645"/>
 </kw>
-<status status="PASS" start="2025-12-11T10:05:38.668953" elapsed="7.735409"/>
+<status status="PASS" start="2025-12-12T00:25:41.169436" elapsed="7.837645"/>
 </branch>
 <branch type="ELSE">
 <kw name="New Page" owner="Browser">
@@ -37,93 +62,170 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="NOT RUN" start="2025-12-11T10:05:46.405331" elapsed="0.000998"/>
+<status status="NOT RUN" start="2025-12-12T00:25:49.008517" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2025-12-11T10:05:46.404362" elapsed="0.001967"/>
+<status status="NOT RUN" start="2025-12-12T00:25:49.007081" elapsed="0.001436"/>
 </branch>
-<status status="PASS" start="2025-12-11T10:05:38.668953" elapsed="7.738376"/>
+<status status="PASS" start="2025-12-12T00:25:41.169436" elapsed="7.839081"/>
 </if>
 <arg>BROWSER=${BROWSER}</arg>
-<arg>EXEC_PATH=${CHROME_EXECUTABLE_PATH}</arg>
 <arg>WEB_URL=${WEB_URL}</arg>
 <doc>Opens the browser and navigates to the specified URL</doc>
-<timeout value="20 seconds"/>
-<status status="PASS" start="2025-12-11T10:05:36.916958" elapsed="9.490371"/>
+<status status="PASS" start="2025-12-12T00:25:40.504912" elapsed="8.503605"/>
 </kw>
-<kw name="Select Impressive Option From 3 Radio Buttons">
-<kw name="Get Element By Role" owner="Browser">
-<msg time="2025-12-11T10:05:46.509176" level="INFO">Locator found successfully.</msg>
-<msg time="2025-12-11T10:05:46.510090" level="INFO">${radio} = internal:role=radio[name="Male"s]</msg>
-<var>${radio}</var>
-<arg>RADIO</arg>
-<arg>name=Male</arg>
-<arg>exact=True</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for the matched element by ``role`` or a list of references if ``all_elements`` is set to ``True``.</doc>
-<status status="PASS" start="2025-12-11T10:05:46.411089" elapsed="0.099001"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2025-12-11T10:05:46.514091" level="INFO">Clicks the element 'internal:role=radio[name="Male"s]'.</msg>
-<arg>selector=${radio}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-11T10:05:46.511085" elapsed="0.088131"/>
-</kw>
-<doc>Select radio button</doc>
-<status status="PASS" start="2025-12-11T10:05:46.408329" elapsed="0.191973"/>
-</kw>
-<kw name="Verify That The Radio Button Is Selected">
-<kw name="Get Element By Role" owner="Browser">
-<msg time="2025-12-11T10:05:46.618367" level="INFO">Locator found successfully.</msg>
-<msg time="2025-12-11T10:05:46.618367" level="INFO">${radio} = internal:role=radio[checked=true]</msg>
-<var>${radio}</var>
-<arg>RADIO</arg>
-<arg>checked=True</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for the matched element by ``role`` or a list of references if ``all_elements`` is set to ``True``.</doc>
-<status status="PASS" start="2025-12-11T10:05:46.602229" elapsed="0.016138"/>
-</kw>
-<kw name="Get Attribute" owner="Browser">
-<msg time="2025-12-11T10:05:46.680967" level="INFO">Attribute is: 'Male'</msg>
-<arg>${radio}</arg>
-<arg>value</arg>
+<kw name="Verify Page Contains Checkboxes">
+<kw name="Get Element Count" owner="Browser">
+<arg>[type=checkbox]</arg>
 <arg>==</arg>
-<arg>Male</arg>
+<arg>3</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-11T10:05:46.618367" elapsed="0.062600"/>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-12-12T00:25:49.009999" elapsed="0.050304"/>
 </kw>
-<doc>Verify the selected radio button</doc>
-<status status="PASS" start="2025-12-11T10:05:46.601234" elapsed="0.079733"/>
+<doc>Check if there are 3 checkboxes</doc>
+<status status="PASS" start="2025-12-12T00:25:49.009999" elapsed="0.050304"/>
+</kw>
+<kw name="Verify Page Contains A Checkbox">
+<kw name="Get Element States" owner="Browser">
+<msg time="2025-12-12T00:25:49.121246" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused', 'unchecked']</msg>
+<arg>${NAME}</arg>
+<arg>validate</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-12T00:25:49.060303" elapsed="0.060943"/>
+</kw>
+<arg>\#checkbox1</arg>
+<doc>Verify that a checkbox exists</doc>
+<status status="PASS" start="2025-12-12T00:25:49.060303" elapsed="0.061955"/>
+</kw>
+<kw name="Verify Page Contains A Checkbox">
+<kw name="Get Element States" owner="Browser">
+<msg time="2025-12-12T00:25:49.157226" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused', 'unchecked']</msg>
+<arg>${NAME}</arg>
+<arg>validate</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-12T00:25:49.123293" elapsed="0.033933"/>
+</kw>
+<arg>\#checkbox2</arg>
+<doc>Verify that a checkbox exists</doc>
+<status status="PASS" start="2025-12-12T00:25:49.122258" elapsed="0.035967"/>
+</kw>
+<kw name="Verify Page Contains A Checkbox">
+<kw name="Get Element States" owner="Browser">
+<msg time="2025-12-12T00:25:49.189775" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused', 'unchecked']</msg>
+<arg>${NAME}</arg>
+<arg>validate</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-12T00:25:49.159226" elapsed="0.030549"/>
+</kw>
+<arg>\#checkbox3</arg>
+<doc>Verify that a checkbox exists</doc>
+<status status="PASS" start="2025-12-12T00:25:49.158225" elapsed="0.032536"/>
+</kw>
+<kw name="Select Checkbox Option">
+<kw name="Check Checkbox" owner="Browser">
+<arg>${NAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2025-12-12T00:25:49.191776" elapsed="0.060882"/>
+</kw>
+<arg>\#checkbox1</arg>
+<doc>Selects a checkbox of given label</doc>
+<status status="PASS" start="2025-12-12T00:25:49.190761" elapsed="0.061897"/>
+</kw>
+<kw name="Select Checkbox Option">
+<kw name="Check Checkbox" owner="Browser">
+<arg>${NAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2025-12-12T00:25:49.252658" elapsed="0.045664"/>
+</kw>
+<arg>\#checkbox3</arg>
+<doc>Selects a checkbox of given label</doc>
+<status status="PASS" start="2025-12-12T00:25:49.252658" elapsed="0.045664"/>
+</kw>
+<kw name="Unselect A Checkbox Option">
+<kw name="Uncheck Checkbox" owner="Browser">
+<arg>${NAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Unchecks the checkbox found by ``selector``.</doc>
+<status status="PASS" start="2025-12-12T00:25:49.301287" elapsed="0.063411"/>
+</kw>
+<arg>\#checkbox3</arg>
+<doc>Unselect a checkbox of a given lable</doc>
+<status status="PASS" start="2025-12-12T00:25:49.299154" elapsed="0.065544"/>
+</kw>
+<kw name="Verify Checkbox Option Is Selected">
+<kw name="Get Checkbox State" owner="Browser">
+<msg time="2025-12-12T00:25:49.391585" level="INFO">Retrieved dom property for element #checkbox1 containing true</msg>
+<msg time="2025-12-12T00:25:49.391585" level="INFO">Checkbox is checked</msg>
+<arg>${NAME}</arg>
+<arg>==</arg>
+<arg>checked</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the state of the checkbox found by ``selector``.</doc>
+<status status="PASS" start="2025-12-12T00:25:49.366603" elapsed="0.025981"/>
+</kw>
+<arg>\#checkbox1</arg>
+<doc>Ensure the checkbox's check state is true</doc>
+<status status="PASS" start="2025-12-12T00:25:49.365602" elapsed="0.026982"/>
+</kw>
+<kw name="Verify Checkbox Option Is Not Selected">
+<kw name="Get Checkbox State" owner="Browser">
+<msg time="2025-12-12T00:25:49.409625" level="INFO">Retrieved dom property for element #checkbox3 containing false</msg>
+<msg time="2025-12-12T00:25:49.409625" level="INFO">Checkbox is unchecked</msg>
+<arg>${NAME}</arg>
+<arg>==</arg>
+<arg>unchecked</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the state of the checkbox found by ``selector``.</doc>
+<status status="PASS" start="2025-12-12T00:25:49.393578" elapsed="0.017161"/>
+</kw>
+<arg>\#checkbox3</arg>
+<doc>Ensure the checkbox's check state is true</doc>
+<status status="PASS" start="2025-12-12T00:25:49.392584" elapsed="0.018155"/>
 </kw>
 <kw name="Close Browser Session" owner="keywords" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2025-12-11T10:05:47.112748" level="INFO">Closed browser</msg>
+<msg time="2025-12-12T00:25:49.862192" level="INFO">Closed browser</msg>
 <arg>CURRENT</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-12-11T10:05:46.694132" elapsed="0.418616"/>
+<status status="PASS" start="2025-12-12T00:25:49.411626" elapsed="0.450566"/>
 </kw>
 <doc>Closes the browser's page, context and window</doc>
-<status status="PASS" start="2025-12-11T10:05:46.680967" elapsed="0.431781"/>
+<status status="PASS" start="2025-12-12T00:25:49.411626" elapsed="0.452573"/>
 </kw>
-<doc>Select a radio button</doc>
-<status status="PASS" start="2025-12-11T10:05:36.916958" elapsed="10.197800"/>
+<doc>Select/deselect multiple checkboxes</doc>
+<status status="PASS" start="2025-12-12T00:25:39.334583" elapsed="10.529616"/>
 </test>
-<doc>To handle the Male and Female radio buttons on a form</doc>
-<status status="PASS" start="2025-12-11T10:05:36.470206" elapsed="10.661175"/>
+<doc>Test to handle a set of checkboxes</doc>
+<status status="PASS" start="2025-12-12T00:25:38.757384" elapsed="11.119435"/>
 </suite>
-<status status="PASS" start="2025-12-11T10:05:36.457133" elapsed="10.688031"/>
+<status status="PASS" start="2025-12-12T00:25:38.754215" elapsed="11.135498"/>
 </suite>
-<status status="PASS" start="2025-12-11T10:05:36.411598" elapsed="10.741397"/>
+<status status="PASS" start="2025-12-12T00:25:38.720694" elapsed="11.173824"/>
 </suite>
 <statistics>
 <total>
@@ -134,7 +236,7 @@ for the matched element by ``role`` or a list of references if ``all_elements`` 
 <suite>
 <stat name="Robotframework Demo" id="s1" pass="1" fail="0" skip="0">Robotframework Demo</stat>
 <stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests</stat>
-<stat name="Radio Button Demo" id="s1-s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests.Radio Button Demo</stat>
+<stat name="Checkbox Demo" id="s1-s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests.Checkbox Demo</stat>
 </suite>
 </statistics>
 <errors>

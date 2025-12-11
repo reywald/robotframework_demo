@@ -5,6 +5,7 @@ Library             Collections
 Library             Browser
 Resource            keywords.resource
 
+Test Setup          Set Browser Timeout    30
 Test Teardown       Close Browser Session
 
 
@@ -15,12 +16,12 @@ Test Teardown       Close Browser Session
 *** Test Cases ***
 Validate Visible Elements On Login Page
     [Documentation]    To validate the visibility of specific elements on the login page
-    Open The Browser With URL    BROWSER=chromium    EXEC_PATH=${CHROME_EXECUTABLE_PATH}
+    Open The Browser With URL    BROWSER=chromium
     Verify Element On Login Page
 
 Validate Successful Login
     [Documentation]    To validate successful login using the Login Form
-    Open The Browser With URL    BROWSER=firefox    EXEC_PATH=${FIREFOX_EXECUTABLE_PATH}
+    Open The Browser With URL    BROWSER=firefox
     Fill The Login Form Successfully
     Verify Dashboard Page Opens
     Verify Items In Dashboard Page

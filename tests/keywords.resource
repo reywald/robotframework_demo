@@ -17,17 +17,25 @@ ${FIREFOX_EXECUTABLE_PATH}      C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\
 *** Keywords ***
 Open The Browser With URL
     [Documentation]    Opens the browser and navigates to the specified URL
-    [Arguments]    ${BROWSER}    ${EXEC_PATH}    ${WEB_URL}
-    [Timeout]    20
-    New Browser    ${BROWSER}    headless=False    executablePath=${EXEC_PATH}    args=["--start-maximized"]
+    [Arguments]    ${BROWSER}    ${WEB_URL}=${None}
+    IF    $BROWSER == 'chromium'
+        New Browser    browser=${BROWSER}    headless=False    executablePath=${CHROME_EXECUTABLE_PATH}
+    ELSE IF    $BROWSER == 'firefox'
+        New Browser    browser=${BROWSER}    headless=False    executablePath=${FIREFOX_EXECUTABLE_PATH}
+    END
 
     IF    $WEB_URL    New Page    ${WEB_URL}    ELSE    New Page    ${URL}
 
 Open The Browser Headlessly With URL
     [Documentation]    Opens the browser in headless mode and navigates to the specified URL
-    [Arguments]    ${BROWSER}    ${EXEC_PATH}
-    New Browser    ${BROWSER}    headless=True    executablePath=${EXEC_PATH}    args=["--start-maximized"]
-    New Page    ${URL}
+    [Arguments]    ${BROWSER}    ${WEB_URL}=${None}
+    IF    $BROWSER == 'chromium'
+        New Browser    browser=${BROWSER}    headless=True    executablePath=${CHROME_EXECUTABLE_PATH}
+    ELSE IF    $BROWSER == 'firefox'
+        New Browser    browser=${BROWSER}    headless=True    executablePath=${FIREFOX_EXECUTABLE_PATH}
+    END
+
+    IF    $WEB_URL    New Page    ${WEB_URL}    ELSE    New Page    ${URL}
 
 Fill The Login Form
     [Documentation]    Fills the login form with provided username and password
@@ -43,7 +51,7 @@ Fill The Login Form Successfully
 
 Verify Error Message Is Correct
     [Documentation]    Verifies that the error message displayed is correct
-    ${result}    Get Text    css=.oxd-alert-content-text
+    ${result} =    Get Text    css=.oxd-alert-content-text
     Should Be Equal    ${result}    Invalid credentials
 
 Close Browser Session
