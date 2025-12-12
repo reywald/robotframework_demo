@@ -1,4 +1,4 @@
-{"level":30,"time":"2025-12-11T23:25:40.393Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Listening on 127.0.0.1:53592"}
+{"level":30,"time":"2025-12-12T09:04:54.546Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Listening on 127.0.0.1:53973"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js:12672:15)
@@ -12,55 +12,52 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1701:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
 =============================================================
-{"level":30,"time":"2025-12-11T23:25:40.500Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2025-12-11T23:25:41.147Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Adding browser to stack: chromium, version: 138.0.7204.23"}
-{"level":30,"time":"2025-12-11T23:25:41.148Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2025-12-11T23:25:41.148Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"End of node method newBrowser"}
-{"level":30,"time":"2025-12-11T23:25:41.158Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newPage"}
-{"level":30,"time":"2025-12-11T23:25:41.159Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@c6354e23c2b803362754813588a71d29\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=78f5bd6a-4969-4b7b-b69f-b94f81b25982\"}"}
-{"level":30,"time":"2025-12-11T23:25:41.179Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Setting default timeout for context context=4743c8f9-df1d-4252-8341-0974f5f4835e to 60000"}
-{"level":30,"time":"2025-12-11T23:25:41.180Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Changed active context: context=4743c8f9-df1d-4252-8341-0974f5f4835e"}
-{"level":30,"time":"2025-12-11T23:25:41.669Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Video path: undefined"}
-{"level":30,"time":"2025-12-11T23:25:41.669Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Changed active page"}
-{"level":30,"time":"2025-12-11T23:25:48.988Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"End of node method newPage"}
-{"level":30,"time":"2025-12-11T23:25:48.999Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getElementCount"}
-{"level":30,"time":"2025-12-11T23:25:48.999Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is disabled, return Locator: [type=checkbox] in page."}
-{"level":30,"time":"2025-12-11T23:25:49.045Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"End of node method getElementCount"}
-{"level":30,"time":"2025-12-11T23:25:49.051Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getElementStates"}
-{"level":30,"time":"2025-12-11T23:25:49.051Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with #checkbox1 in page."}
-{"level":30,"time":"2025-12-11T23:25:49.077Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Element #checkbox1 is editable: true"}
-{"level":30,"time":"2025-12-11T23:25:49.077Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Checking checked state"}
-{"level":30,"time":"2025-12-11T23:25:49.105Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"End of node method getElementStates"}
-{"level":30,"time":"2025-12-11T23:25:49.110Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getElementStates"}
-{"level":30,"time":"2025-12-11T23:25:49.110Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with #checkbox2 in page."}
-{"level":30,"time":"2025-12-11T23:25:49.126Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Element #checkbox2 is editable: true"}
-{"level":30,"time":"2025-12-11T23:25:49.126Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Checking checked state"}
-{"level":30,"time":"2025-12-11T23:25:49.140Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"End of node method getElementStates"}
-{"level":30,"time":"2025-12-11T23:25:49.146Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getElementStates"}
-{"level":30,"time":"2025-12-11T23:25:49.146Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with #checkbox3 in page."}
-{"level":30,"time":"2025-12-11T23:25:49.162Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Element #checkbox3 is editable: true"}
-{"level":30,"time":"2025-12-11T23:25:49.162Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Checking checked state"}
-{"level":30,"time":"2025-12-11T23:25:49.173Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"End of node method getElementStates"}
-{"level":30,"time":"2025-12-11T23:25:49.178Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Start of node method checkCheckbox"}
-{"level":30,"time":"2025-12-11T23:25:49.178Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with #checkbox1 in page."}
-{"level":30,"time":"2025-12-11T23:25:49.236Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"End of node method checkCheckbox"}
-{"level":30,"time":"2025-12-11T23:25:49.242Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with #checkbox3 in page."}
-{"level":30,"time":"2025-12-11T23:25:49.241Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Start of node method checkCheckbox"}
-{"level":30,"time":"2025-12-11T23:25:49.281Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"End of node method checkCheckbox"}
-{"level":30,"time":"2025-12-11T23:25:49.292Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Start of node method uncheckCheckbox"}
-{"level":30,"time":"2025-12-11T23:25:49.292Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with #checkbox3 in page."}
-{"level":30,"time":"2025-12-11T23:25:49.347Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"End of node method uncheckCheckbox"}
-{"level":30,"time":"2025-12-11T23:25:49.356Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBoolProperty"}
-{"level":30,"time":"2025-12-11T23:25:49.356Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with #checkbox1 in page."}
-{"level":30,"time":"2025-12-11T23:25:49.375Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Retrieved dom property for element #checkbox1 containing true"}
-{"level":30,"time":"2025-12-11T23:25:49.375Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBoolProperty"}
-{"level":30,"time":"2025-12-11T23:25:49.382Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBoolProperty"}
-{"level":30,"time":"2025-12-11T23:25:49.382Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with #checkbox3 in page."}
-{"level":30,"time":"2025-12-11T23:25:49.393Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Retrieved dom property for element #checkbox3 containing false"}
-{"level":30,"time":"2025-12-11T23:25:49.393Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBoolProperty"}
-{"level":30,"time":"2025-12-11T23:25:49.399Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2025-12-11T23:25:49.424Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Removed page=7871d890-f72d-4f42-8224-81af0912067f from context=4743c8f9-df1d-4252-8341-0974f5f4835e page stack"}
-{"level":30,"time":"2025-12-11T23:25:49.846Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2025-12-12T09:04:54.992Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-12-12T09:04:55.754Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Adding browser to stack: chromium, version: 138.0.7204.23"}
+{"level":30,"time":"2025-12-12T09:04:55.754Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-12-12T09:04:55.754Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-12-12T09:04:55.768Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-12-12T09:04:55.769Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@644b62674494f22f2afa0bf490452f66\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=9fbf4f15-7ba2-43df-8fd3-23fd86690cb3\"}"}
+{"level":30,"time":"2025-12-12T09:04:55.785Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Setting default timeout for context context=26e0c0e2-4609-45ce-96de-3f64bf66be5d to 30000"}
+{"level":30,"time":"2025-12-12T09:04:55.786Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Changed active context: context=26e0c0e2-4609-45ce-96de-3f64bf66be5d"}
+{"level":30,"time":"2025-12-12T09:04:56.179Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Video path: undefined"}
+{"level":30,"time":"2025-12-12T09:04:56.179Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Changed active page"}
+{"level":30,"time":"2025-12-12T09:05:07.769Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"End of node method newPage"}
+{"level":30,"time":"2025-12-12T09:05:07.805Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-12-12T09:05:07.806Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with #Skills in page."}
+{"level":30,"time":"2025-12-12T09:05:07.907Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Option entries: 78"}
+{"level":30,"time":"2025-12-12T09:05:07.907Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-12-12T09:05:07.907Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-12-12T09:05:07.913Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getSelectContent"}
+{"level":30,"time":"2025-12-12T09:05:07.914Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with #Skills in page."}
+{"level":30,"time":"2025-12-12T09:05:07.934Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Option entries: 78"}
+{"level":30,"time":"2025-12-12T09:05:07.934Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-12-12T09:05:07.935Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"End of node method getSelectContent"}
+{"level":30,"time":"2025-12-12T09:05:07.942Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-12-12T09:05:07.942Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with #Skills in page."}
+{"level":30,"time":"2025-12-12T09:05:07.967Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Option entries: 78"}
+{"level":30,"time":"2025-12-12T09:05:07.967Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-12-12T09:05:07.967Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-12-12T09:05:07.976Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getSelectContent"}
+{"level":30,"time":"2025-12-12T09:05:07.976Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with #Skills in page."}
+{"level":30,"time":"2025-12-12T09:05:08.000Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Option entries: 78"}
+{"level":30,"time":"2025-12-12T09:05:08.000Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-12-12T09:05:08.000Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"End of node method getSelectContent"}
+{"level":30,"time":"2025-12-12T09:05:08.007Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-12-12T09:05:08.007Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with #Skills in page."}
+{"level":30,"time":"2025-12-12T09:05:08.027Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Option entries: 78"}
+{"level":30,"time":"2025-12-12T09:05:08.028Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-12-12T09:05:08.028Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-12-12T09:05:08.034Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getSelectContent"}
+{"level":30,"time":"2025-12-12T09:05:08.034Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with #Skills in page."}
+{"level":30,"time":"2025-12-12T09:05:08.055Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Option entries: 78"}
+{"level":30,"time":"2025-12-12T09:05:08.055Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-12-12T09:05:08.055Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"End of node method getSelectContent"}
+{"level":30,"time":"2025-12-12T09:05:08.062Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-12-12T09:05:08.080Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Removed page=e9295805-a107-4857-bcc5-7de5be2ae599 from context=26e0c0e2-4609-45ce-96de-3f64bf66be5d page stack"}
+{"level":30,"time":"2025-12-12T09:05:08.555Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2025-12-12T09:05:08.566Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-12T09:05:08.567Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js:12672:15)
@@ -74,22 +71,7 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1701:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
 =============================================================
-{"level":30,"time":"2025-12-11T23:25:49.859Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-11T23:25:49.859Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
-================= Original suppressed error =================
-Error: Browser has been closed.
-    at PlaywrightState.getActiveBrowser (c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js:12672:15)
-    at PlaywrightServer.getActiveBrowser (c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js:13622:59)
-    at PlaywrightServer.setTimeout (c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js:13873:57)
-    at Object.onReceiveHalfClose (c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
-    at BaseServerInterceptingCall.maybePushNextMessage (c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
-    at BaseServerInterceptingCall.handleEndEvent (c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
-    at ServerHttp2Stream.<anonymous> (c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
-    at ServerHttp2Stream.emit (node:events:520:35)
-    at endReadableNT (node:internal/streams/readable:1701:12)
-    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
-=============================================================
-{"level":30,"time":"2025-12-11T23:25:49.871Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-11T23:25:49.871Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-11T23:25:51.621Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2025-12-11T23:25:51.621Z","pid":24192,"hostname":"NG-SS-LPT-040798","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2025-12-12T09:05:08.589Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-12T09:05:08.589Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-12T09:05:10.315Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-12-12T09:05:10.316Z","pid":15088,"hostname":"NG-SS-LPT-040798","msg":"End of node method closeAllBrowsers"}

@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-12T00:25:38.710513" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-12T10:04:52.806208" rpa="false" schemaversion="5">
 <suite id="s1" name="Robotframework Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo">
 <suite id="s1-s1" name="Tests" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests">
-<suite id="s1-s1-s1" name="Checkbox Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests\checkbox_demo.robot">
-<test id="s1-s1-s1-t1" name="Select An Option Of Checkbox" line="17">
+<suite id="s1-s1-s1" name="Dropdown Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests\dropdown_demo.robot">
+<test id="s1-s1-s1-t1" name="Select Options In Dropdown" line="17">
 <kw name="Set Browser Timeout" owner="Browser" type="SETUP">
-<msg time="2025-12-12T00:25:39.415489" level="INFO">Starting Browser process c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:53592</msg>
-<arg>60 seconds</arg>
-<arg>Test</arg>
+<msg time="2025-12-12T10:04:53.368450" level="INFO">Starting Browser process c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:53973</msg>
+<arg>30</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<status status="PASS" start="2025-12-12T00:25:39.351437" elapsed="1.153475"/>
+<status status="PASS" start="2025-12-12T10:04:53.257616" elapsed="1.728893"/>
 </kw>
 <kw name="Open The Browser With URL" owner="keywords">
 <if>
 <branch type="IF" condition="$BROWSER == 'chromium'">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-12-12T00:25:40.508768" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\e1bdf70b-0258-4e5d-93f8-1623fe850dbb"}</msg>
-<msg time="2025-12-12T00:25:41.165762" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\e1bdf70b-0258-4e5d-93f8-1623fe850dbb"}</msg>
+<msg time="2025-12-12T10:04:54.988506" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\dbe1c5dc-f4c2-4dfe-8dca-16ff391e81e8"}</msg>
+<msg time="2025-12-12T10:04:55.756115" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\dbe1c5dc-f4c2-4dfe-8dca-16ff391e81e8"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=False</arg>
 <arg>executablePath=${CHROME_EXECUTABLE_PATH}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-12-12T00:25:40.508768" elapsed="0.657814"/>
+<status status="PASS" start="2025-12-12T10:04:54.988506" elapsed="0.767609"/>
 </kw>
-<status status="PASS" start="2025-12-12T00:25:40.508768" elapsed="0.659322"/>
+<status status="PASS" start="2025-12-12T10:04:54.988506" elapsed="0.767609"/>
 </branch>
 <branch type="ELSE IF" condition="$BROWSER == 'firefox'">
 <kw name="New Browser" owner="Browser">
@@ -37,24 +36,24 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="NOT RUN" start="2025-12-12T00:25:41.168090" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-12-12T10:04:55.758121" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2025-12-12T00:25:41.168090" elapsed="0.001346"/>
+<status status="NOT RUN" start="2025-12-12T10:04:55.756115" elapsed="0.002006"/>
 </branch>
-<status status="PASS" start="2025-12-12T00:25:40.508768" elapsed="0.660668"/>
+<status status="PASS" start="2025-12-12T10:04:54.988506" elapsed="0.769615"/>
 </if>
 <if>
 <branch type="IF" condition="$WEB_URL">
 <kw name="New Page" owner="Browser">
-<msg time="2025-12-12T00:25:49.005750" level="INFO">Successfully initialized new page object and opened url: https://demo.automationtesting.in/Register.html</msg>
-<msg time="2025-12-12T00:25:49.005750" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-12-12T10:05:07.773668" level="INFO">Successfully initialized new page object and opened url: https://demo.automationtesting.in/Register.html</msg>
+<msg time="2025-12-12T10:05:07.773668" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${WEB_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-12-12T00:25:41.169436" elapsed="7.837645"/>
+<status status="PASS" start="2025-12-12T10:04:55.758121" elapsed="12.019542"/>
 </kw>
-<status status="PASS" start="2025-12-12T00:25:41.169436" elapsed="7.837645"/>
+<status status="PASS" start="2025-12-12T10:04:55.758121" elapsed="12.022864"/>
 </branch>
 <branch type="ELSE">
 <kw name="New Page" owner="Browser">
@@ -62,170 +61,1286 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="NOT RUN" start="2025-12-12T00:25:49.008517" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-12-12T10:05:07.783001" elapsed="0.001454"/>
 </kw>
-<status status="NOT RUN" start="2025-12-12T00:25:49.007081" elapsed="0.001436"/>
+<status status="NOT RUN" start="2025-12-12T10:05:07.780985" elapsed="0.004484"/>
 </branch>
-<status status="PASS" start="2025-12-12T00:25:41.169436" elapsed="7.839081"/>
+<status status="PASS" start="2025-12-12T10:04:55.758121" elapsed="12.027348"/>
 </if>
-<arg>BROWSER=${BROWSER}</arg>
-<arg>WEB_URL=${WEB_URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>${WEB_URL}</arg>
 <doc>Opens the browser and navigates to the specified URL</doc>
-<status status="PASS" start="2025-12-12T00:25:40.504912" elapsed="8.503605"/>
+<status status="PASS" start="2025-12-12T10:04:54.987541" elapsed="12.797928"/>
 </kw>
-<kw name="Verify Page Contains Checkboxes">
-<kw name="Get Element Count" owner="Browser">
-<arg>[type=checkbox]</arg>
-<arg>==</arg>
-<arg>3</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the count of elements found with ``selector``.</doc>
-<status status="PASS" start="2025-12-12T00:25:49.009999" elapsed="0.050304"/>
-</kw>
-<doc>Check if there are 3 checkboxes</doc>
-<status status="PASS" start="2025-12-12T00:25:49.009999" elapsed="0.050304"/>
-</kw>
-<kw name="Verify Page Contains A Checkbox">
-<kw name="Get Element States" owner="Browser">
-<msg time="2025-12-12T00:25:49.121246" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused', 'unchecked']</msg>
-<arg>${NAME}</arg>
-<arg>validate</arg>
-<arg>visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-12T00:25:49.060303" elapsed="0.060943"/>
-</kw>
-<arg>\#checkbox1</arg>
-<doc>Verify that a checkbox exists</doc>
-<status status="PASS" start="2025-12-12T00:25:49.060303" elapsed="0.061955"/>
-</kw>
-<kw name="Verify Page Contains A Checkbox">
-<kw name="Get Element States" owner="Browser">
-<msg time="2025-12-12T00:25:49.157226" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused', 'unchecked']</msg>
-<arg>${NAME}</arg>
-<arg>validate</arg>
-<arg>visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-12T00:25:49.123293" elapsed="0.033933"/>
-</kw>
-<arg>\#checkbox2</arg>
-<doc>Verify that a checkbox exists</doc>
-<status status="PASS" start="2025-12-12T00:25:49.122258" elapsed="0.035967"/>
-</kw>
-<kw name="Verify Page Contains A Checkbox">
-<kw name="Get Element States" owner="Browser">
-<msg time="2025-12-12T00:25:49.189775" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused', 'unchecked']</msg>
-<arg>${NAME}</arg>
-<arg>validate</arg>
-<arg>visible</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-12T00:25:49.159226" elapsed="0.030549"/>
-</kw>
-<arg>\#checkbox3</arg>
-<doc>Verify that a checkbox exists</doc>
-<status status="PASS" start="2025-12-12T00:25:49.158225" elapsed="0.032536"/>
-</kw>
-<kw name="Select Checkbox Option">
-<kw name="Check Checkbox" owner="Browser">
-<arg>${NAME}</arg>
+<kw name="Select A Dropdown Option By Value">
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-12-12T10:05:07.800139" level="INFO">Selects the option(s) APIs by attribute SelectAttribute.value from element #Skills.</msg>
+<arg>\#Skills</arg>
+<arg>value</arg>
+<arg>${value}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
-<status status="PASS" start="2025-12-12T00:25:49.191776" elapsed="0.060882"/>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-12T10:05:07.799140" elapsed="0.109978"/>
 </kw>
-<arg>\#checkbox1</arg>
-<doc>Selects a checkbox of given label</doc>
-<status status="PASS" start="2025-12-12T00:25:49.190761" elapsed="0.061897"/>
-</kw>
-<kw name="Select Checkbox Option">
-<kw name="Check Checkbox" owner="Browser">
-<arg>${NAME}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
-<status status="PASS" start="2025-12-12T00:25:49.252658" elapsed="0.045664"/>
-</kw>
-<arg>\#checkbox3</arg>
-<doc>Selects a checkbox of given label</doc>
-<status status="PASS" start="2025-12-12T00:25:49.252658" elapsed="0.045664"/>
-</kw>
-<kw name="Unselect A Checkbox Option">
-<kw name="Uncheck Checkbox" owner="Browser">
-<arg>${NAME}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Unchecks the checkbox found by ``selector``.</doc>
-<status status="PASS" start="2025-12-12T00:25:49.301287" elapsed="0.063411"/>
-</kw>
-<arg>\#checkbox3</arg>
-<doc>Unselect a checkbox of a given lable</doc>
-<status status="PASS" start="2025-12-12T00:25:49.299154" elapsed="0.065544"/>
-</kw>
-<kw name="Verify Checkbox Option Is Selected">
-<kw name="Get Checkbox State" owner="Browser">
-<msg time="2025-12-12T00:25:49.391585" level="INFO">Retrieved dom property for element #checkbox1 containing true</msg>
-<msg time="2025-12-12T00:25:49.391585" level="INFO">Checkbox is checked</msg>
-<arg>${NAME}</arg>
-<arg>==</arg>
-<arg>checked</arg>
+<kw name="Get Selected Options" owner="Browser">
+<msg time="2025-12-12T10:05:07.936304" level="INFO">entry {
+  label: "Select Skills"
+}
+entry {
+  value: "Adobe InDesign"
+  label: "Adobe InDesign"
+  index: 1
+}
+entry {
+  value: "Adobe Photoshop"
+  label: "Adobe Photoshop"
+  index: 2
+}
+entry {
+  value: "Analytics"
+  label: "Analytics"
+  index: 3
+}
+entry {
+  value: "Android"
+  label: "Android"
+  index: 4
+}
+entry {
+  value: "APIs"
+  label: "APIs"
+  index: 5
+  selected: true
+}
+entry {
+  value: "Art Design"
+  label: "Art Design"
+  index: 6
+}
+entry {
+  value: "AutoCAD"
+  label: "AutoCAD"
+  index: 7
+}
+entry {
+  value: "Backup Management"
+  label: "Backup Management"
+  index: 8
+}
+entry {
+  value: "C"
+  label: "C"
+  index: 9
+}
+entry {
+  value: "C++"
+  label: "C++"
+  index: 10
+}
+entry {
+  value: "Certifications"
+  label: "Certifications"
+  index: 11
+}
+entry {
+  value: "Client Server"
+  label: "Client Server"
+  index: 12
+}
+entry {
+  value: "Client Support"
+  label: "Client Support"
+  index: 13
+}
+entry {
+  value: "Configuration"
+  label: "Configuration"
+  index: 14
+}
+entry {
+  value: "Content Managment"
+  label: "Content Managment"
+  index: 15
+}
+entry {
+  value: "Content Management Systems (CMS)"
+  label: "Content Management Systems (CMS)"
+  index: 16
+}
+entry {
+  value: "Corel Draw"
+  label: "Corel Draw"
+  index: 17
+}
+entry {
+  value: "Corel Word Perfect"
+  label: "Corel Word Perfect"
+  index: 18
+}
+entry {
+  value: "CSS"
+  label: "CSS"
+  index: 19
+}
+entry {
+  value: "Data Analytics"
+  label: "Data Analytics"
+  index: 20
+}
+entry {
+  value: "Desktop Publishing"
+  label: "Desktop Publishing"
+  index: 21
+}
+entry {
+  value: "Design"
+  label: "Design"
+  index: 22
+}
+entry {
+  value: "Diagnostics"
+  label: "Diagnostics"
+  index: 23
+}
+entry {
+  value: "Documentation"
+  label: "Documentation"
+  index: 24
+}
+entry {
+  value: "End User Support"
+  label: "End User Support"
+  index: 25
+}
+entry {
+  value: "Email"
+  label: "Email"
+  index: 26
+}
+entry {
+  value: "Engineering"
+  label: "Engineering"
+  index: 27
+}
+entry {
+  value: "Excel"
+  label: "Excel"
+  index: 28
+}
+entry {
+  value: "FileMaker Pro"
+  label: "FileMaker Pro"
+  index: 29
+}
+entry {
+  value: "Fortran"
+  label: "Fortran"
+  index: 30
+}
+entry {
+  value: "HTML"
+  label: "HTML"
+  index: 31
+}
+entry {
+  value: "Implementation"
+  label: "Implementation"
+  index: 32
+}
+entry {
+  value: "Installation"
+  label: "Installation"
+  index: 33
+}
+entry {
+  value: "Internet"
+  label: "Internet"
+  index: 34
+}
+entry {
+  value: "iOS"
+  label: "iOS"
+  index: 35
+}
+entry {
+  value: "iPhone"
+  label: "iPhone"
+  index: 36
+}
+entry {
+  value: "Linux"
+  label: "Linux"
+  index: 37
+}
+entry {
+  value: "Java"
+  label: "Java"
+  index: 38
+}
+entry {
+  value: "Javascript"
+  label: "Javascript"
+  index: 39
+}
+entry {
+  value: "Mac"
+  label: "Mac"
+  index: 40
+}
+entry {
+  value: "Matlab"
+  label: "Matlab"
+  index: 41
+}
+entry {
+  value: "Maya"
+  label: "Maya"
+  index: 42
+}
+entry {
+  value: "Microsoft Excel"
+  label: "Microsoft Excel"
+  index: 43
+}
+entry {
+  value: "Microsoft Office"
+  label: "Microsoft Office"
+  index: 44
+}
+entry {
+  value: "Microsoft Outlook"
+  label: "Microsoft Outlook"
+  index: 45
+}
+entry {
+  value: "Microsoft Publisher"
+  label: "Microsoft Publisher"
+  index: 46
+}
+entry {
+  value: "Microsoft Word"
+  label: "Microsoft Word"
+  index: 47
+}
+entry {
+  value: "Microsoft Visual"
+  label: "Microsoft Visual"
+  index: 48
+}
+entry {
+  value: "Mobile"
+  label: "Mobile"
+  index: 49
+}
+entry {
+  value: "MySQL"
+  label: "MySQL"
+  index: 50
+}
+entry {
+  value: "Networks"
+  label: "Networks"
+  index: 51
+}
+entry {
+  value: "Open Source Software"
+  label: "Open Source Software"
+  index: 52
+}
+entry {
+  value: "Oracle"
+  label: "Oracle"
+  index: 53
+}
+entry {
+  value: "Perl"
+  label: "Perl"
+  index: 54
+}
+entry {
+  value: "PHP"
+  label: "PHP"
+  index: 55
+}
+entry {
+  value: "Presentations"
+  label: "Presentations"
+  index: 56
+}
+entry {
+  value: "Processing"
+  label: "Processing"
+  index: 57
+}
+entry {
+  value: "Programming"
+  label: "Programming"
+  index: 58
+}
+entry {
+  value: "PT Modeler"
+  label: "PT Modeler"
+  index: 59
+}
+entry {
+  value: "Python"
+  label: "Python"
+  index: 60
+}
+entry {
+  value: "QuickBooks"
+  label: "QuickBooks"
+  index: 61
+}
+entry {
+  value: "Ruby"
+  label: "Ruby"
+  index: 62
+}
+entry {
+  value: "Shade"
+  label: "Shade"
+  index: 63
+}
+entry {
+  value: "Software"
+  label: "Software"
+  index: 64
+}
+entry {
+  value: "Spreadsheet"
+  label: "Spreadsheet"
+  index: 65
+}
+entry {
+  value: "SQL"
+  label: "SQL"
+  index: 66
+}
+entry {
+  value: "Support"
+  label: "Support"
+  index: 67
+}
+entry {
+  value: "Systems Administration"
+  label: "Systems Administration"
+  index: 68
+}
+entry {
+  value: "Tech Support"
+  label: "Tech Support"
+  index: 69
+}
+entry {
+  value: "Troubleshooting"
+  label: "Troubleshooting"
+  index: 70
+}
+entry {
+  value: "Unix"
+  label: "Unix"
+  index: 71
+}
+entry {
+  value: "UI / UX"
+  label: "UI / UX"
+  index: 72
+}
+entry {
+  value: "Web Page Design"
+  label: "Web Page Design"
+  index: 73
+}
+entry {
+  value: "Windows"
+  label: "Windows"
+  index: 74
+}
+entry {
+  value: "Word Processing"
+  label: "Word Processing"
+  index: 75
+}
+entry {
+  value: "XML"
+  label: "XML"
+  index: 76
+}
+entry {
+  value: "XHTML"
+  label: "XHTML"
+  index: 77
+}
+</msg>
+<arg>\#Skills</arg>
+<arg>value</arg>
+<arg>should be</arg>
+<arg>${value}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns the state of the checkbox found by ``selector``.</doc>
-<status status="PASS" start="2025-12-12T00:25:49.366603" elapsed="0.025981"/>
+<doc>Returns the specified attribute of selected options of the ``select`` element.</doc>
+<status status="PASS" start="2025-12-12T10:05:07.910118" elapsed="0.026186"/>
 </kw>
-<arg>\#checkbox1</arg>
-<doc>Ensure the checkbox's check state is true</doc>
-<status status="PASS" start="2025-12-12T00:25:49.365602" elapsed="0.026982"/>
+<arg>APIs</arg>
+<doc>Select a dropdown option given the value</doc>
+<status status="PASS" start="2025-12-12T10:05:07.792443" elapsed="0.145866"/>
 </kw>
-<kw name="Verify Checkbox Option Is Not Selected">
-<kw name="Get Checkbox State" owner="Browser">
-<msg time="2025-12-12T00:25:49.409625" level="INFO">Retrieved dom property for element #checkbox3 containing false</msg>
-<msg time="2025-12-12T00:25:49.409625" level="INFO">Checkbox is unchecked</msg>
-<arg>${NAME}</arg>
-<arg>==</arg>
-<arg>unchecked</arg>
+<kw name="Select A Dropdown Option By Label">
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-12-12T10:05:07.938309" level="INFO">Selects the option(s) CSS by attribute SelectAttribute.label from element #Skills.</msg>
+<arg>\#Skills</arg>
+<arg>label</arg>
+<arg>${label}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-12T10:05:07.938309" elapsed="0.034287"/>
+</kw>
+<kw name="Get Selected Options" owner="Browser">
+<msg time="2025-12-12T10:05:08.003230" level="INFO">entry {
+  label: "Select Skills"
+}
+entry {
+  value: "Adobe InDesign"
+  label: "Adobe InDesign"
+  index: 1
+}
+entry {
+  value: "Adobe Photoshop"
+  label: "Adobe Photoshop"
+  index: 2
+}
+entry {
+  value: "Analytics"
+  label: "Analytics"
+  index: 3
+}
+entry {
+  value: "Android"
+  label: "Android"
+  index: 4
+}
+entry {
+  value: "APIs"
+  label: "APIs"
+  index: 5
+}
+entry {
+  value: "Art Design"
+  label: "Art Design"
+  index: 6
+}
+entry {
+  value: "AutoCAD"
+  label: "AutoCAD"
+  index: 7
+}
+entry {
+  value: "Backup Management"
+  label: "Backup Management"
+  index: 8
+}
+entry {
+  value: "C"
+  label: "C"
+  index: 9
+}
+entry {
+  value: "C++"
+  label: "C++"
+  index: 10
+}
+entry {
+  value: "Certifications"
+  label: "Certifications"
+  index: 11
+}
+entry {
+  value: "Client Server"
+  label: "Client Server"
+  index: 12
+}
+entry {
+  value: "Client Support"
+  label: "Client Support"
+  index: 13
+}
+entry {
+  value: "Configuration"
+  label: "Configuration"
+  index: 14
+}
+entry {
+  value: "Content Managment"
+  label: "Content Managment"
+  index: 15
+}
+entry {
+  value: "Content Management Systems (CMS)"
+  label: "Content Management Systems (CMS)"
+  index: 16
+}
+entry {
+  value: "Corel Draw"
+  label: "Corel Draw"
+  index: 17
+}
+entry {
+  value: "Corel Word Perfect"
+  label: "Corel Word Perfect"
+  index: 18
+}
+entry {
+  value: "CSS"
+  label: "CSS"
+  index: 19
+  selected: true
+}
+entry {
+  value: "Data Analytics"
+  label: "Data Analytics"
+  index: 20
+}
+entry {
+  value: "Desktop Publishing"
+  label: "Desktop Publishing"
+  index: 21
+}
+entry {
+  value: "Design"
+  label: "Design"
+  index: 22
+}
+entry {
+  value: "Diagnostics"
+  label: "Diagnostics"
+  index: 23
+}
+entry {
+  value: "Documentation"
+  label: "Documentation"
+  index: 24
+}
+entry {
+  value: "End User Support"
+  label: "End User Support"
+  index: 25
+}
+entry {
+  value: "Email"
+  label: "Email"
+  index: 26
+}
+entry {
+  value: "Engineering"
+  label: "Engineering"
+  index: 27
+}
+entry {
+  value: "Excel"
+  label: "Excel"
+  index: 28
+}
+entry {
+  value: "FileMaker Pro"
+  label: "FileMaker Pro"
+  index: 29
+}
+entry {
+  value: "Fortran"
+  label: "Fortran"
+  index: 30
+}
+entry {
+  value: "HTML"
+  label: "HTML"
+  index: 31
+}
+entry {
+  value: "Implementation"
+  label: "Implementation"
+  index: 32
+}
+entry {
+  value: "Installation"
+  label: "Installation"
+  index: 33
+}
+entry {
+  value: "Internet"
+  label: "Internet"
+  index: 34
+}
+entry {
+  value: "iOS"
+  label: "iOS"
+  index: 35
+}
+entry {
+  value: "iPhone"
+  label: "iPhone"
+  index: 36
+}
+entry {
+  value: "Linux"
+  label: "Linux"
+  index: 37
+}
+entry {
+  value: "Java"
+  label: "Java"
+  index: 38
+}
+entry {
+  value: "Javascript"
+  label: "Javascript"
+  index: 39
+}
+entry {
+  value: "Mac"
+  label: "Mac"
+  index: 40
+}
+entry {
+  value: "Matlab"
+  label: "Matlab"
+  index: 41
+}
+entry {
+  value: "Maya"
+  label: "Maya"
+  index: 42
+}
+entry {
+  value: "Microsoft Excel"
+  label: "Microsoft Excel"
+  index: 43
+}
+entry {
+  value: "Microsoft Office"
+  label: "Microsoft Office"
+  index: 44
+}
+entry {
+  value: "Microsoft Outlook"
+  label: "Microsoft Outlook"
+  index: 45
+}
+entry {
+  value: "Microsoft Publisher"
+  label: "Microsoft Publisher"
+  index: 46
+}
+entry {
+  value: "Microsoft Word"
+  label: "Microsoft Word"
+  index: 47
+}
+entry {
+  value: "Microsoft Visual"
+  label: "Microsoft Visual"
+  index: 48
+}
+entry {
+  value: "Mobile"
+  label: "Mobile"
+  index: 49
+}
+entry {
+  value: "MySQL"
+  label: "MySQL"
+  index: 50
+}
+entry {
+  value: "Networks"
+  label: "Networks"
+  index: 51
+}
+entry {
+  value: "Open Source Software"
+  label: "Open Source Software"
+  index: 52
+}
+entry {
+  value: "Oracle"
+  label: "Oracle"
+  index: 53
+}
+entry {
+  value: "Perl"
+  label: "Perl"
+  index: 54
+}
+entry {
+  value: "PHP"
+  label: "PHP"
+  index: 55
+}
+entry {
+  value: "Presentations"
+  label: "Presentations"
+  index: 56
+}
+entry {
+  value: "Processing"
+  label: "Processing"
+  index: 57
+}
+entry {
+  value: "Programming"
+  label: "Programming"
+  index: 58
+}
+entry {
+  value: "PT Modeler"
+  label: "PT Modeler"
+  index: 59
+}
+entry {
+  value: "Python"
+  label: "Python"
+  index: 60
+}
+entry {
+  value: "QuickBooks"
+  label: "QuickBooks"
+  index: 61
+}
+entry {
+  value: "Ruby"
+  label: "Ruby"
+  index: 62
+}
+entry {
+  value: "Shade"
+  label: "Shade"
+  index: 63
+}
+entry {
+  value: "Software"
+  label: "Software"
+  index: 64
+}
+entry {
+  value: "Spreadsheet"
+  label: "Spreadsheet"
+  index: 65
+}
+entry {
+  value: "SQL"
+  label: "SQL"
+  index: 66
+}
+entry {
+  value: "Support"
+  label: "Support"
+  index: 67
+}
+entry {
+  value: "Systems Administration"
+  label: "Systems Administration"
+  index: 68
+}
+entry {
+  value: "Tech Support"
+  label: "Tech Support"
+  index: 69
+}
+entry {
+  value: "Troubleshooting"
+  label: "Troubleshooting"
+  index: 70
+}
+entry {
+  value: "Unix"
+  label: "Unix"
+  index: 71
+}
+entry {
+  value: "UI / UX"
+  label: "UI / UX"
+  index: 72
+}
+entry {
+  value: "Web Page Design"
+  label: "Web Page Design"
+  index: 73
+}
+entry {
+  value: "Windows"
+  label: "Windows"
+  index: 74
+}
+entry {
+  value: "Word Processing"
+  label: "Word Processing"
+  index: 75
+}
+entry {
+  value: "XML"
+  label: "XML"
+  index: 76
+}
+entry {
+  value: "XHTML"
+  label: "XHTML"
+  index: 77
+}
+</msg>
+<arg>\#Skills</arg>
+<arg>label</arg>
+<arg>should be</arg>
+<arg>${label}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns the state of the checkbox found by ``selector``.</doc>
-<status status="PASS" start="2025-12-12T00:25:49.393578" elapsed="0.017161"/>
+<doc>Returns the specified attribute of selected options of the ``select`` element.</doc>
+<status status="PASS" start="2025-12-12T10:05:07.972596" elapsed="0.030634"/>
 </kw>
-<arg>\#checkbox3</arg>
-<doc>Ensure the checkbox's check state is true</doc>
-<status status="PASS" start="2025-12-12T00:25:49.392584" elapsed="0.018155"/>
+<arg>CSS</arg>
+<doc>Select a dropdown option given the label</doc>
+<status status="PASS" start="2025-12-12T10:05:07.938309" elapsed="0.064921"/>
+</kw>
+<kw name="Select A Dropdown Option By Index">
+<kw name="Select Options By" owner="Browser">
+<msg time="2025-12-12T10:05:08.005228" level="INFO">Selects the option(s) 43 by attribute SelectAttribute.index from element #Skills.</msg>
+<arg>\#Skills</arg>
+<arg>index</arg>
+<arg>${index}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-12T10:05:08.005228" elapsed="0.026373"/>
+</kw>
+<kw name="Get Selected Options" owner="Browser">
+<msg time="2025-12-12T10:05:08.057445" level="INFO">entry {
+  label: "Select Skills"
+}
+entry {
+  value: "Adobe InDesign"
+  label: "Adobe InDesign"
+  index: 1
+}
+entry {
+  value: "Adobe Photoshop"
+  label: "Adobe Photoshop"
+  index: 2
+}
+entry {
+  value: "Analytics"
+  label: "Analytics"
+  index: 3
+}
+entry {
+  value: "Android"
+  label: "Android"
+  index: 4
+}
+entry {
+  value: "APIs"
+  label: "APIs"
+  index: 5
+}
+entry {
+  value: "Art Design"
+  label: "Art Design"
+  index: 6
+}
+entry {
+  value: "AutoCAD"
+  label: "AutoCAD"
+  index: 7
+}
+entry {
+  value: "Backup Management"
+  label: "Backup Management"
+  index: 8
+}
+entry {
+  value: "C"
+  label: "C"
+  index: 9
+}
+entry {
+  value: "C++"
+  label: "C++"
+  index: 10
+}
+entry {
+  value: "Certifications"
+  label: "Certifications"
+  index: 11
+}
+entry {
+  value: "Client Server"
+  label: "Client Server"
+  index: 12
+}
+entry {
+  value: "Client Support"
+  label: "Client Support"
+  index: 13
+}
+entry {
+  value: "Configuration"
+  label: "Configuration"
+  index: 14
+}
+entry {
+  value: "Content Managment"
+  label: "Content Managment"
+  index: 15
+}
+entry {
+  value: "Content Management Systems (CMS)"
+  label: "Content Management Systems (CMS)"
+  index: 16
+}
+entry {
+  value: "Corel Draw"
+  label: "Corel Draw"
+  index: 17
+}
+entry {
+  value: "Corel Word Perfect"
+  label: "Corel Word Perfect"
+  index: 18
+}
+entry {
+  value: "CSS"
+  label: "CSS"
+  index: 19
+}
+entry {
+  value: "Data Analytics"
+  label: "Data Analytics"
+  index: 20
+}
+entry {
+  value: "Desktop Publishing"
+  label: "Desktop Publishing"
+  index: 21
+}
+entry {
+  value: "Design"
+  label: "Design"
+  index: 22
+}
+entry {
+  value: "Diagnostics"
+  label: "Diagnostics"
+  index: 23
+}
+entry {
+  value: "Documentation"
+  label: "Documentation"
+  index: 24
+}
+entry {
+  value: "End User Support"
+  label: "End User Support"
+  index: 25
+}
+entry {
+  value: "Email"
+  label: "Email"
+  index: 26
+}
+entry {
+  value: "Engineering"
+  label: "Engineering"
+  index: 27
+}
+entry {
+  value: "Excel"
+  label: "Excel"
+  index: 28
+}
+entry {
+  value: "FileMaker Pro"
+  label: "FileMaker Pro"
+  index: 29
+}
+entry {
+  value: "Fortran"
+  label: "Fortran"
+  index: 30
+}
+entry {
+  value: "HTML"
+  label: "HTML"
+  index: 31
+}
+entry {
+  value: "Implementation"
+  label: "Implementation"
+  index: 32
+}
+entry {
+  value: "Installation"
+  label: "Installation"
+  index: 33
+}
+entry {
+  value: "Internet"
+  label: "Internet"
+  index: 34
+}
+entry {
+  value: "iOS"
+  label: "iOS"
+  index: 35
+}
+entry {
+  value: "iPhone"
+  label: "iPhone"
+  index: 36
+}
+entry {
+  value: "Linux"
+  label: "Linux"
+  index: 37
+}
+entry {
+  value: "Java"
+  label: "Java"
+  index: 38
+}
+entry {
+  value: "Javascript"
+  label: "Javascript"
+  index: 39
+}
+entry {
+  value: "Mac"
+  label: "Mac"
+  index: 40
+}
+entry {
+  value: "Matlab"
+  label: "Matlab"
+  index: 41
+}
+entry {
+  value: "Maya"
+  label: "Maya"
+  index: 42
+}
+entry {
+  value: "Microsoft Excel"
+  label: "Microsoft Excel"
+  index: 43
+  selected: true
+}
+entry {
+  value: "Microsoft Office"
+  label: "Microsoft Office"
+  index: 44
+}
+entry {
+  value: "Microsoft Outlook"
+  label: "Microsoft Outlook"
+  index: 45
+}
+entry {
+  value: "Microsoft Publisher"
+  label: "Microsoft Publisher"
+  index: 46
+}
+entry {
+  value: "Microsoft Word"
+  label: "Microsoft Word"
+  index: 47
+}
+entry {
+  value: "Microsoft Visual"
+  label: "Microsoft Visual"
+  index: 48
+}
+entry {
+  value: "Mobile"
+  label: "Mobile"
+  index: 49
+}
+entry {
+  value: "MySQL"
+  label: "MySQL"
+  index: 50
+}
+entry {
+  value: "Networks"
+  label: "Networks"
+  index: 51
+}
+entry {
+  value: "Open Source Software"
+  label: "Open Source Software"
+  index: 52
+}
+entry {
+  value: "Oracle"
+  label: "Oracle"
+  index: 53
+}
+entry {
+  value: "Perl"
+  label: "Perl"
+  index: 54
+}
+entry {
+  value: "PHP"
+  label: "PHP"
+  index: 55
+}
+entry {
+  value: "Presentations"
+  label: "Presentations"
+  index: 56
+}
+entry {
+  value: "Processing"
+  label: "Processing"
+  index: 57
+}
+entry {
+  value: "Programming"
+  label: "Programming"
+  index: 58
+}
+entry {
+  value: "PT Modeler"
+  label: "PT Modeler"
+  index: 59
+}
+entry {
+  value: "Python"
+  label: "Python"
+  index: 60
+}
+entry {
+  value: "QuickBooks"
+  label: "QuickBooks"
+  index: 61
+}
+entry {
+  value: "Ruby"
+  label: "Ruby"
+  index: 62
+}
+entry {
+  value: "Shade"
+  label: "Shade"
+  index: 63
+}
+entry {
+  value: "Software"
+  label: "Software"
+  index: 64
+}
+entry {
+  value: "Spreadsheet"
+  label: "Spreadsheet"
+  index: 65
+}
+entry {
+  value: "SQL"
+  label: "SQL"
+  index: 66
+}
+entry {
+  value: "Support"
+  label: "Support"
+  index: 67
+}
+entry {
+  value: "Systems Administration"
+  label: "Systems Administration"
+  index: 68
+}
+entry {
+  value: "Tech Support"
+  label: "Tech Support"
+  index: 69
+}
+entry {
+  value: "Troubleshooting"
+  label: "Troubleshooting"
+  index: 70
+}
+entry {
+  value: "Unix"
+  label: "Unix"
+  index: 71
+}
+entry {
+  value: "UI / UX"
+  label: "UI / UX"
+  index: 72
+}
+entry {
+  value: "Web Page Design"
+  label: "Web Page Design"
+  index: 73
+}
+entry {
+  value: "Windows"
+  label: "Windows"
+  index: 74
+}
+entry {
+  value: "Word Processing"
+  label: "Word Processing"
+  index: 75
+}
+entry {
+  value: "XML"
+  label: "XML"
+  index: 76
+}
+entry {
+  value: "XHTML"
+  label: "XHTML"
+  index: 77
+}
+</msg>
+<arg>\#Skills</arg>
+<arg>index</arg>
+<arg>should be</arg>
+<arg>${index}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the specified attribute of selected options of the ``select`` element.</doc>
+<status status="PASS" start="2025-12-12T10:05:08.031928" elapsed="0.025517"/>
+</kw>
+<arg>43</arg>
+<doc>Select a dropdown option given the index</doc>
+<status status="PASS" start="2025-12-12T10:05:08.004227" elapsed="0.053218"/>
 </kw>
 <kw name="Close Browser Session" owner="keywords" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2025-12-12T00:25:49.862192" level="INFO">Closed browser</msg>
+<msg time="2025-12-12T10:05:08.557330" level="INFO">Closed browser</msg>
 <arg>CURRENT</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-12-12T00:25:49.411626" elapsed="0.450566"/>
+<status status="PASS" start="2025-12-12T10:05:08.059446" elapsed="0.498506"/>
 </kw>
 <doc>Closes the browser's page, context and window</doc>
-<status status="PASS" start="2025-12-12T00:25:49.411626" elapsed="0.452573"/>
+<status status="PASS" start="2025-12-12T10:05:08.058446" elapsed="0.499506"/>
 </kw>
-<doc>Select/deselect multiple checkboxes</doc>
-<status status="PASS" start="2025-12-12T00:25:39.334583" elapsed="10.529616"/>
+<doc>Select multiple options</doc>
+<status status="PASS" start="2025-12-12T10:04:53.252445" elapsed="15.306073"/>
 </test>
-<doc>Test to handle a set of checkboxes</doc>
-<status status="PASS" start="2025-12-12T00:25:38.757384" elapsed="11.119435"/>
+<doc>Tests to handle a set of dropdown options</doc>
+<status status="PASS" start="2025-12-12T10:04:52.872477" elapsed="15.703946"/>
 </suite>
-<status status="PASS" start="2025-12-12T00:25:38.754215" elapsed="11.135498"/>
+<status status="PASS" start="2025-12-12T10:04:52.856838" elapsed="15.734269"/>
 </suite>
-<status status="PASS" start="2025-12-12T00:25:38.720694" elapsed="11.173824"/>
+<status status="PASS" start="2025-12-12T10:04:52.814607" elapsed="15.789949"/>
 </suite>
 <statistics>
 <total>
@@ -236,7 +1351,7 @@
 <suite>
 <stat name="Robotframework Demo" id="s1" pass="1" fail="0" skip="0">Robotframework Demo</stat>
 <stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests</stat>
-<stat name="Checkbox Demo" id="s1-s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests.Checkbox Demo</stat>
+<stat name="Dropdown Demo" id="s1-s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests.Dropdown Demo</stat>
 </suite>
 </statistics>
 <errors>
