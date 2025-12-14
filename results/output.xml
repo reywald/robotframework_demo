@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-12T10:04:52.806208" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-14T18:45:59.567146" rpa="false" schemaversion="5">
 <suite id="s1" name="Robotframework Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo">
 <suite id="s1-s1" name="Tests" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests">
-<suite id="s1-s1-s1" name="Dropdown Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests\dropdown_demo.robot">
-<test id="s1-s1-s1-t1" name="Select Options In Dropdown" line="17">
+<suite id="s1-s1-s1" name="Multiple Windows Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests\multiple_windows_demo.robot">
+<test id="s1-s1-s1-t1" name="Multiple Windows Switch" line="18">
 <kw name="Set Browser Timeout" owner="Browser" type="SETUP">
-<msg time="2025-12-12T10:04:53.368450" level="INFO">Starting Browser process c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:53973</msg>
+<msg time="2025-12-14T18:46:00.113244" level="INFO">Starting Browser process c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:57456</msg>
 <arg>30</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<status status="PASS" start="2025-12-12T10:04:53.257616" elapsed="1.728893"/>
+<status status="PASS" start="2025-12-14T18:46:00.027107" elapsed="1.682837"/>
 </kw>
 <kw name="Open The Browser With URL" owner="keywords">
 <if>
 <branch type="IF" condition="$BROWSER == 'chromium'">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-12-12T10:04:54.988506" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\dbe1c5dc-f4c2-4dfe-8dca-16ff391e81e8"}</msg>
-<msg time="2025-12-12T10:04:55.756115" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\dbe1c5dc-f4c2-4dfe-8dca-16ff391e81e8"}</msg>
+<msg time="2025-12-14T18:46:01.718531" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\752db4c4-a375-49fb-b176-d0eca5f69f2e"}</msg>
+<msg time="2025-12-14T18:46:02.515898" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\752db4c4-a375-49fb-b176-d0eca5f69f2e"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=False</arg>
 <arg>executablePath=${CHROME_EXECUTABLE_PATH}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-12-12T10:04:54.988506" elapsed="0.767609"/>
+<status status="PASS" start="2025-12-14T18:46:01.716967" elapsed="0.799940"/>
 </kw>
-<status status="PASS" start="2025-12-12T10:04:54.988506" elapsed="0.767609"/>
+<status status="PASS" start="2025-12-14T18:46:01.715720" elapsed="0.801187"/>
 </branch>
 <branch type="ELSE IF" condition="$BROWSER == 'firefox'">
 <kw name="New Browser" owner="Browser">
@@ -36,24 +36,24 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="NOT RUN" start="2025-12-12T10:04:55.758121" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-12-14T18:46:02.517907" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2025-12-12T10:04:55.756115" elapsed="0.002006"/>
+<status status="NOT RUN" start="2025-12-14T18:46:02.516907" elapsed="0.001000"/>
 </branch>
-<status status="PASS" start="2025-12-12T10:04:54.988506" elapsed="0.769615"/>
+<status status="PASS" start="2025-12-14T18:46:01.715720" elapsed="0.802187"/>
 </if>
 <if>
 <branch type="IF" condition="$WEB_URL">
 <kw name="New Page" owner="Browser">
-<msg time="2025-12-12T10:05:07.773668" level="INFO">Successfully initialized new page object and opened url: https://demo.automationtesting.in/Register.html</msg>
-<msg time="2025-12-12T10:05:07.773668" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-12-14T18:46:10.776450" level="INFO">Successfully initialized new page object and opened url: https://demo.automationtesting.in/Windows.html</msg>
+<msg time="2025-12-14T18:46:10.776450" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${WEB_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-12-12T10:04:55.758121" elapsed="12.019542"/>
+<status status="PASS" start="2025-12-14T18:46:02.519162" elapsed="8.259984"/>
 </kw>
-<status status="PASS" start="2025-12-12T10:04:55.758121" elapsed="12.022864"/>
+<status status="PASS" start="2025-12-14T18:46:02.517907" elapsed="8.261239"/>
 </branch>
 <branch type="ELSE">
 <kw name="New Page" owner="Browser">
@@ -61,1286 +61,179 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="NOT RUN" start="2025-12-12T10:05:07.783001" elapsed="0.001454"/>
+<status status="NOT RUN" start="2025-12-14T18:46:10.781339" elapsed="0.001674"/>
 </kw>
-<status status="NOT RUN" start="2025-12-12T10:05:07.780985" elapsed="0.004484"/>
+<status status="NOT RUN" start="2025-12-14T18:46:10.779146" elapsed="0.004320"/>
 </branch>
-<status status="PASS" start="2025-12-12T10:04:55.758121" elapsed="12.027348"/>
+<status status="PASS" start="2025-12-14T18:46:02.517907" elapsed="8.265559"/>
 </if>
 <arg>${BROWSER}</arg>
 <arg>${WEB_URL}</arg>
 <doc>Opens the browser and navigates to the specified URL</doc>
-<status status="PASS" start="2025-12-12T10:04:54.987541" elapsed="12.797928"/>
+<status status="PASS" start="2025-12-14T18:46:01.715212" elapsed="9.068254"/>
 </kw>
-<kw name="Select A Dropdown Option By Value">
-<kw name="Select Options By" owner="Browser">
-<msg time="2025-12-12T10:05:07.800139" level="INFO">Selects the option(s) APIs by attribute SelectAttribute.value from element #Skills.</msg>
-<arg>\#Skills</arg>
-<arg>value</arg>
-<arg>${value}</arg>
+<kw name="Open Child Windows">
+<kw name="Get Element By Role" owner="Browser">
+<msg time="2025-12-14T18:46:10.848828" level="INFO">Locator found successfully.</msg>
+<msg time="2025-12-14T18:46:10.848828" level="INFO">${window_btn} = internal:role=link[name="Open Seperate Multiple Windows"i]</msg>
+<var>${window_btn}</var>
+<arg>LINK</arg>
+<arg>name=Open Seperate Multiple Windows</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for the matched element by ``role`` or a list of references if ``all_elements`` is set to ``True``.</doc>
+<status status="PASS" start="2025-12-14T18:46:10.784748" elapsed="0.065077"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-12-14T18:46:10.850825" level="INFO">Clicks the element 'internal:role=link[name="Open Seperate Multiple Windows"i]'.</msg>
+<arg>${window_btn}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-12T10:05:07.799140" elapsed="0.109978"/>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-14T18:46:10.849825" elapsed="0.053735"/>
 </kw>
-<kw name="Get Selected Options" owner="Browser">
-<msg time="2025-12-12T10:05:07.936304" level="INFO">entry {
-  label: "Select Skills"
-}
-entry {
-  value: "Adobe InDesign"
-  label: "Adobe InDesign"
-  index: 1
-}
-entry {
-  value: "Adobe Photoshop"
-  label: "Adobe Photoshop"
-  index: 2
-}
-entry {
-  value: "Analytics"
-  label: "Analytics"
-  index: 3
-}
-entry {
-  value: "Android"
-  label: "Android"
-  index: 4
-}
-entry {
-  value: "APIs"
-  label: "APIs"
-  index: 5
-  selected: true
-}
-entry {
-  value: "Art Design"
-  label: "Art Design"
-  index: 6
-}
-entry {
-  value: "AutoCAD"
-  label: "AutoCAD"
-  index: 7
-}
-entry {
-  value: "Backup Management"
-  label: "Backup Management"
-  index: 8
-}
-entry {
-  value: "C"
-  label: "C"
-  index: 9
-}
-entry {
-  value: "C++"
-  label: "C++"
-  index: 10
-}
-entry {
-  value: "Certifications"
-  label: "Certifications"
-  index: 11
-}
-entry {
-  value: "Client Server"
-  label: "Client Server"
-  index: 12
-}
-entry {
-  value: "Client Support"
-  label: "Client Support"
-  index: 13
-}
-entry {
-  value: "Configuration"
-  label: "Configuration"
-  index: 14
-}
-entry {
-  value: "Content Managment"
-  label: "Content Managment"
-  index: 15
-}
-entry {
-  value: "Content Management Systems (CMS)"
-  label: "Content Management Systems (CMS)"
-  index: 16
-}
-entry {
-  value: "Corel Draw"
-  label: "Corel Draw"
-  index: 17
-}
-entry {
-  value: "Corel Word Perfect"
-  label: "Corel Word Perfect"
-  index: 18
-}
-entry {
-  value: "CSS"
-  label: "CSS"
-  index: 19
-}
-entry {
-  value: "Data Analytics"
-  label: "Data Analytics"
-  index: 20
-}
-entry {
-  value: "Desktop Publishing"
-  label: "Desktop Publishing"
-  index: 21
-}
-entry {
-  value: "Design"
-  label: "Design"
-  index: 22
-}
-entry {
-  value: "Diagnostics"
-  label: "Diagnostics"
-  index: 23
-}
-entry {
-  value: "Documentation"
-  label: "Documentation"
-  index: 24
-}
-entry {
-  value: "End User Support"
-  label: "End User Support"
-  index: 25
-}
-entry {
-  value: "Email"
-  label: "Email"
-  index: 26
-}
-entry {
-  value: "Engineering"
-  label: "Engineering"
-  index: 27
-}
-entry {
-  value: "Excel"
-  label: "Excel"
-  index: 28
-}
-entry {
-  value: "FileMaker Pro"
-  label: "FileMaker Pro"
-  index: 29
-}
-entry {
-  value: "Fortran"
-  label: "Fortran"
-  index: 30
-}
-entry {
-  value: "HTML"
-  label: "HTML"
-  index: 31
-}
-entry {
-  value: "Implementation"
-  label: "Implementation"
-  index: 32
-}
-entry {
-  value: "Installation"
-  label: "Installation"
-  index: 33
-}
-entry {
-  value: "Internet"
-  label: "Internet"
-  index: 34
-}
-entry {
-  value: "iOS"
-  label: "iOS"
-  index: 35
-}
-entry {
-  value: "iPhone"
-  label: "iPhone"
-  index: 36
-}
-entry {
-  value: "Linux"
-  label: "Linux"
-  index: 37
-}
-entry {
-  value: "Java"
-  label: "Java"
-  index: 38
-}
-entry {
-  value: "Javascript"
-  label: "Javascript"
-  index: 39
-}
-entry {
-  value: "Mac"
-  label: "Mac"
-  index: 40
-}
-entry {
-  value: "Matlab"
-  label: "Matlab"
-  index: 41
-}
-entry {
-  value: "Maya"
-  label: "Maya"
-  index: 42
-}
-entry {
-  value: "Microsoft Excel"
-  label: "Microsoft Excel"
-  index: 43
-}
-entry {
-  value: "Microsoft Office"
-  label: "Microsoft Office"
-  index: 44
-}
-entry {
-  value: "Microsoft Outlook"
-  label: "Microsoft Outlook"
-  index: 45
-}
-entry {
-  value: "Microsoft Publisher"
-  label: "Microsoft Publisher"
-  index: 46
-}
-entry {
-  value: "Microsoft Word"
-  label: "Microsoft Word"
-  index: 47
-}
-entry {
-  value: "Microsoft Visual"
-  label: "Microsoft Visual"
-  index: 48
-}
-entry {
-  value: "Mobile"
-  label: "Mobile"
-  index: 49
-}
-entry {
-  value: "MySQL"
-  label: "MySQL"
-  index: 50
-}
-entry {
-  value: "Networks"
-  label: "Networks"
-  index: 51
-}
-entry {
-  value: "Open Source Software"
-  label: "Open Source Software"
-  index: 52
-}
-entry {
-  value: "Oracle"
-  label: "Oracle"
-  index: 53
-}
-entry {
-  value: "Perl"
-  label: "Perl"
-  index: 54
-}
-entry {
-  value: "PHP"
-  label: "PHP"
-  index: 55
-}
-entry {
-  value: "Presentations"
-  label: "Presentations"
-  index: 56
-}
-entry {
-  value: "Processing"
-  label: "Processing"
-  index: 57
-}
-entry {
-  value: "Programming"
-  label: "Programming"
-  index: 58
-}
-entry {
-  value: "PT Modeler"
-  label: "PT Modeler"
-  index: 59
-}
-entry {
-  value: "Python"
-  label: "Python"
-  index: 60
-}
-entry {
-  value: "QuickBooks"
-  label: "QuickBooks"
-  index: 61
-}
-entry {
-  value: "Ruby"
-  label: "Ruby"
-  index: 62
-}
-entry {
-  value: "Shade"
-  label: "Shade"
-  index: 63
-}
-entry {
-  value: "Software"
-  label: "Software"
-  index: 64
-}
-entry {
-  value: "Spreadsheet"
-  label: "Spreadsheet"
-  index: 65
-}
-entry {
-  value: "SQL"
-  label: "SQL"
-  index: 66
-}
-entry {
-  value: "Support"
-  label: "Support"
-  index: 67
-}
-entry {
-  value: "Systems Administration"
-  label: "Systems Administration"
-  index: 68
-}
-entry {
-  value: "Tech Support"
-  label: "Tech Support"
-  index: 69
-}
-entry {
-  value: "Troubleshooting"
-  label: "Troubleshooting"
-  index: 70
-}
-entry {
-  value: "Unix"
-  label: "Unix"
-  index: 71
-}
-entry {
-  value: "UI / UX"
-  label: "UI / UX"
-  index: 72
-}
-entry {
-  value: "Web Page Design"
-  label: "Web Page Design"
-  index: 73
-}
-entry {
-  value: "Windows"
-  label: "Windows"
-  index: 74
-}
-entry {
-  value: "Word Processing"
-  label: "Word Processing"
-  index: 75
-}
-entry {
-  value: "XML"
-  label: "XML"
-  index: 76
-}
-entry {
-  value: "XHTML"
-  label: "XHTML"
-  index: 77
-}
-</msg>
-<arg>\#Skills</arg>
-<arg>value</arg>
+<kw name="Get Element By Role" owner="Browser">
+<msg time="2025-12-14T18:46:10.917869" level="INFO">Locator found successfully.</msg>
+<msg time="2025-12-14T18:46:10.917869" level="INFO">${click_btn} = internal:role=button[name="click"i]</msg>
+<var>${click_btn}</var>
+<arg>BUTTON</arg>
+<arg>name=click</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for the matched element by ``role`` or a list of references if ``all_elements`` is set to ``True``.</doc>
+<status status="PASS" start="2025-12-14T18:46:10.904594" elapsed="0.013275"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-12-14T18:46:10.919878" level="INFO">Clicks the element 'internal:role=button[name="click"i]'.</msg>
+<arg>${click_btn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-14T18:46:10.918876" elapsed="0.204994"/>
+</kw>
+<doc>Click buttons to open a child window</doc>
+<status status="PASS" start="2025-12-14T18:46:10.784748" elapsed="0.339122"/>
+</kw>
+<kw name="Verify The Child Windows Are Opened">
+<kw name="Switch Page" owner="Browser">
+<msg time="2025-12-14T18:46:11.137456" level="INFO">Switching to page NEW,context CURRENT, browser CURRENT</msg>
+<msg time="2025-12-14T18:46:11.418270" level="INFO">Activated new page page=5f651b56-9b50-4a25-9db5-e541127be70c</msg>
+<msg time="2025-12-14T18:46:11.419272" level="INFO">${id} = page=b3aee6d0-5bcc-4785-bdae-886b14a41e3d</msg>
+<var>${id}</var>
+<arg>NEW</arg>
+<arg>CURRENT</arg>
+<arg>CURRENT</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
+<status status="PASS" start="2025-12-14T18:46:11.136447" elapsed="0.282825"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2025-12-14T18:46:11.742506" level="INFO">Title: 'Index'</msg>
 <arg>should be</arg>
-<arg>${value}</arg>
+<arg>Index</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns the specified attribute of selected options of the ``select`` element.</doc>
-<status status="PASS" start="2025-12-12T10:05:07.910118" elapsed="0.026186"/>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-12-14T18:46:11.420272" elapsed="0.324420"/>
 </kw>
-<arg>APIs</arg>
-<doc>Select a dropdown option given the value</doc>
-<status status="PASS" start="2025-12-12T10:05:07.792443" elapsed="0.145866"/>
-</kw>
-<kw name="Select A Dropdown Option By Label">
-<kw name="Select Options By" owner="Browser">
-<msg time="2025-12-12T10:05:07.938309" level="INFO">Selects the option(s) CSS by attribute SelectAttribute.label from element #Skills.</msg>
-<arg>\#Skills</arg>
-<arg>label</arg>
-<arg>${label}</arg>
-<tag>PageContent</tag>
+<kw name="Switch Page" owner="Browser">
+<msg time="2025-12-14T18:46:11.747199" level="INFO">Switching to page NEW,context CURRENT, browser CURRENT</msg>
+<msg time="2025-12-14T18:46:12.604487" level="INFO">Activated new page page=7f5c7fcd-4c26-4a4c-8546-1383dad0f0bb</msg>
+<arg>NEW</arg>
+<arg>CURRENT</arg>
+<arg>CURRENT</arg>
+<tag>BrowserControl</tag>
 <tag>Setter</tag>
-<doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-12T10:05:07.938309" elapsed="0.034287"/>
+<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
+<status status="PASS" start="2025-12-14T18:46:11.744692" elapsed="0.872845"/>
 </kw>
-<kw name="Get Selected Options" owner="Browser">
-<msg time="2025-12-12T10:05:08.003230" level="INFO">entry {
-  label: "Select Skills"
-}
-entry {
-  value: "Adobe InDesign"
-  label: "Adobe InDesign"
-  index: 1
-}
-entry {
-  value: "Adobe Photoshop"
-  label: "Adobe Photoshop"
-  index: 2
-}
-entry {
-  value: "Analytics"
-  label: "Analytics"
-  index: 3
-}
-entry {
-  value: "Android"
-  label: "Android"
-  index: 4
-}
-entry {
-  value: "APIs"
-  label: "APIs"
-  index: 5
-}
-entry {
-  value: "Art Design"
-  label: "Art Design"
-  index: 6
-}
-entry {
-  value: "AutoCAD"
-  label: "AutoCAD"
-  index: 7
-}
-entry {
-  value: "Backup Management"
-  label: "Backup Management"
-  index: 8
-}
-entry {
-  value: "C"
-  label: "C"
-  index: 9
-}
-entry {
-  value: "C++"
-  label: "C++"
-  index: 10
-}
-entry {
-  value: "Certifications"
-  label: "Certifications"
-  index: 11
-}
-entry {
-  value: "Client Server"
-  label: "Client Server"
-  index: 12
-}
-entry {
-  value: "Client Support"
-  label: "Client Support"
-  index: 13
-}
-entry {
-  value: "Configuration"
-  label: "Configuration"
-  index: 14
-}
-entry {
-  value: "Content Managment"
-  label: "Content Managment"
-  index: 15
-}
-entry {
-  value: "Content Management Systems (CMS)"
-  label: "Content Management Systems (CMS)"
-  index: 16
-}
-entry {
-  value: "Corel Draw"
-  label: "Corel Draw"
-  index: 17
-}
-entry {
-  value: "Corel Word Perfect"
-  label: "Corel Word Perfect"
-  index: 18
-}
-entry {
-  value: "CSS"
-  label: "CSS"
-  index: 19
-  selected: true
-}
-entry {
-  value: "Data Analytics"
-  label: "Data Analytics"
-  index: 20
-}
-entry {
-  value: "Desktop Publishing"
-  label: "Desktop Publishing"
-  index: 21
-}
-entry {
-  value: "Design"
-  label: "Design"
-  index: 22
-}
-entry {
-  value: "Diagnostics"
-  label: "Diagnostics"
-  index: 23
-}
-entry {
-  value: "Documentation"
-  label: "Documentation"
-  index: 24
-}
-entry {
-  value: "End User Support"
-  label: "End User Support"
-  index: 25
-}
-entry {
-  value: "Email"
-  label: "Email"
-  index: 26
-}
-entry {
-  value: "Engineering"
-  label: "Engineering"
-  index: 27
-}
-entry {
-  value: "Excel"
-  label: "Excel"
-  index: 28
-}
-entry {
-  value: "FileMaker Pro"
-  label: "FileMaker Pro"
-  index: 29
-}
-entry {
-  value: "Fortran"
-  label: "Fortran"
-  index: 30
-}
-entry {
-  value: "HTML"
-  label: "HTML"
-  index: 31
-}
-entry {
-  value: "Implementation"
-  label: "Implementation"
-  index: 32
-}
-entry {
-  value: "Installation"
-  label: "Installation"
-  index: 33
-}
-entry {
-  value: "Internet"
-  label: "Internet"
-  index: 34
-}
-entry {
-  value: "iOS"
-  label: "iOS"
-  index: 35
-}
-entry {
-  value: "iPhone"
-  label: "iPhone"
-  index: 36
-}
-entry {
-  value: "Linux"
-  label: "Linux"
-  index: 37
-}
-entry {
-  value: "Java"
-  label: "Java"
-  index: 38
-}
-entry {
-  value: "Javascript"
-  label: "Javascript"
-  index: 39
-}
-entry {
-  value: "Mac"
-  label: "Mac"
-  index: 40
-}
-entry {
-  value: "Matlab"
-  label: "Matlab"
-  index: 41
-}
-entry {
-  value: "Maya"
-  label: "Maya"
-  index: 42
-}
-entry {
-  value: "Microsoft Excel"
-  label: "Microsoft Excel"
-  index: 43
-}
-entry {
-  value: "Microsoft Office"
-  label: "Microsoft Office"
-  index: 44
-}
-entry {
-  value: "Microsoft Outlook"
-  label: "Microsoft Outlook"
-  index: 45
-}
-entry {
-  value: "Microsoft Publisher"
-  label: "Microsoft Publisher"
-  index: 46
-}
-entry {
-  value: "Microsoft Word"
-  label: "Microsoft Word"
-  index: 47
-}
-entry {
-  value: "Microsoft Visual"
-  label: "Microsoft Visual"
-  index: 48
-}
-entry {
-  value: "Mobile"
-  label: "Mobile"
-  index: 49
-}
-entry {
-  value: "MySQL"
-  label: "MySQL"
-  index: 50
-}
-entry {
-  value: "Networks"
-  label: "Networks"
-  index: 51
-}
-entry {
-  value: "Open Source Software"
-  label: "Open Source Software"
-  index: 52
-}
-entry {
-  value: "Oracle"
-  label: "Oracle"
-  index: 53
-}
-entry {
-  value: "Perl"
-  label: "Perl"
-  index: 54
-}
-entry {
-  value: "PHP"
-  label: "PHP"
-  index: 55
-}
-entry {
-  value: "Presentations"
-  label: "Presentations"
-  index: 56
-}
-entry {
-  value: "Processing"
-  label: "Processing"
-  index: 57
-}
-entry {
-  value: "Programming"
-  label: "Programming"
-  index: 58
-}
-entry {
-  value: "PT Modeler"
-  label: "PT Modeler"
-  index: 59
-}
-entry {
-  value: "Python"
-  label: "Python"
-  index: 60
-}
-entry {
-  value: "QuickBooks"
-  label: "QuickBooks"
-  index: 61
-}
-entry {
-  value: "Ruby"
-  label: "Ruby"
-  index: 62
-}
-entry {
-  value: "Shade"
-  label: "Shade"
-  index: 63
-}
-entry {
-  value: "Software"
-  label: "Software"
-  index: 64
-}
-entry {
-  value: "Spreadsheet"
-  label: "Spreadsheet"
-  index: 65
-}
-entry {
-  value: "SQL"
-  label: "SQL"
-  index: 66
-}
-entry {
-  value: "Support"
-  label: "Support"
-  index: 67
-}
-entry {
-  value: "Systems Administration"
-  label: "Systems Administration"
-  index: 68
-}
-entry {
-  value: "Tech Support"
-  label: "Tech Support"
-  index: 69
-}
-entry {
-  value: "Troubleshooting"
-  label: "Troubleshooting"
-  index: 70
-}
-entry {
-  value: "Unix"
-  label: "Unix"
-  index: 71
-}
-entry {
-  value: "UI / UX"
-  label: "UI / UX"
-  index: 72
-}
-entry {
-  value: "Web Page Design"
-  label: "Web Page Design"
-  index: 73
-}
-entry {
-  value: "Windows"
-  label: "Windows"
-  index: 74
-}
-entry {
-  value: "Word Processing"
-  label: "Word Processing"
-  index: 75
-}
-entry {
-  value: "XML"
-  label: "XML"
-  index: 76
-}
-entry {
-  value: "XHTML"
-  label: "XHTML"
-  index: 77
-}
-</msg>
-<arg>\#Skills</arg>
-<arg>label</arg>
+<kw name="Get Title" owner="Browser">
+<msg time="2025-12-14T18:46:12.635239" level="INFO">Title: 'Selenium'</msg>
 <arg>should be</arg>
-<arg>${label}</arg>
+<arg>Selenium</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns the specified attribute of selected options of the ``select`` element.</doc>
-<status status="PASS" start="2025-12-12T10:05:07.972596" elapsed="0.030634"/>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-12-14T18:46:12.618924" elapsed="0.017822"/>
 </kw>
-<arg>CSS</arg>
-<doc>Select a dropdown option given the label</doc>
-<status status="PASS" start="2025-12-12T10:05:07.938309" elapsed="0.064921"/>
+<return>
+<value>${id}</value>
+<status status="PASS" start="2025-12-14T18:46:12.636746" elapsed="0.001011"/>
+</return>
+<msg time="2025-12-14T18:46:12.640184" level="INFO">${ID} = page=b3aee6d0-5bcc-4785-bdae-886b14a41e3d</msg>
+<var>${ID}</var>
+<doc>Switch to the child windows</doc>
+<status status="PASS" start="2025-12-14T18:46:11.134934" elapsed="1.507507"/>
 </kw>
-<kw name="Select A Dropdown Option By Index">
-<kw name="Select Options By" owner="Browser">
-<msg time="2025-12-12T10:05:08.005228" level="INFO">Selects the option(s) 43 by attribute SelectAttribute.index from element #Skills.</msg>
-<arg>\#Skills</arg>
-<arg>index</arg>
-<arg>${index}</arg>
-<tag>PageContent</tag>
+<kw name="Verify The User Is Back To Parent Window">
+<kw name="Switch Page" owner="Browser">
+<msg time="2025-12-14T18:46:12.649159" level="INFO">Switching to page page=b3aee6d0-5bcc-4785-bdae-886b14a41e3d,context CURRENT, browser CURRENT</msg>
+<msg time="2025-12-14T18:46:12.699823" level="INFO">Successfully changed active page: page=b3aee6d0-5bcc-4785-bdae-886b14a41e3d</msg>
+<arg>${ID}</arg>
+<arg>CURRENT</arg>
+<arg>CURRENT</arg>
+<tag>BrowserControl</tag>
 <tag>Setter</tag>
-<doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-12T10:05:08.005228" elapsed="0.026373"/>
+<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
+<status status="PASS" start="2025-12-14T18:46:12.648158" elapsed="0.054136"/>
 </kw>
-<kw name="Get Selected Options" owner="Browser">
-<msg time="2025-12-12T10:05:08.057445" level="INFO">entry {
-  label: "Select Skills"
-}
-entry {
-  value: "Adobe InDesign"
-  label: "Adobe InDesign"
-  index: 1
-}
-entry {
-  value: "Adobe Photoshop"
-  label: "Adobe Photoshop"
-  index: 2
-}
-entry {
-  value: "Analytics"
-  label: "Analytics"
-  index: 3
-}
-entry {
-  value: "Android"
-  label: "Android"
-  index: 4
-}
-entry {
-  value: "APIs"
-  label: "APIs"
-  index: 5
-}
-entry {
-  value: "Art Design"
-  label: "Art Design"
-  index: 6
-}
-entry {
-  value: "AutoCAD"
-  label: "AutoCAD"
-  index: 7
-}
-entry {
-  value: "Backup Management"
-  label: "Backup Management"
-  index: 8
-}
-entry {
-  value: "C"
-  label: "C"
-  index: 9
-}
-entry {
-  value: "C++"
-  label: "C++"
-  index: 10
-}
-entry {
-  value: "Certifications"
-  label: "Certifications"
-  index: 11
-}
-entry {
-  value: "Client Server"
-  label: "Client Server"
-  index: 12
-}
-entry {
-  value: "Client Support"
-  label: "Client Support"
-  index: 13
-}
-entry {
-  value: "Configuration"
-  label: "Configuration"
-  index: 14
-}
-entry {
-  value: "Content Managment"
-  label: "Content Managment"
-  index: 15
-}
-entry {
-  value: "Content Management Systems (CMS)"
-  label: "Content Management Systems (CMS)"
-  index: 16
-}
-entry {
-  value: "Corel Draw"
-  label: "Corel Draw"
-  index: 17
-}
-entry {
-  value: "Corel Word Perfect"
-  label: "Corel Word Perfect"
-  index: 18
-}
-entry {
-  value: "CSS"
-  label: "CSS"
-  index: 19
-}
-entry {
-  value: "Data Analytics"
-  label: "Data Analytics"
-  index: 20
-}
-entry {
-  value: "Desktop Publishing"
-  label: "Desktop Publishing"
-  index: 21
-}
-entry {
-  value: "Design"
-  label: "Design"
-  index: 22
-}
-entry {
-  value: "Diagnostics"
-  label: "Diagnostics"
-  index: 23
-}
-entry {
-  value: "Documentation"
-  label: "Documentation"
-  index: 24
-}
-entry {
-  value: "End User Support"
-  label: "End User Support"
-  index: 25
-}
-entry {
-  value: "Email"
-  label: "Email"
-  index: 26
-}
-entry {
-  value: "Engineering"
-  label: "Engineering"
-  index: 27
-}
-entry {
-  value: "Excel"
-  label: "Excel"
-  index: 28
-}
-entry {
-  value: "FileMaker Pro"
-  label: "FileMaker Pro"
-  index: 29
-}
-entry {
-  value: "Fortran"
-  label: "Fortran"
-  index: 30
-}
-entry {
-  value: "HTML"
-  label: "HTML"
-  index: 31
-}
-entry {
-  value: "Implementation"
-  label: "Implementation"
-  index: 32
-}
-entry {
-  value: "Installation"
-  label: "Installation"
-  index: 33
-}
-entry {
-  value: "Internet"
-  label: "Internet"
-  index: 34
-}
-entry {
-  value: "iOS"
-  label: "iOS"
-  index: 35
-}
-entry {
-  value: "iPhone"
-  label: "iPhone"
-  index: 36
-}
-entry {
-  value: "Linux"
-  label: "Linux"
-  index: 37
-}
-entry {
-  value: "Java"
-  label: "Java"
-  index: 38
-}
-entry {
-  value: "Javascript"
-  label: "Javascript"
-  index: 39
-}
-entry {
-  value: "Mac"
-  label: "Mac"
-  index: 40
-}
-entry {
-  value: "Matlab"
-  label: "Matlab"
-  index: 41
-}
-entry {
-  value: "Maya"
-  label: "Maya"
-  index: 42
-}
-entry {
-  value: "Microsoft Excel"
-  label: "Microsoft Excel"
-  index: 43
-  selected: true
-}
-entry {
-  value: "Microsoft Office"
-  label: "Microsoft Office"
-  index: 44
-}
-entry {
-  value: "Microsoft Outlook"
-  label: "Microsoft Outlook"
-  index: 45
-}
-entry {
-  value: "Microsoft Publisher"
-  label: "Microsoft Publisher"
-  index: 46
-}
-entry {
-  value: "Microsoft Word"
-  label: "Microsoft Word"
-  index: 47
-}
-entry {
-  value: "Microsoft Visual"
-  label: "Microsoft Visual"
-  index: 48
-}
-entry {
-  value: "Mobile"
-  label: "Mobile"
-  index: 49
-}
-entry {
-  value: "MySQL"
-  label: "MySQL"
-  index: 50
-}
-entry {
-  value: "Networks"
-  label: "Networks"
-  index: 51
-}
-entry {
-  value: "Open Source Software"
-  label: "Open Source Software"
-  index: 52
-}
-entry {
-  value: "Oracle"
-  label: "Oracle"
-  index: 53
-}
-entry {
-  value: "Perl"
-  label: "Perl"
-  index: 54
-}
-entry {
-  value: "PHP"
-  label: "PHP"
-  index: 55
-}
-entry {
-  value: "Presentations"
-  label: "Presentations"
-  index: 56
-}
-entry {
-  value: "Processing"
-  label: "Processing"
-  index: 57
-}
-entry {
-  value: "Programming"
-  label: "Programming"
-  index: 58
-}
-entry {
-  value: "PT Modeler"
-  label: "PT Modeler"
-  index: 59
-}
-entry {
-  value: "Python"
-  label: "Python"
-  index: 60
-}
-entry {
-  value: "QuickBooks"
-  label: "QuickBooks"
-  index: 61
-}
-entry {
-  value: "Ruby"
-  label: "Ruby"
-  index: 62
-}
-entry {
-  value: "Shade"
-  label: "Shade"
-  index: 63
-}
-entry {
-  value: "Software"
-  label: "Software"
-  index: 64
-}
-entry {
-  value: "Spreadsheet"
-  label: "Spreadsheet"
-  index: 65
-}
-entry {
-  value: "SQL"
-  label: "SQL"
-  index: 66
-}
-entry {
-  value: "Support"
-  label: "Support"
-  index: 67
-}
-entry {
-  value: "Systems Administration"
-  label: "Systems Administration"
-  index: 68
-}
-entry {
-  value: "Tech Support"
-  label: "Tech Support"
-  index: 69
-}
-entry {
-  value: "Troubleshooting"
-  label: "Troubleshooting"
-  index: 70
-}
-entry {
-  value: "Unix"
-  label: "Unix"
-  index: 71
-}
-entry {
-  value: "UI / UX"
-  label: "UI / UX"
-  index: 72
-}
-entry {
-  value: "Web Page Design"
-  label: "Web Page Design"
-  index: 73
-}
-entry {
-  value: "Windows"
-  label: "Windows"
-  index: 74
-}
-entry {
-  value: "Word Processing"
-  label: "Word Processing"
-  index: 75
-}
-entry {
-  value: "XML"
-  label: "XML"
-  index: 76
-}
-entry {
-  value: "XHTML"
-  label: "XHTML"
-  index: 77
-}
-</msg>
-<arg>\#Skills</arg>
-<arg>index</arg>
+<kw name="Get Title" owner="Browser">
+<msg time="2025-12-14T18:46:12.728213" level="INFO">Title: 'Frames &amp; windows'</msg>
 <arg>should be</arg>
-<arg>${index}</arg>
+<arg>Frames &amp; windows</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns the specified attribute of selected options of the ``select`` element.</doc>
-<status status="PASS" start="2025-12-12T10:05:08.031928" elapsed="0.025517"/>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-12-14T18:46:12.703311" elapsed="0.025913"/>
 </kw>
-<arg>43</arg>
-<doc>Select a dropdown option given the index</doc>
-<status status="PASS" start="2025-12-12T10:05:08.004227" elapsed="0.053218"/>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-12-14T18:46:12.817701" level="INFO">Text: 'Automation Demo Site'</msg>
+<arg>h1</arg>
+<arg>should be</arg>
+<arg>Automation Demo Site</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-14T18:46:12.729224" elapsed="0.089490"/>
+</kw>
+<arg>${ID}</arg>
+<doc>Return back to the parent windpw</doc>
+<status status="PASS" start="2025-12-14T18:46:12.647147" elapsed="0.171567"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-14T18:46:22.826360" level="INFO">Slept 10 seconds.</msg>
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-14T18:46:12.821309" elapsed="10.005051"/>
 </kw>
 <kw name="Close Browser Session" owner="keywords" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2025-12-12T10:05:08.557330" level="INFO">Closed browser</msg>
+<msg time="2025-12-14T18:46:24.120755" level="INFO">Closed browser</msg>
 <arg>CURRENT</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-12-12T10:05:08.059446" elapsed="0.498506"/>
+<status status="PASS" start="2025-12-14T18:46:22.832402" elapsed="1.288353"/>
 </kw>
 <doc>Closes the browser's page, context and window</doc>
-<status status="PASS" start="2025-12-12T10:05:08.058446" elapsed="0.499506"/>
+<status status="PASS" start="2025-12-14T18:46:22.831390" elapsed="1.290366"/>
 </kw>
-<doc>Select multiple options</doc>
-<status status="PASS" start="2025-12-12T10:04:53.252445" elapsed="15.306073"/>
+<doc>Open multiple windows and verify them</doc>
+<status status="PASS" start="2025-12-14T18:46:00.018744" elapsed="24.111693"/>
 </test>
-<doc>Tests to handle a set of dropdown options</doc>
-<status status="PASS" start="2025-12-12T10:04:52.872477" elapsed="15.703946"/>
+<doc>Switch from a main window to others</doc>
+<status status="PASS" start="2025-12-14T18:45:59.629640" elapsed="24.518494"/>
 </suite>
-<status status="PASS" start="2025-12-12T10:04:52.856838" elapsed="15.734269"/>
+<status status="PASS" start="2025-12-14T18:45:59.618720" elapsed="24.548627"/>
 </suite>
-<status status="PASS" start="2025-12-12T10:04:52.814607" elapsed="15.789949"/>
+<status status="PASS" start="2025-12-14T18:45:59.577694" elapsed="24.604272"/>
 </suite>
 <statistics>
 <total>
@@ -1351,7 +244,7 @@ entry {
 <suite>
 <stat name="Robotframework Demo" id="s1" pass="1" fail="0" skip="0">Robotframework Demo</stat>
 <stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests</stat>
-<stat name="Dropdown Demo" id="s1-s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests.Dropdown Demo</stat>
+<stat name="Multiple Windows Demo" id="s1-s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests.Multiple Windows Demo</stat>
 </suite>
 </statistics>
 <errors>
