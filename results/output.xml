@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-14T18:45:59.567146" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-16T08:50:43.104172" rpa="false" schemaversion="5">
 <suite id="s1" name="Robotframework Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo">
 <suite id="s1-s1" name="Tests" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests">
-<suite id="s1-s1-s1" name="Multiple Windows Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests\multiple_windows_demo.robot">
-<test id="s1-s1-s1-t1" name="Multiple Windows Switch" line="18">
+<suite id="s1-s1-s1" name="Textbox Alert Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests\textbox_alert_demo.robot">
+<test id="s1-s1-s1-t1" name="Handle Message Alert" line="17">
 <kw name="Set Browser Timeout" owner="Browser" type="SETUP">
-<msg time="2025-12-14T18:46:00.113244" level="INFO">Starting Browser process c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:57456</msg>
+<msg time="2025-12-16T08:50:43.631016" level="INFO">Starting Browser process c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:54781</msg>
 <arg>30</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<status status="PASS" start="2025-12-14T18:46:00.027107" elapsed="1.682837"/>
+<status status="PASS" start="2025-12-16T08:50:43.564994" elapsed="1.148532"/>
 </kw>
 <kw name="Open The Browser With URL" owner="keywords">
 <if>
 <branch type="IF" condition="$BROWSER == 'chromium'">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-12-14T18:46:01.718531" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\752db4c4-a375-49fb-b176-d0eca5f69f2e"}</msg>
-<msg time="2025-12-14T18:46:02.515898" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\752db4c4-a375-49fb-b176-d0eca5f69f2e"}</msg>
+<msg time="2025-12-16T08:50:44.713526" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\7f3eba46-6e09-4a81-b456-582b451febf9"}</msg>
+<msg time="2025-12-16T08:50:45.284026" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\7f3eba46-6e09-4a81-b456-582b451febf9"}</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>headless=False</arg>
 <arg>executablePath=${CHROME_EXECUTABLE_PATH}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-12-14T18:46:01.716967" elapsed="0.799940"/>
+<status status="PASS" start="2025-12-16T08:50:44.713526" elapsed="0.572510"/>
 </kw>
-<status status="PASS" start="2025-12-14T18:46:01.715720" elapsed="0.801187"/>
+<status status="PASS" start="2025-12-16T08:50:44.713526" elapsed="0.573122"/>
 </branch>
 <branch type="ELSE IF" condition="$BROWSER == 'firefox'">
 <kw name="New Browser" owner="Browser">
@@ -36,24 +36,24 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="NOT RUN" start="2025-12-14T18:46:02.517907" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-12-16T08:50:45.286648" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2025-12-14T18:46:02.516907" elapsed="0.001000"/>
+<status status="NOT RUN" start="2025-12-16T08:50:45.286648" elapsed="0.000000"/>
 </branch>
-<status status="PASS" start="2025-12-14T18:46:01.715720" elapsed="0.802187"/>
+<status status="PASS" start="2025-12-16T08:50:44.713526" elapsed="0.573122"/>
 </if>
 <if>
 <branch type="IF" condition="$WEB_URL">
 <kw name="New Page" owner="Browser">
-<msg time="2025-12-14T18:46:10.776450" level="INFO">Successfully initialized new page object and opened url: https://demo.automationtesting.in/Windows.html</msg>
-<msg time="2025-12-14T18:46:10.776450" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-12-16T08:50:51.760853" level="INFO">Successfully initialized new page object and opened url: https://demo.automationtesting.in/Alerts.html</msg>
+<msg time="2025-12-16T08:50:51.761853" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${WEB_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-12-14T18:46:02.519162" elapsed="8.259984"/>
+<status status="PASS" start="2025-12-16T08:50:45.287873" elapsed="6.474980"/>
 </kw>
-<status status="PASS" start="2025-12-14T18:46:02.517907" elapsed="8.261239"/>
+<status status="PASS" start="2025-12-16T08:50:45.286648" elapsed="6.476205"/>
 </branch>
 <branch type="ELSE">
 <kw name="New Page" owner="Browser">
@@ -61,179 +61,200 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="NOT RUN" start="2025-12-14T18:46:10.781339" elapsed="0.001674"/>
+<status status="NOT RUN" start="2025-12-16T08:50:51.764069" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2025-12-14T18:46:10.779146" elapsed="0.004320"/>
+<status status="NOT RUN" start="2025-12-16T08:50:51.762853" elapsed="0.001216"/>
 </branch>
-<status status="PASS" start="2025-12-14T18:46:02.517907" elapsed="8.265559"/>
+<status status="PASS" start="2025-12-16T08:50:45.286648" elapsed="6.477421"/>
 </if>
 <arg>${BROWSER}</arg>
-<arg>${WEB_URL}</arg>
+<arg>${URL}</arg>
 <doc>Opens the browser and navigates to the specified URL</doc>
-<status status="PASS" start="2025-12-14T18:46:01.715212" elapsed="9.068254"/>
+<status status="PASS" start="2025-12-16T08:50:44.713526" elapsed="7.051765"/>
 </kw>
-<kw name="Open Child Windows">
+<kw name="Select The Prompt Alert And Enter Text">
 <kw name="Get Element By Role" owner="Browser">
-<msg time="2025-12-14T18:46:10.848828" level="INFO">Locator found successfully.</msg>
-<msg time="2025-12-14T18:46:10.848828" level="INFO">${window_btn} = internal:role=link[name="Open Seperate Multiple Windows"i]</msg>
-<var>${window_btn}</var>
+<msg time="2025-12-16T08:50:51.828057" level="INFO">Locator found successfully.</msg>
+<msg time="2025-12-16T08:50:51.830058" level="INFO">${link} = internal:role=link[name="Alert with Textbox"s]</msg>
+<var>${link}</var>
 <arg>LINK</arg>
-<arg>name=Open Seperate Multiple Windows</arg>
+<arg>name=Alert with Textbox</arg>
+<arg>exact=True</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
 for the matched element by ``role`` or a list of references if ``all_elements`` is set to ``True``.</doc>
-<status status="PASS" start="2025-12-14T18:46:10.784748" elapsed="0.065077"/>
+<status status="PASS" start="2025-12-16T08:50:51.771790" elapsed="0.058268"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-12-14T18:46:10.850825" level="INFO">Clicks the element 'internal:role=link[name="Open Seperate Multiple Windows"i]'.</msg>
-<arg>${window_btn}</arg>
+<msg time="2025-12-16T08:50:51.832032" level="INFO">Clicks the element 'internal:role=link[name="Alert with Textbox"s]'.</msg>
+<arg>${link}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-14T18:46:10.849825" elapsed="0.053735"/>
+<status status="PASS" start="2025-12-16T08:50:51.830058" elapsed="0.054030"/>
 </kw>
-<kw name="Get Element By Role" owner="Browser">
-<msg time="2025-12-14T18:46:10.917869" level="INFO">Locator found successfully.</msg>
-<msg time="2025-12-14T18:46:10.917869" level="INFO">${click_btn} = internal:role=button[name="click"i]</msg>
-<var>${click_btn}</var>
-<arg>BUTTON</arg>
-<arg>name=click</arg>
+<kw name="Promise To" owner="Browser">
+<msg time="2025-12-16T08:50:51.888281" level="INFO">${promise} = &lt;Future at 0x15ab065cf80 state=running&gt;</msg>
+<var>${promise}</var>
+<arg>Wait For Alert</arg>
+<arg>action=accept</arg>
+<arg>prompt_input=Hello World!</arg>
+<tag>Wait</tag>
+<doc>Wrap a Browser library keyword and make it a promise.</doc>
+<status status="PASS" start="2025-12-16T08:50:51.885272" elapsed="0.003009"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-12-16T08:50:51.899919" level="INFO">Locator found successfully.</msg>
+<msg time="2025-12-16T08:50:51.901204" level="INFO">${button} = #Textbox &gt; button</msg>
+<var>${button}</var>
+<arg>\#Textbox &gt; button</arg>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for the matched element by ``role`` or a list of references if ``all_elements`` is set to ``True``.</doc>
-<status status="PASS" start="2025-12-14T18:46:10.904594" elapsed="0.013275"/>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-12-16T08:50:51.888281" elapsed="0.012923"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-12-14T18:46:10.919878" level="INFO">Clicks the element 'internal:role=button[name="click"i]'.</msg>
-<arg>${click_btn}</arg>
+<msg time="2025-12-16T08:50:51.902214" level="INFO">Clicks the element '#Textbox &gt; button'.</msg>
+<arg>${button}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-14T18:46:10.918876" elapsed="0.204994"/>
+<status status="PASS" start="2025-12-16T08:50:51.902214" elapsed="0.069360"/>
 </kw>
-<doc>Click buttons to open a child window</doc>
-<status status="PASS" start="2025-12-14T18:46:10.784748" elapsed="0.339122"/>
+<kw name="Wait For" owner="Browser">
+<arg>${promise}</arg>
+<tag>Wait</tag>
+<doc>Waits for promises to finish and returns results from them.</doc>
+<status status="PASS" start="2025-12-16T08:50:51.971574" elapsed="0.001043"/>
 </kw>
-<kw name="Verify The Child Windows Are Opened">
-<kw name="Switch Page" owner="Browser">
-<msg time="2025-12-14T18:46:11.137456" level="INFO">Switching to page NEW,context CURRENT, browser CURRENT</msg>
-<msg time="2025-12-14T18:46:11.418270" level="INFO">Activated new page page=5f651b56-9b50-4a25-9db5-e541127be70c</msg>
-<msg time="2025-12-14T18:46:11.419272" level="INFO">${id} = page=b3aee6d0-5bcc-4785-bdae-886b14a41e3d</msg>
-<var>${id}</var>
-<arg>NEW</arg>
-<arg>CURRENT</arg>
-<arg>CURRENT</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
-<status status="PASS" start="2025-12-14T18:46:11.136447" elapsed="0.282825"/>
+<doc>Select the link and alert buttons</doc>
+<status status="PASS" start="2025-12-16T08:50:51.771790" elapsed="0.200827"/>
 </kw>
-<kw name="Get Title" owner="Browser">
-<msg time="2025-12-14T18:46:11.742506" level="INFO">Title: 'Index'</msg>
-<arg>should be</arg>
-<arg>Index</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-12-14T18:46:11.420272" elapsed="0.324420"/>
-</kw>
-<kw name="Switch Page" owner="Browser">
-<msg time="2025-12-14T18:46:11.747199" level="INFO">Switching to page NEW,context CURRENT, browser CURRENT</msg>
-<msg time="2025-12-14T18:46:12.604487" level="INFO">Activated new page page=7f5c7fcd-4c26-4a4c-8546-1383dad0f0bb</msg>
-<arg>NEW</arg>
-<arg>CURRENT</arg>
-<arg>CURRENT</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
-<status status="PASS" start="2025-12-14T18:46:11.744692" elapsed="0.872845"/>
-</kw>
-<kw name="Get Title" owner="Browser">
-<msg time="2025-12-14T18:46:12.635239" level="INFO">Title: 'Selenium'</msg>
-<arg>should be</arg>
-<arg>Selenium</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-12-14T18:46:12.618924" elapsed="0.017822"/>
-</kw>
-<return>
-<value>${id}</value>
-<status status="PASS" start="2025-12-14T18:46:12.636746" elapsed="0.001011"/>
-</return>
-<msg time="2025-12-14T18:46:12.640184" level="INFO">${ID} = page=b3aee6d0-5bcc-4785-bdae-886b14a41e3d</msg>
-<var>${ID}</var>
-<doc>Switch to the child windows</doc>
-<status status="PASS" start="2025-12-14T18:46:11.134934" elapsed="1.507507"/>
-</kw>
-<kw name="Verify The User Is Back To Parent Window">
-<kw name="Switch Page" owner="Browser">
-<msg time="2025-12-14T18:46:12.649159" level="INFO">Switching to page page=b3aee6d0-5bcc-4785-bdae-886b14a41e3d,context CURRENT, browser CURRENT</msg>
-<msg time="2025-12-14T18:46:12.699823" level="INFO">Successfully changed active page: page=b3aee6d0-5bcc-4785-bdae-886b14a41e3d</msg>
-<arg>${ID}</arg>
-<arg>CURRENT</arg>
-<arg>CURRENT</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
-<status status="PASS" start="2025-12-14T18:46:12.648158" elapsed="0.054136"/>
-</kw>
-<kw name="Get Title" owner="Browser">
-<msg time="2025-12-14T18:46:12.728213" level="INFO">Title: 'Frames &amp; windows'</msg>
-<arg>should be</arg>
-<arg>Frames &amp; windows</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-12-14T18:46:12.703311" elapsed="0.025913"/>
-</kw>
+<kw name="Verify The Text Entered In Textbox">
 <kw name="Get Text" owner="Browser">
-<msg time="2025-12-14T18:46:12.817701" level="INFO">Text: 'Automation Demo Site'</msg>
-<arg>h1</arg>
-<arg>should be</arg>
-<arg>Automation Demo Site</arg>
+<msg time="2025-12-16T08:50:52.012325" level="INFO">Text: 'Hello Hello World! How are you today'</msg>
+<msg time="2025-12-16T08:50:52.013319" level="INFO">${text} = Hello Hello World! How are you today</msg>
+<var>${text}</var>
+<arg>\#demo1</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-12-14T18:46:12.729224" elapsed="0.089490"/>
+<status status="PASS" start="2025-12-16T08:50:51.972617" elapsed="0.041705"/>
 </kw>
-<arg>${ID}</arg>
-<doc>Return back to the parent windpw</doc>
-<status status="PASS" start="2025-12-14T18:46:12.647147" elapsed="0.171567"/>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${text}</arg>
+<arg>Hello Hello World! How are you today</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-12-16T08:50:52.014322" elapsed="0.000907"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-12-14T18:46:22.826360" level="INFO">Slept 10 seconds.</msg>
-<arg>10 seconds</arg>
+<msg time="2025-12-16T08:50:57.017478" level="INFO">Slept 5 seconds.</msg>
+<arg>5 seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-12-14T18:46:12.821309" elapsed="10.005051"/>
+<status status="PASS" start="2025-12-16T08:50:52.017241" elapsed="5.000237"/>
+</kw>
+<doc>Check the string from the alert box</doc>
+<status status="PASS" start="2025-12-16T08:50:51.972617" elapsed="5.044861"/>
+</kw>
+<kw name="Select The Prompt Alert But Cancel">
+<kw name="Get Element By Role" owner="Browser">
+<msg time="2025-12-16T08:50:57.031544" level="INFO">Locator found successfully.</msg>
+<msg time="2025-12-16T08:50:57.033702" level="INFO">${link} = internal:role=link[name="Alert with Textbox"s]</msg>
+<var>${link}</var>
+<arg>LINK</arg>
+<arg>name=Alert with Textbox</arg>
+<arg>exact=True</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for the matched element by ``role`` or a list of references if ``all_elements`` is set to ``True``.</doc>
+<status status="PASS" start="2025-12-16T08:50:57.017478" elapsed="0.016224"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-12-16T08:50:57.035342" level="INFO">Clicks the element 'internal:role=link[name="Alert with Textbox"s]'.</msg>
+<arg>${link}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-16T08:50:57.033702" elapsed="0.039983"/>
+</kw>
+<kw name="Handle Future Dialogs" owner="Browser">
+<arg>dismiss</arg>
+<tag>PageContent</tag>
+<doc>Handle next dialog on page with ``action``.</doc>
+<status status="PASS" start="2025-12-16T08:50:57.073685" elapsed="0.005930"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-12-16T08:50:57.089548" level="INFO">Locator found successfully.</msg>
+<msg time="2025-12-16T08:50:57.090545" level="INFO">${button} = #Textbox &gt; button</msg>
+<var>${button}</var>
+<arg>\#Textbox &gt; button</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-12-16T08:50:57.080057" elapsed="0.010488"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-12-16T08:50:57.092546" level="INFO">Clicks the element '#Textbox &gt; button'.</msg>
+<arg>${button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-16T08:50:57.091556" elapsed="0.039977"/>
+</kw>
+<doc>Select the Prompt alert but click the cancel button</doc>
+<status status="PASS" start="2025-12-16T08:50:57.017478" elapsed="0.115054"/>
+</kw>
+<kw name="Verify No Text After Canceling The Prompt">
+<kw name="Get Text" owner="Browser">
+<msg time="2025-12-16T08:50:57.156868" level="INFO">Text: ''</msg>
+<msg time="2025-12-16T08:50:57.156868" level="INFO">${text} = </msg>
+<var>${text}</var>
+<arg>\#demo1</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-16T08:50:57.138661" elapsed="0.018207"/>
+</kw>
+<kw name="Should Be Empty" owner="BuiltIn">
+<msg time="2025-12-16T08:50:57.157878" level="INFO">Length is 0.</msg>
+<arg>${text}</arg>
+<doc>Verifies that the given item is empty.</doc>
+<status status="PASS" start="2025-12-16T08:50:57.156868" elapsed="0.001010"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-12-16T08:51:02.159472" level="INFO">Slept 5 seconds.</msg>
+<arg>5 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-12-16T08:50:57.157878" elapsed="5.001594"/>
+</kw>
+<doc>Check the text generated after canceling the prompt</doc>
+<status status="PASS" start="2025-12-16T08:50:57.137641" elapsed="5.021831"/>
 </kw>
 <kw name="Close Browser Session" owner="keywords" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2025-12-14T18:46:24.120755" level="INFO">Closed browser</msg>
+<msg time="2025-12-16T08:51:02.708506" level="INFO">Closed browser</msg>
 <arg>CURRENT</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-12-14T18:46:22.832402" elapsed="1.288353"/>
+<status status="PASS" start="2025-12-16T08:51:02.162145" elapsed="0.547286"/>
 </kw>
 <doc>Closes the browser's page, context and window</doc>
-<status status="PASS" start="2025-12-14T18:46:22.831390" elapsed="1.290366"/>
+<status status="PASS" start="2025-12-16T08:51:02.162145" elapsed="0.547286"/>
 </kw>
-<doc>Open multiple windows and verify them</doc>
-<status status="PASS" start="2025-12-14T18:46:00.018744" elapsed="24.111693"/>
+<doc>Open an alert dialog</doc>
+<status status="PASS" start="2025-12-16T08:50:43.553907" elapsed="19.157781"/>
 </test>
-<doc>Switch from a main window to others</doc>
-<status status="PASS" start="2025-12-14T18:45:59.629640" elapsed="24.518494"/>
+<doc>To validate the Textbox Alert</doc>
+<status status="PASS" start="2025-12-16T08:50:43.167928" elapsed="19.556031"/>
 </suite>
-<status status="PASS" start="2025-12-14T18:45:59.618720" elapsed="24.548627"/>
+<status status="PASS" start="2025-12-16T08:50:43.158627" elapsed="19.577754"/>
 </suite>
-<status status="PASS" start="2025-12-14T18:45:59.577694" elapsed="24.604272"/>
+<status status="PASS" start="2025-12-16T08:50:43.114479" elapsed="19.637113"/>
 </suite>
 <statistics>
 <total>
@@ -244,7 +265,7 @@ for the matched element by ``role`` or a list of references if ``all_elements`` 
 <suite>
 <stat name="Robotframework Demo" id="s1" pass="1" fail="0" skip="0">Robotframework Demo</stat>
 <stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests</stat>
-<stat name="Multiple Windows Demo" id="s1-s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests.Multiple Windows Demo</stat>
+<stat name="Textbox Alert Demo" id="s1-s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests.Textbox Alert Demo</stat>
 </suite>
 </statistics>
 <errors>

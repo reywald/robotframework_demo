@@ -12,7 +12,6 @@ Test Teardown       Close Browser Session
 *** Variables ***
 ${BROWSER}      chromium
 ${WEB_URL}      https://demo.automationtesting.in/Windows.html
-${ID}           ${None}
 
 
 *** Test Cases ***
@@ -25,6 +24,7 @@ Switch Windows
     Open Child Window
     ${ID} =    Verify The Child Window Is Opened
     Verify The User Is Back To Parent Window    ${ID}
+
 
 
 *** Keywords ***
