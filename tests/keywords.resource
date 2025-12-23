@@ -13,6 +13,12 @@ ${DASHBOARD_TEXT}               css=.oxd-topbar-header-breadcrumb-module
 
 
 *** Keywords ***
+Get Window Dimensions
+    [Documentation]    Retrieves the current window dimensions
+    ${width} =    Evaluate JavaScript    ${None}    () => window.screen.availWidth
+    ${height} =    Evaluate JavaScript    ${None}    () => window.screen.availHeight
+    RETURN    ${width}    ${height}
+
 Open The Browser With URL
     [Documentation]    Opens the browser and navigates to the specified URL
     [Arguments]    ${BROWSER}    ${WEB_URL}=${None}
@@ -23,14 +29,16 @@ Open The Browser With URL
     END
 
     IF    $WEB_URL    New Page    ${WEB_URL}    ELSE    New Page    ${URL}
+    ${width}    ${height} =    Get Window Dimensions
+    Set Viewport Size    width=1536    height=816
 
 Open The Browser Headlessly With URL
     [Documentation]    Opens the browser in headless mode and navigates to the specified URL
     [Arguments]    ${BROWSER}    ${WEB_URL}=${None}
     IF    $BROWSER == 'chromium'
-        New Browser    browser=${BROWSER}    headless=True    executablePath=${CHROME_EXECUTABLE_PATH}
+        New Browser    browser=${BROWSER}    executablePath=${CHROME_EXECUTABLE_PATH}
     ELSE IF    $BROWSER == 'firefox'
-        New Browser    browser=${BROWSER}    headless=True    executablePath=${FIREFOX_EXECUTABLE_PATH}
+        New Browser    browser=${BROWSER}    executablePath=${FIREFOX_EXECUTABLE_PATH}
     END
 
     IF    $WEB_URL    New Page    ${WEB_URL}    ELSE    New Page    ${URL}
