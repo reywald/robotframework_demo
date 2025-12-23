@@ -6,12 +6,10 @@ Library             Browser
 
 *** Variables ***
 ${URL}                          https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-${USERNAME}                     Admin
-${PASSWORD}                     Admin
-${VALID_USERNAME}               Admin
-${VALID_PASSWORD}               admin123
 ${CHROME_EXECUTABLE_PATH}       C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe
 ${FIREFOX_EXECUTABLE_PATH}      C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\firefox-1488\\firefox\\firefox.exe
+${LOGIN_ERROR_MESSAGE}          css=.oxd-alert-content--error
+${DASHBOARD_TEXT}               css=.oxd-topbar-header-breadcrumb-module
 
 
 *** Keywords ***
@@ -39,20 +37,19 @@ Open The Browser Headlessly With URL
 
 Fill The Login Form
     [Documentation]    Fills the login form with provided username and password
-    Type Text    css=input[name="username"]    ${USERNAME}
-    Type Text    css=input[name="password"]    ${PASSWORD}
-    Click    css=.orangehrm-login-button
-
-Fill The Login Form Successfully
-    [Documentation]    Fills the login form with provided username and password
-    Type Text    css=input[name="username"]    ${VALID_USERNAME}
-    Type Text    css=input[name="password"]    ${VALID_PASSWORD}
+    [Arguments]    ${username}    ${password}
+    Type Text    css=input[name="username"]    ${username}
+    Type Text    css=input[name="password"]    ${password}
     Click    css=.orangehrm-login-button
 
 Verify Error Message Is Correct
     [Documentation]    Verifies that the error message displayed is correct
     ${result} =    Get Text    css=.oxd-alert-content-text
     Should Be Equal    ${result}    Invalid credentials
+
+Verify Dashboard Page Opens
+    [Documentation]    Verifies that the user logged in successfully by checking for the dashboard
+    Get Text    ${DASHBOARD_TEXT}    ==    Dashboard
 
 Close Browser Session
     [Documentation]    Closes the browser's page, context and window

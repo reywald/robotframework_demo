@@ -16,5 +16,5 @@ ${BROWSER}      chromium
 Validate Unsuccessful Login
     [Documentation]    To validate unsuccessful login using the Login Form
     Open The Browser With URL    BROWSER=${BROWSER}
-    Fill The Login Form
+    Fill The Login Form    username=Admin    password=Admin
     Verify Error Message Is Correct

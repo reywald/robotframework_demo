@@ -22,7 +22,7 @@ Validate Visible Elements On Login Page
 Validate Successful Login
     [Documentation]    To validate successful login using the Login Form
     Open The Browser With URL    BROWSER=firefox
-    Fill The Login Form Successfully
+    Fill The Login Form    username=Admin    password=admin123
     Verify Dashboard Page Opens
     Verify Items In Dashboard Page
 
