@@ -21,7 +21,7 @@ Get Window Dimensions
 
 Open The Browser With URL
     [Documentation]    Opens the browser and navigates to the specified URL
-    [Arguments]    ${BROWSER}    ${WEB_URL}=${None}
+    [Arguments]    ${BROWSER}='chromium'    ${WEB_URL}=${None}
     IF    $BROWSER == 'chromium'
         New Browser    browser=${BROWSER}    headless=False    executablePath=${CHROME_EXECUTABLE_PATH}
     ELSE IF    $BROWSER == 'firefox'
@@ -34,7 +34,7 @@ Open The Browser With URL
 
 Open The Browser Headlessly With URL
     [Documentation]    Opens the browser in headless mode and navigates to the specified URL
-    [Arguments]    ${BROWSER}    ${WEB_URL}=${None}
+    [Arguments]    ${BROWSER}='chromium'    ${WEB_URL}=${None}
     IF    $BROWSER == 'chromium'
         New Browser    browser=${BROWSER}    executablePath=${CHROME_EXECUTABLE_PATH}
     ELSE IF    $BROWSER == 'firefox'
