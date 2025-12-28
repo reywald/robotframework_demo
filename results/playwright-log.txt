@@ -1,4 +1,4 @@
-{"level":30,"time":"2025-12-28T14:59:10.444Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Listening on 127.0.0.1:64026"}
+{"level":30,"time":"2025-12-28T17:55:20.186Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Listening on 127.0.0.1:61686"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js:12672:15)
@@ -12,152 +12,152 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1701:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
 =============================================================
-{"level":30,"time":"2025-12-28T14:59:10.977Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2025-12-28T14:59:11.760Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Adding browser to stack: chromium, version: 138.0.7204.23"}
-{"level":30,"time":"2025-12-28T14:59:11.760Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2025-12-28T14:59:11.761Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method newBrowser"}
-{"level":30,"time":"2025-12-28T14:59:11.771Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newPage"}
-{"level":30,"time":"2025-12-28T14:59:11.772Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@51bb28bea5cb3a33722cd6e96a0b61c3\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=e284ca4e-0bfd-4ab7-9785-e67d2017e35a\"}"}
-{"level":30,"time":"2025-12-28T14:59:11.795Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Setting default timeout for context context=00ec25af-7cb3-42f9-8c94-89f9f1260eb0 to 30000"}
-{"level":30,"time":"2025-12-28T14:59:11.795Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Changed active context: context=00ec25af-7cb3-42f9-8c94-89f9f1260eb0"}
-{"level":30,"time":"2025-12-28T14:59:12.379Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Video path: undefined"}
-{"level":30,"time":"2025-12-28T14:59:12.379Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Changed active page"}
-{"level":30,"time":"2025-12-28T14:59:20.391Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method newPage"}
-{"level":30,"time":"2025-12-28T14:59:20.406Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method evaluateJavascript"}
-{"level":30,"time":"2025-12-28T14:59:20.426Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method evaluateJavascript"}
-{"level":30,"time":"2025-12-28T14:59:20.436Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method evaluateJavascript"}
-{"level":30,"time":"2025-12-28T14:59:20.442Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method evaluateJavascript"}
-{"level":30,"time":"2025-12-28T14:59:20.462Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method setViewportSize"}
-{"level":30,"time":"2025-12-28T14:59:20.480Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method setViewportSize"}
-{"level":30,"time":"2025-12-28T14:59:20.497Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method typeText"}
-{"level":30,"time":"2025-12-28T14:59:20.498Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=input[name=\"username\"] in page."}
-{"level":30,"time":"2025-12-28T14:59:21.460Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method typeText"}
-{"level":30,"time":"2025-12-28T14:59:21.472Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method typeText"}
-{"level":30,"time":"2025-12-28T14:59:21.472Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=input[name=\"password\"] in page."}
-{"level":30,"time":"2025-12-28T14:59:21.537Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method typeText"}
-{"level":30,"time":"2025-12-28T14:59:21.550Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method click"}
-{"level":30,"time":"2025-12-28T14:59:21.551Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=.orangehrm-login-button in page."}
-{"level":30,"time":"2025-12-28T14:59:22.620Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method click"}
-{"level":30,"time":"2025-12-28T14:59:22.634Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getText"}
-{"level":30,"time":"2025-12-28T14:59:22.634Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=.oxd-alert-content-text in page."}
-{"level":30,"time":"2025-12-28T14:59:23.554Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Retrieved text for element css=.oxd-alert-content-text containing Invalid credentials"}
-{"level":30,"time":"2025-12-28T14:59:23.554Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method getText"}
-{"level":30,"time":"2025-12-28T14:59:23.574Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2025-12-28T14:59:23.598Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Removed page=998a7ab8-3045-4ffe-a9ea-2daaed669ce2 from context=00ec25af-7cb3-42f9-8c94-89f9f1260eb0 page stack"}
-{"level":30,"time":"2025-12-28T14:59:24.571Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method closeBrowser"}
-{"level":30,"time":"2025-12-28T14:59:24.587Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-28T14:59:24.588Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-28T14:59:24.620Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-28T14:59:24.621Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-28T14:59:24.636Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2025-12-28T14:59:25.379Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Adding browser to stack: chromium, version: 138.0.7204.23"}
-{"level":30,"time":"2025-12-28T14:59:25.379Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2025-12-28T14:59:25.379Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method newBrowser"}
-{"level":30,"time":"2025-12-28T14:59:25.388Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newPage"}
-{"level":30,"time":"2025-12-28T14:59:25.388Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@0a9a31c40e758f93f724896ee060ce16\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=bd733c87-0bb5-4739-947f-0d94ff2bfc31\"}"}
-{"level":30,"time":"2025-12-28T14:59:25.412Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Setting default timeout for context context=43a1705a-26cd-4d13-8446-dfdf65433579 to 30000"}
-{"level":30,"time":"2025-12-28T14:59:25.412Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Changed active context: context=43a1705a-26cd-4d13-8446-dfdf65433579"}
-{"level":30,"time":"2025-12-28T14:59:26.089Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Video path: undefined"}
-{"level":30,"time":"2025-12-28T14:59:26.089Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Changed active page"}
-{"level":30,"time":"2025-12-28T14:59:30.173Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method newPage"}
-{"level":30,"time":"2025-12-28T14:59:30.189Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method evaluateJavascript"}
-{"level":30,"time":"2025-12-28T14:59:30.198Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method evaluateJavascript"}
-{"level":30,"time":"2025-12-28T14:59:30.211Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method evaluateJavascript"}
-{"level":30,"time":"2025-12-28T14:59:30.215Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method evaluateJavascript"}
-{"level":30,"time":"2025-12-28T14:59:30.232Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method setViewportSize"}
-{"level":30,"time":"2025-12-28T14:59:30.248Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method setViewportSize"}
-{"level":30,"time":"2025-12-28T14:59:30.261Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method typeText"}
-{"level":30,"time":"2025-12-28T14:59:30.261Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=input[name=\"username\"] in page."}
-{"level":30,"time":"2025-12-28T14:59:31.193Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method typeText"}
-{"level":30,"time":"2025-12-28T14:59:31.205Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method typeText"}
-{"level":30,"time":"2025-12-28T14:59:31.205Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=input[name=\"password\"] in page."}
-{"level":30,"time":"2025-12-28T14:59:31.247Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method typeText"}
-{"level":30,"time":"2025-12-28T14:59:31.257Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method click"}
-{"level":30,"time":"2025-12-28T14:59:31.257Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=.orangehrm-login-button in page."}
-{"level":30,"time":"2025-12-28T14:59:31.310Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method click"}
-{"level":30,"time":"2025-12-28T14:59:31.319Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getText"}
-{"level":30,"time":"2025-12-28T14:59:31.319Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=.oxd-alert-content-text in page."}
-{"level":30,"time":"2025-12-28T14:59:32.861Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Retrieved text for element css=.oxd-alert-content-text containing Invalid credentials"}
-{"level":30,"time":"2025-12-28T14:59:32.861Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method getText"}
-{"level":30,"time":"2025-12-28T14:59:32.878Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2025-12-28T14:59:32.900Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Removed page=7eaa9105-c4e6-4c97-8ee0-3ef56ae033aa from context=43a1705a-26cd-4d13-8446-dfdf65433579 page stack"}
-{"level":30,"time":"2025-12-28T14:59:33.706Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method closeBrowser"}
-{"level":30,"time":"2025-12-28T14:59:33.719Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-28T14:59:33.720Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-28T14:59:33.739Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-28T14:59:33.739Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-28T14:59:33.750Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2025-12-28T14:59:34.397Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Adding browser to stack: chromium, version: 138.0.7204.23"}
-{"level":30,"time":"2025-12-28T14:59:34.397Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2025-12-28T14:59:34.397Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method newBrowser"}
-{"level":30,"time":"2025-12-28T14:59:34.413Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newPage"}
-{"level":30,"time":"2025-12-28T14:59:34.413Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@864d8b7bc5e19d95145e2db958855557\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=165d7e88-beb7-46cf-9c20-005716ea27f3\"}"}
-{"level":30,"time":"2025-12-28T14:59:34.429Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Setting default timeout for context context=21256d24-f62b-47df-a3fc-52b1020cafe9 to 30000"}
-{"level":30,"time":"2025-12-28T14:59:34.429Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Changed active context: context=21256d24-f62b-47df-a3fc-52b1020cafe9"}
-{"level":30,"time":"2025-12-28T14:59:35.435Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Video path: undefined"}
-{"level":30,"time":"2025-12-28T14:59:35.435Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Changed active page"}
-{"level":30,"time":"2025-12-28T14:59:39.697Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method newPage"}
-{"level":30,"time":"2025-12-28T14:59:39.713Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method evaluateJavascript"}
-{"level":30,"time":"2025-12-28T14:59:39.721Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method evaluateJavascript"}
-{"level":30,"time":"2025-12-28T14:59:39.734Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method evaluateJavascript"}
-{"level":30,"time":"2025-12-28T14:59:39.738Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method evaluateJavascript"}
-{"level":30,"time":"2025-12-28T14:59:39.753Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method setViewportSize"}
-{"level":30,"time":"2025-12-28T14:59:39.768Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method setViewportSize"}
-{"level":30,"time":"2025-12-28T14:59:39.787Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method typeText"}
-{"level":30,"time":"2025-12-28T14:59:39.787Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=input[name=\"username\"] in page."}
-{"level":30,"time":"2025-12-28T14:59:40.716Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method typeText"}
-{"level":30,"time":"2025-12-28T14:59:40.724Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method typeText"}
-{"level":30,"time":"2025-12-28T14:59:40.724Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=input[name=\"password\"] in page."}
-{"level":30,"time":"2025-12-28T14:59:40.776Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method typeText"}
-{"level":30,"time":"2025-12-28T14:59:40.789Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method click"}
-{"level":30,"time":"2025-12-28T14:59:40.789Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=.orangehrm-login-button in page."}
-{"level":30,"time":"2025-12-28T14:59:40.824Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method click"}
-{"level":30,"time":"2025-12-28T14:59:40.833Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getText"}
-{"level":30,"time":"2025-12-28T14:59:40.833Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=.oxd-alert-content-text in page."}
-{"level":30,"time":"2025-12-28T14:59:42.153Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Retrieved text for element css=.oxd-alert-content-text containing Invalid credentials"}
-{"level":30,"time":"2025-12-28T14:59:42.154Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method getText"}
-{"level":30,"time":"2025-12-28T14:59:42.175Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2025-12-28T14:59:42.192Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Removed page=38ea56a2-4549-4964-97bd-c1a6204cd259 from context=21256d24-f62b-47df-a3fc-52b1020cafe9 page stack"}
-{"level":30,"time":"2025-12-28T14:59:43.363Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method closeBrowser"}
-{"level":30,"time":"2025-12-28T14:59:43.375Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-28T14:59:43.375Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-28T14:59:43.386Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-28T14:59:43.386Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-28T14:59:43.397Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2025-12-28T14:59:44.129Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Adding browser to stack: chromium, version: 138.0.7204.23"}
-{"level":30,"time":"2025-12-28T14:59:44.129Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2025-12-28T14:59:44.129Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method newBrowser"}
-{"level":30,"time":"2025-12-28T14:59:44.137Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newPage"}
-{"level":30,"time":"2025-12-28T14:59:44.137Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@ce77eef24a8991962ae3b59fa2d1b1e1\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=5349e26d-8a3c-4e2e-b335-4fd8dcb744c5\"}"}
-{"level":30,"time":"2025-12-28T14:59:44.149Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Setting default timeout for context context=9d5c40c0-ab5d-4229-a0f8-269b78adc10d to 30000"}
-{"level":30,"time":"2025-12-28T14:59:44.149Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Changed active context: context=9d5c40c0-ab5d-4229-a0f8-269b78adc10d"}
-{"level":30,"time":"2025-12-28T14:59:44.809Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Video path: undefined"}
-{"level":30,"time":"2025-12-28T14:59:44.809Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Changed active page"}
-{"level":30,"time":"2025-12-28T14:59:48.694Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method newPage"}
-{"level":30,"time":"2025-12-28T14:59:48.710Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method evaluateJavascript"}
-{"level":30,"time":"2025-12-28T14:59:48.717Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method evaluateJavascript"}
-{"level":30,"time":"2025-12-28T14:59:48.732Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method evaluateJavascript"}
-{"level":30,"time":"2025-12-28T14:59:48.735Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method evaluateJavascript"}
-{"level":30,"time":"2025-12-28T14:59:48.754Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method setViewportSize"}
-{"level":30,"time":"2025-12-28T14:59:48.768Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method setViewportSize"}
-{"level":30,"time":"2025-12-28T14:59:48.784Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method typeText"}
-{"level":30,"time":"2025-12-28T14:59:48.784Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=input[name=\"username\"] in page."}
-{"level":30,"time":"2025-12-28T14:59:49.698Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method typeText"}
-{"level":30,"time":"2025-12-28T14:59:49.711Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method typeText"}
-{"level":30,"time":"2025-12-28T14:59:49.711Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=input[name=\"password\"] in page."}
-{"level":30,"time":"2025-12-28T14:59:49.763Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method typeText"}
-{"level":30,"time":"2025-12-28T14:59:49.780Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method click"}
-{"level":30,"time":"2025-12-28T14:59:49.781Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=.orangehrm-login-button in page."}
-{"level":30,"time":"2025-12-28T14:59:50.515Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method click"}
-{"level":30,"time":"2025-12-28T14:59:50.527Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getText"}
-{"level":30,"time":"2025-12-28T14:59:50.527Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=.oxd-alert-content-text in page."}
-{"level":30,"time":"2025-12-28T14:59:51.010Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Retrieved text for element css=.oxd-alert-content-text containing Invalid credentials"}
-{"level":30,"time":"2025-12-28T14:59:51.010Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method getText"}
-{"level":30,"time":"2025-12-28T14:59:51.029Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2025-12-28T14:59:51.046Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Removed page=a0464576-342a-4b66-9929-12b8b4e63337 from context=9d5c40c0-ab5d-4229-a0f8-269b78adc10d page stack"}
-{"level":30,"time":"2025-12-28T14:59:52.137Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method closeBrowser"}
-{"level":30,"time":"2025-12-28T14:59:52.152Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-28T14:59:52.152Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T17:55:20.484Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-12-28T17:55:21.055Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Adding browser to stack: chromium, version: 138.0.7204.23"}
+{"level":30,"time":"2025-12-28T17:55:21.055Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-12-28T17:55:21.055Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-12-28T17:55:21.065Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-12-28T17:55:21.065Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@f064a0d427f8c60084e1d081ba655624\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=8614b52f-45b4-4135-b9bb-583d758d5f60\"}"}
+{"level":30,"time":"2025-12-28T17:55:21.079Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Setting default timeout for context context=a636d59e-3261-4713-80be-5d89000f45d9 to 30000"}
+{"level":30,"time":"2025-12-28T17:55:21.080Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Changed active context: context=a636d59e-3261-4713-80be-5d89000f45d9"}
+{"level":30,"time":"2025-12-28T17:55:21.605Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Video path: undefined"}
+{"level":30,"time":"2025-12-28T17:55:21.605Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Changed active page"}
+{"level":30,"time":"2025-12-28T17:55:27.127Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method newPage"}
+{"level":30,"time":"2025-12-28T17:55:27.137Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2025-12-28T17:55:27.147Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2025-12-28T17:55:27.153Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2025-12-28T17:55:27.157Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2025-12-28T17:55:27.164Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method setViewportSize"}
+{"level":30,"time":"2025-12-28T17:55:27.178Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method setViewportSize"}
+{"level":30,"time":"2025-12-28T17:55:27.185Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-12-28T17:55:27.186Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=input[name=\"username\"] in page."}
+{"level":30,"time":"2025-12-28T17:55:28.151Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method typeText"}
+{"level":30,"time":"2025-12-28T17:55:28.156Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-12-28T17:55:28.156Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=input[name=\"password\"] in page."}
+{"level":30,"time":"2025-12-28T17:55:28.201Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method typeText"}
+{"level":30,"time":"2025-12-28T17:55:28.206Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method click"}
+{"level":30,"time":"2025-12-28T17:55:28.206Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=.orangehrm-login-button in page."}
+{"level":30,"time":"2025-12-28T17:55:28.254Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method click"}
+{"level":30,"time":"2025-12-28T17:55:28.262Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getText"}
+{"level":30,"time":"2025-12-28T17:55:28.263Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=.oxd-alert-content-text in page."}
+{"level":30,"time":"2025-12-28T17:55:30.126Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Retrieved text for element css=.oxd-alert-content-text containing Invalid credentials"}
+{"level":30,"time":"2025-12-28T17:55:30.126Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method getText"}
+{"level":30,"time":"2025-12-28T17:55:30.132Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-12-28T17:55:30.146Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Removed page=10dee474-7194-44cd-8f3a-903933d8f4f5 from context=a636d59e-3261-4713-80be-5d89000f45d9 page stack"}
+{"level":30,"time":"2025-12-28T17:55:30.552Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2025-12-28T17:55:30.561Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T17:55:30.562Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T17:55:30.578Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T17:55:30.578Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T17:55:30.587Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-12-28T17:55:31.024Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Adding browser to stack: chromium, version: 138.0.7204.23"}
+{"level":30,"time":"2025-12-28T17:55:31.024Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-12-28T17:55:31.024Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-12-28T17:55:31.032Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-12-28T17:55:31.032Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@f7d636647799dcd7e40ab35d5387f2e0\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=a7d7bd2e-cfad-4ac0-b076-134b3445f6bb\"}"}
+{"level":30,"time":"2025-12-28T17:55:31.043Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Setting default timeout for context context=f6a4ca04-4541-462d-92e9-3eecf2c406f5 to 30000"}
+{"level":30,"time":"2025-12-28T17:55:31.043Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Changed active context: context=f6a4ca04-4541-462d-92e9-3eecf2c406f5"}
+{"level":30,"time":"2025-12-28T17:55:31.461Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Video path: undefined"}
+{"level":30,"time":"2025-12-28T17:55:31.461Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Changed active page"}
+{"level":30,"time":"2025-12-28T17:55:35.479Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method newPage"}
+{"level":30,"time":"2025-12-28T17:55:35.486Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2025-12-28T17:55:35.491Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2025-12-28T17:55:35.495Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2025-12-28T17:55:35.497Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2025-12-28T17:55:35.504Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method setViewportSize"}
+{"level":30,"time":"2025-12-28T17:55:35.514Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method setViewportSize"}
+{"level":30,"time":"2025-12-28T17:55:35.519Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-12-28T17:55:35.520Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=input[name=\"username\"] in page."}
+{"level":30,"time":"2025-12-28T17:55:36.437Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method typeText"}
+{"level":30,"time":"2025-12-28T17:55:36.443Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-12-28T17:55:36.443Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=input[name=\"password\"] in page."}
+{"level":30,"time":"2025-12-28T17:55:36.471Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method typeText"}
+{"level":30,"time":"2025-12-28T17:55:36.476Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method click"}
+{"level":30,"time":"2025-12-28T17:55:36.476Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=.orangehrm-login-button in page."}
+{"level":30,"time":"2025-12-28T17:55:36.513Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method click"}
+{"level":30,"time":"2025-12-28T17:55:36.517Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getText"}
+{"level":30,"time":"2025-12-28T17:55:36.517Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=.oxd-alert-content-text in page."}
+{"level":30,"time":"2025-12-28T17:55:38.072Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Retrieved text for element css=.oxd-alert-content-text containing Invalid credentials"}
+{"level":30,"time":"2025-12-28T17:55:38.072Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method getText"}
+{"level":30,"time":"2025-12-28T17:55:38.078Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-12-28T17:55:38.090Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Removed page=b11e0504-a9b5-4222-bddd-85d3028cc335 from context=f6a4ca04-4541-462d-92e9-3eecf2c406f5 page stack"}
+{"level":30,"time":"2025-12-28T17:55:38.908Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2025-12-28T17:55:38.918Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T17:55:38.918Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T17:55:38.927Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T17:55:38.927Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T17:55:38.935Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-12-28T17:55:39.476Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Adding browser to stack: chromium, version: 138.0.7204.23"}
+{"level":30,"time":"2025-12-28T17:55:39.476Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-12-28T17:55:39.476Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-12-28T17:55:39.484Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-12-28T17:55:39.484Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@e31ba18988bd1ad2139243d45c33d1da\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=92836d0a-5460-4186-af2a-d8768d283c55\"}"}
+{"level":30,"time":"2025-12-28T17:55:39.493Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Setting default timeout for context context=03976a21-f2cf-4fca-bb2b-51f76486dcb4 to 30000"}
+{"level":30,"time":"2025-12-28T17:55:39.493Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Changed active context: context=03976a21-f2cf-4fca-bb2b-51f76486dcb4"}
+{"level":30,"time":"2025-12-28T17:55:40.204Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Video path: undefined"}
+{"level":30,"time":"2025-12-28T17:55:40.204Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Changed active page"}
+{"level":30,"time":"2025-12-28T17:55:44.516Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method newPage"}
+{"level":30,"time":"2025-12-28T17:55:44.523Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2025-12-28T17:55:44.527Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2025-12-28T17:55:44.531Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2025-12-28T17:55:44.533Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2025-12-28T17:55:44.541Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method setViewportSize"}
+{"level":30,"time":"2025-12-28T17:55:44.549Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method setViewportSize"}
+{"level":30,"time":"2025-12-28T17:55:44.557Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-12-28T17:55:44.557Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=input[name=\"username\"] in page."}
+{"level":30,"time":"2025-12-28T17:55:45.442Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method typeText"}
+{"level":30,"time":"2025-12-28T17:55:45.446Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-12-28T17:55:45.446Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=input[name=\"password\"] in page."}
+{"level":30,"time":"2025-12-28T17:55:45.474Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method typeText"}
+{"level":30,"time":"2025-12-28T17:55:45.480Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method click"}
+{"level":30,"time":"2025-12-28T17:55:45.480Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=.orangehrm-login-button in page."}
+{"level":30,"time":"2025-12-28T17:55:45.545Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method click"}
+{"level":30,"time":"2025-12-28T17:55:45.550Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getText"}
+{"level":30,"time":"2025-12-28T17:55:45.550Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=.oxd-alert-content-text in page."}
+{"level":30,"time":"2025-12-28T17:55:46.775Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Retrieved text for element css=.oxd-alert-content-text containing Invalid credentials"}
+{"level":30,"time":"2025-12-28T17:55:46.775Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method getText"}
+{"level":30,"time":"2025-12-28T17:55:46.781Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-12-28T17:55:46.789Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Removed page=b99d564e-a7e4-4efe-a443-97e19c6587b2 from context=03976a21-f2cf-4fca-bb2b-51f76486dcb4 page stack"}
+{"level":30,"time":"2025-12-28T17:55:47.560Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2025-12-28T17:55:47.571Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T17:55:47.571Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T17:55:47.580Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T17:55:47.580Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T17:55:47.589Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-12-28T17:55:48.110Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Adding browser to stack: chromium, version: 138.0.7204.23"}
+{"level":30,"time":"2025-12-28T17:55:48.110Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-12-28T17:55:48.110Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-12-28T17:55:48.118Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-12-28T17:55:48.119Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@7adc3cc335d27bd5fdad78ad5f2d5b32\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=32555b30-f4bc-4d1c-9a3d-55e22998ecba\"}"}
+{"level":30,"time":"2025-12-28T17:55:48.129Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Setting default timeout for context context=3f7ccfcc-26ee-4706-a3e5-927dfe016940 to 30000"}
+{"level":30,"time":"2025-12-28T17:55:48.129Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Changed active context: context=3f7ccfcc-26ee-4706-a3e5-927dfe016940"}
+{"level":30,"time":"2025-12-28T17:55:48.547Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Video path: undefined"}
+{"level":30,"time":"2025-12-28T17:55:48.547Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Changed active page"}
+{"level":30,"time":"2025-12-28T17:55:52.422Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method newPage"}
+{"level":30,"time":"2025-12-28T17:55:52.428Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2025-12-28T17:55:52.433Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2025-12-28T17:55:52.438Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2025-12-28T17:55:52.440Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2025-12-28T17:55:52.447Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method setViewportSize"}
+{"level":30,"time":"2025-12-28T17:55:52.458Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method setViewportSize"}
+{"level":30,"time":"2025-12-28T17:55:52.468Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-12-28T17:55:52.468Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=input[name=\"username\"] in page."}
+{"level":30,"time":"2025-12-28T17:55:53.367Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method typeText"}
+{"level":30,"time":"2025-12-28T17:55:53.372Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-12-28T17:55:53.373Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=input[name=\"password\"] in page."}
+{"level":30,"time":"2025-12-28T17:55:53.402Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method typeText"}
+{"level":30,"time":"2025-12-28T17:55:53.406Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method click"}
+{"level":30,"time":"2025-12-28T17:55:53.406Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=.orangehrm-login-button in page."}
+{"level":30,"time":"2025-12-28T17:55:53.445Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method click"}
+{"level":30,"time":"2025-12-28T17:55:53.448Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getText"}
+{"level":30,"time":"2025-12-28T17:55:53.448Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=.oxd-alert-content-text in page."}
+{"level":30,"time":"2025-12-28T17:55:54.534Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Retrieved text for element css=.oxd-alert-content-text containing Invalid credentials"}
+{"level":30,"time":"2025-12-28T17:55:54.534Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method getText"}
+{"level":30,"time":"2025-12-28T17:55:54.540Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-12-28T17:55:54.549Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Removed page=ce5ed65f-2f7d-41ad-8920-cf7ede34183e from context=3f7ccfcc-26ee-4706-a3e5-927dfe016940 page stack"}
+{"level":30,"time":"2025-12-28T17:55:55.201Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2025-12-28T17:55:55.210Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T17:55:55.210Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js:12672:15)
@@ -171,7 +171,7 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1701:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
 =============================================================
-{"level":30,"time":"2025-12-28T14:59:52.180Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-28T14:59:52.180Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-12-28T14:59:54.675Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2025-12-28T14:59:54.676Z","pid":10876,"hostname":"NG-SS-LPT-040798","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2025-12-28T17:55:55.222Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T17:55:55.222Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T17:55:56.922Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-12-28T17:55:56.922Z","pid":32552,"hostname":"NG-SS-LPT-040798","msg":"End of node method closeAllBrowsers"}
