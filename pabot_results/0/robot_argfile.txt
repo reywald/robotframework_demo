@@ -1,0 +1,16 @@
+--test Page Objects.Forgot Password Tests.Validate Reset Password Functionality
+--variable CALLER_ID:35390fe066354143936fa09b718040b8
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:1
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:8
+--variable PABOTQUEUEINDEX:0
+--variable PABOTLASTLEVEL:Page Objects.Forgot Password Tests.Validate Reset Password Functionality
+--listener RobotStackTracer
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\0
+--consolecolors off
+--consolemarkers off
+page_objects/

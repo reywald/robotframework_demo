@@ -2,7 +2,7 @@
 Documentation       Test to handle a set of checkboxes
 
 Library             Browser
-Resource            keywords.resource
+Resource            ../resources/keywords.resource
 
 Test Setup          Set Browser Timeout    60 seconds    Test
 Test Teardown       Close Browser Session

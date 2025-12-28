@@ -1,0 +1,10 @@
+datasources:36d346799c3d1f2c3fe94e76887cc8adf77cb56a
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:ad64213f7b960ef290cc61e54288c07c4cf524b6
+--test Page Objects.Forgot Password Tests.Validate Reset Password Functionality
+--test Page Objects.Forgot Password Tests.Validate Cancel Functionality
+--test Page Objects.Login Page Tests.Validate Unsuccessful Login With Invalid Credentials
+--test Page Objects.Login Page Tests.Validate Unsuccessful Login With Blank Username
+--test Page Objects.Login Page Tests.Validate Unsuccessful Login With Blank Password
+--test Page Objects.Login Page Tests.Validate Successful Login With Valid Credentials

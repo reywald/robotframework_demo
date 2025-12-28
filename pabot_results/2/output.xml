@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-28T15:08:51.964900" rpa="false" schemaversion="5">
+<suite id="s1" name="Page Objects" source="C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\page_objects">
+<suite id="s1-s1" name="Login Page Tests" source="C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\page_objects\login_page_tests.robot">
+<test id="s1-s1-t1" name="Validate Unsuccessful Login With Invalid Credentials" line="15">
+<kw name="Open The Browser With URL" owner="generic" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-12-28T15:08:52.678620" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\pabot_results\\2\\browser\\traces\\temp\\e8d081e3-9d1d-46e0-8576-1d328ef6dc39"}</msg>
+<msg time="2025-12-28T15:08:54.246306" level="INFO">Starting Browser process C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:64848</msg>
+<msg time="2025-12-28T15:08:57.656466" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\pabot_results\\2\\browser\\traces\\temp\\e8d081e3-9d1d-46e0-8576-1d328ef6dc39"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>executablePath=C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-12-28T15:08:52.677508" elapsed="4.978958"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-12-28T15:09:05.655163" level="INFO">Successfully initialized new page object and opened url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
+<msg time="2025-12-28T15:09:05.655163" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-12-28T15:08:57.657666" elapsed="7.998505"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2025-12-28T15:09:05.685992" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>width=1536</arg>
+<arg>height=816</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2025-12-28T15:09:05.656171" elapsed="0.029821"/>
+</kw>
+<doc>Opens the browser and navigates to the specified URL</doc>
+<status status="PASS" start="2025-12-28T15:08:52.676506" elapsed="13.010501"/>
+</kw>
+<kw name="Fill The Login Form" owner="login">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-12-28T15:09:05.689506" level="INFO">Fills the text '1234' in the given field.</msg>
+<arg>css=input[name="username"]</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-12-28T15:09:05.688000" elapsed="1.001884"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-12-28T15:09:06.690918" level="INFO">Fills the text '45678' in the given field.</msg>
+<arg>css=input[name="password"]</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-12-28T15:09:06.690391" elapsed="0.027674"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-12-28T15:09:06.719301" level="INFO">Clicks the element 'css=button[type="submit"]'.</msg>
+<arg>css=button[type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-28T15:09:06.718065" elapsed="1.557825"/>
+</kw>
+<arg>${INVALID_USERNAME}</arg>
+<arg>${INVALID_PASSWORD}</arg>
+<doc>Fill the login form with given username and password.</doc>
+<status status="PASS" start="2025-12-28T15:09:05.687007" elapsed="2.588883"/>
+</kw>
+<kw name="Verify The Error Message Is Correct" owner="login">
+<kw name="Get Text" owner="Browser">
+<msg time="2025-12-28T15:09:08.794307" level="INFO">Text: 'Invalid credentials'</msg>
+<arg>${LOGIN_ERROR_MESSAGE}</arg>
+<arg>==</arg>
+<arg>Invalid credentials</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-28T15:09:08.277895" elapsed="0.516412"/>
+</kw>
+<doc>Verify that the login error message matches the expected message.</doc>
+<status status="PASS" start="2025-12-28T15:09:08.276891" elapsed="0.517416"/>
+</kw>
+<kw name="Close Browser Session" owner="generic" type="TEARDOWN">
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-12-28T15:09:10.784318" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-28T15:09:08.796308" elapsed="1.988010"/>
+</kw>
+<doc>Closes the browser session</doc>
+<status status="PASS" start="2025-12-28T15:09:08.795308" elapsed="1.989010"/>
+</kw>
+<doc>Test to validate unsuccessful login with invalid credentials.</doc>
+<status status="PASS" start="2025-12-28T15:08:52.674486" elapsed="18.109832"/>
+</test>
+<doc>Tests to login to Login Page</doc>
+<status status="PASS" start="2025-12-28T15:08:52.051459" elapsed="18.781989"/>
+</suite>
+<status status="PASS" start="2025-12-28T15:08:52.010198" elapsed="18.837399"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Page Objects" id="s1" pass="1" fail="0" skip="0">Page Objects</stat>
+<stat name="Login Page Tests" id="s1-s1" pass="1" fail="0" skip="0">Page Objects.Login Page Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

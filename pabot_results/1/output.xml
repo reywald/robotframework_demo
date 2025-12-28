@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-28T15:08:51.077754" rpa="false" schemaversion="5">
+<suite id="s1" name="Page Objects" source="C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\page_objects">
+<suite id="s1-s1" name="Forgot Password Tests" source="C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\page_objects\forgot_password_tests.robot">
+<test id="s1-s1-t1" name="Validate Cancel Functionality" line="21">
+<kw name="Open The Browser With URL" owner="generic" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-12-28T15:08:51.829532" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\pabot_results\\1\\browser\\traces\\temp\\3ae1870c-56ed-49ab-b511-250c40c5abf2"}</msg>
+<msg time="2025-12-28T15:08:54.152443" level="INFO">Starting Browser process C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:64842</msg>
+<msg time="2025-12-28T15:08:57.973115" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\pabot_results\\1\\browser\\traces\\temp\\3ae1870c-56ed-49ab-b511-250c40c5abf2"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>executablePath=C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-12-28T15:08:51.828525" elapsed="6.145901"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-12-28T15:09:07.340205" level="INFO">Successfully initialized new page object and opened url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
+<msg time="2025-12-28T15:09:07.341215" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-12-28T15:08:57.976392" elapsed="9.364823"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2025-12-28T15:09:07.390207" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>width=1536</arg>
+<arg>height=816</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2025-12-28T15:09:07.345225" elapsed="0.128088"/>
+</kw>
+<doc>Opens the browser and navigates to the specified URL</doc>
+<status status="PASS" start="2025-12-28T15:08:51.828018" elapsed="15.645295"/>
+</kw>
+<kw name="Go To Forgot Your Password Page" owner="login">
+<kw name="Click" owner="Browser">
+<msg time="2025-12-28T15:09:07.477313" level="INFO">Clicks the element 'css=p.orangehrm-login-forgot-header'.</msg>
+<arg>${FORGOT_PASSWORD_LINK}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-28T15:09:07.475311" elapsed="2.297688"/>
+</kw>
+<doc>Click on the 'Forgot your password?' link to navigate to the forgot password page.</doc>
+<status status="PASS" start="2025-12-28T15:09:07.474312" elapsed="2.299702"/>
+</kw>
+<kw name="Verify Forgot Your Password Page Opens" owner="forgot_password">
+<kw name="Get Text" owner="Browser">
+<msg time="2025-12-28T15:09:10.330003" level="INFO">Text: 'Reset Password'</msg>
+<arg>${FORGOT_PASSWORD_TITLE}</arg>
+<arg>==</arg>
+<arg>Reset Password</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-28T15:09:09.778013" elapsed="0.551990"/>
+</kw>
+<doc>Verify that the "Forgot Your Password" page is opened by checking the title element.</doc>
+<status status="PASS" start="2025-12-28T15:09:09.774014" elapsed="0.555989"/>
+</kw>
+<kw name="Cancel The Reset Password" owner="forgot_password">
+<kw name="Click" owner="Browser">
+<msg time="2025-12-28T15:09:10.332209" level="INFO">Clicks the element 'css=button.orangehrm-forgot-password-button--cancel'.</msg>
+<arg>${CANCEL_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-28T15:09:10.331016" elapsed="0.485932"/>
+</kw>
+<doc>Click the cancel button to return to the login page.</doc>
+<status status="PASS" start="2025-12-28T15:09:10.331016" elapsed="0.485932"/>
+</kw>
+<kw name="Verify Login Page Is Displayed" owner="forgot_password">
+<kw name="Get Text" owner="Browser">
+<msg time="2025-12-28T15:09:11.258528" level="INFO">Text: 'Login'</msg>
+<arg>${LOGIN_PAGE_TITLE}</arg>
+<arg>==</arg>
+<arg>Login</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-28T15:09:10.818045" elapsed="0.441489"/>
+</kw>
+<doc>Verify that the login page is displayed by checking the title element.</doc>
+<status status="PASS" start="2025-12-28T15:09:10.816948" elapsed="0.442586"/>
+</kw>
+<kw name="Close Browser Session" owner="generic" type="TEARDOWN">
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-12-28T15:09:13.136610" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-28T15:09:11.260063" elapsed="1.876547"/>
+</kw>
+<doc>Closes the browser session</doc>
+<status status="PASS" start="2025-12-28T15:09:11.260063" elapsed="1.876547"/>
+</kw>
+<doc>Test to validate the cancel functionality on Forgot Your Password page.</doc>
+<status status="PASS" start="2025-12-28T15:08:51.826010" elapsed="21.310600"/>
+</test>
+<doc>Tests to validate the Forgot Your Password functionality</doc>
+<status status="PASS" start="2025-12-28T15:08:51.153531" elapsed="22.015780"/>
+</suite>
+<status status="PASS" start="2025-12-28T15:08:51.125372" elapsed="22.052854"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Page Objects" id="s1" pass="1" fail="0" skip="0">Page Objects</stat>
+<stat name="Forgot Password Tests" id="s1-s1" pass="1" fail="0" skip="0">Page Objects.Forgot Password Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

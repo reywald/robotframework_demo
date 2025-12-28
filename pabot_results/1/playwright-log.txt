@@ -1,0 +1,63 @@
+{"level":30,"time":"2025-12-28T14:08:55.951Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Listening on 127.0.0.1:64842"}
+{"level":30,"time":"2025-12-28T14:08:56.254Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-12-28T14:08:57.962Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Adding browser to stack: chromium, version: 138.0.7204.23"}
+{"level":30,"time":"2025-12-28T14:08:57.962Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-12-28T14:08:57.962Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-12-28T14:08:57.984Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-12-28T14:08:57.984Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@f9251d1e4a6dc9a32fbbcb290199b419\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=577a347e-d4b3-4b9f-b391-96ae0f95c051\"}"}
+{"level":30,"time":"2025-12-28T14:08:58.022Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Setting default timeout for context context=b0f6ea0c-7d20-4afb-aaa8-fcb143974f39 to 10000"}
+{"level":30,"time":"2025-12-28T14:08:58.022Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Changed active context: context=b0f6ea0c-7d20-4afb-aaa8-fcb143974f39"}
+{"level":30,"time":"2025-12-28T14:09:02.848Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Video path: undefined"}
+{"level":30,"time":"2025-12-28T14:09:02.848Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Changed active page"}
+{"level":30,"time":"2025-12-28T14:09:07.322Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"End of node method newPage"}
+{"level":30,"time":"2025-12-28T14:09:07.351Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Start of node method setViewportSize"}
+{"level":30,"time":"2025-12-28T14:09:07.374Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"End of node method setViewportSize"}
+{"level":30,"time":"2025-12-28T14:09:07.495Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Start of node method click"}
+{"level":30,"time":"2025-12-28T14:09:07.496Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=p.orangehrm-login-forgot-header in page."}
+{"level":30,"time":"2025-12-28T14:09:09.767Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"End of node method click"}
+{"level":30,"time":"2025-12-28T14:09:09.786Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getText"}
+{"level":30,"time":"2025-12-28T14:09:09.786Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=h6.orangehrm-forgot-password-title in page."}
+{"level":30,"time":"2025-12-28T14:09:10.327Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Retrieved text for element css=h6.orangehrm-forgot-password-title containing Reset Password"}
+{"level":30,"time":"2025-12-28T14:09:10.327Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"End of node method getText"}
+{"level":30,"time":"2025-12-28T14:09:10.335Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Start of node method click"}
+{"level":30,"time":"2025-12-28T14:09:10.336Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=button.orangehrm-forgot-password-button--cancel in page."}
+{"level":30,"time":"2025-12-28T14:09:10.814Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"End of node method click"}
+{"level":30,"time":"2025-12-28T14:09:10.823Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getText"}
+{"level":30,"time":"2025-12-28T14:09:10.823Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Strict mode is enabled, find Locator with css=h5.orangehrm-login-title in page."}
+{"level":30,"time":"2025-12-28T14:09:11.256Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Retrieved text for element css=h5.orangehrm-login-title containing Login"}
+{"level":30,"time":"2025-12-28T14:09:11.256Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"End of node method getText"}
+{"level":30,"time":"2025-12-28T14:09:11.264Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-12-28T14:09:11.283Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Removed page=d450184a-1473-468f-8e1a-8d51c936beb3 from context=b0f6ea0c-7d20-4afb-aaa8-fcb143974f39 page stack"}
+{"level":30,"time":"2025-12-28T14:09:13.134Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js:13622:59)
+    at PlaywrightServer.setTimeout (C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js:13873:57)
+    at Object.onReceiveHalfClose (C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2025-12-28T14:09:13.166Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T14:09:13.166Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js:12672:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js:13622:59)
+    at PlaywrightServer.setTimeout (C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js:13873:57)
+    at Object.onReceiveHalfClose (C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2025-12-28T14:09:13.175Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T14:09:13.176Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-12-28T14:09:13.191Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-12-28T14:09:13.192Z","pid":3580,"hostname":"NG-SS-LPT-040798","msg":"End of node method closeAllBrowsers"}

@@ -2,7 +2,7 @@
 Documentation       To handle the Male and Female radio buttons on a form
 
 Library             Browser
-Resource            keywords.resource
+Resource            ../resources/keywords.resource
 
 Test Setup          Set Browser Timeout    30
 Test Teardown       Close Browser Session

@@ -3,7 +3,7 @@ Documentation       Tests for switching between browser tabs
 
 Library             Collections
 Library             Browser
-Resource            keywords.resource
+Resource            ../resources/keywords.resource
 
 Test Setup          Set Browser Timeout    30
 Test Teardown       Close Browser Session
@@ -24,7 +24,6 @@ Switch Windows
     Open Child Window
     ${ID} =    Verify The Child Window Is Opened
     Verify The User Is Back To Parent Window    ${ID}
-
 
 
 *** Keywords ***

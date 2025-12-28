@@ -2,7 +2,7 @@
 Documentation       To validate the Message Alert
 
 Library             Browser
-Resource            keywords.resource
+Resource            ../resources/keywords.resource
 
 Test Setup          Set Browser Timeout    30
 Test Teardown       Close Browser Session

@@ -2,7 +2,7 @@
 Documentation       To drag and drop a box
 
 Library             Browser
-Resource            keywords.resource
+Resource            ../resources/keywords.resource
 
 Test Setup          Set Browser Timeout    60
 Test Teardown       Close Browser Session

@@ -2,7 +2,7 @@
 Documentation       Tests to handle a set of dropdown options
 
 Library             Browser
-Resource            keywords.resource
+Resource            ../resources/keywords.resource
 
 Test Setup          Set Browser Timeout    30
 Test Teardown       Close Browser Session

@@ -1,0 +1,16 @@
+--test Page Objects.Login Page Tests.Validate Unsuccessful Login With Blank Password
+--variable CALLER_ID:029ad6f4ff21437ca5e755a892272aec
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:2
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:8
+--variable PABOTQUEUEINDEX:4
+--variable PABOTLASTLEVEL:Page Objects.Login Page Tests.Validate Unsuccessful Login With Blank Password
+--listener RobotStackTracer
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\4
+--consolecolors off
+--consolemarkers off
+page_objects/

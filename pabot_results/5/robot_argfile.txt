@@ -1,0 +1,16 @@
+--test Page Objects.Login Page Tests.Validate Successful Login With Valid Credentials
+--variable CALLER_ID:60cf24b696a54f28b7db62b5eed9c2d1
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:3
+--variable PABOTISLASTEXECUTIONINPOOL:1
+--variable PABOTNUMBEROFPROCESSES:8
+--variable PABOTQUEUEINDEX:5
+--variable PABOTLASTLEVEL:
+--listener RobotStackTracer
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\5
+--consolecolors off
+--consolemarkers off
+page_objects/

@@ -2,7 +2,7 @@
 Documentation       To validate the Login Form in headless mode
 
 Library             Browser
-Resource            keywords.resource
+Resource            ../resources/keywords.resource
 
 Test Setup          Set Browser Timeout    30
 Test Teardown       Close Browser Session

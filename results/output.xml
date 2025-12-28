@@ -1,312 +1,410 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-23T23:14:03.355255" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-27T23:18:22.749889" rpa="false" schemaversion="5">
 <suite id="s1" name="Robotframework Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo">
 <suite id="s1-s1" name="Tests" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests">
-<suite id="s1-s1-s1" name="Drag And Drop Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests\drag_and_drop_demo.robot">
-<test id="s1-s1-s1-t1" name="Verify That The User Can Drag And Drop A Box" line="12">
-<kw name="Set Browser Timeout" owner="Browser" type="SETUP">
-<msg time="2025-12-23T23:14:05.100989" level="INFO">Starting Browser process c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:54553</msg>
-<arg>60</arg>
-<tag>Config</tag>
-<tag>Setter</tag>
-<doc>Sets the timeout used by most input and getter keywords.</doc>
-<status status="PASS" start="2025-12-23T23:14:03.899044" elapsed="3.982972"/>
-</kw>
-<kw name="Load Browser">
-<kw name="Open The Browser With URL" owner="keywords">
-<if>
-<branch type="IF" condition="$BROWSER == 'chromium'">
+<suite id="s1-s1-s1" name="Page Objects" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests\page_objects">
+<suite id="s1-s1-s1-s1" name="Login Page Tests" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\tests\page_objects\login_page_tests.robot">
+<test id="s1-s1-s1-s1-t1" name="Validate Unsuccessful Login With Invalid Credentials" line="15">
+<kw name="Open The Browser With URL" owner="generic" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-12-23T23:14:07.889373" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\8d102860-36f2-48a2-b3ef-0aca6fcadcf6"}</msg>
-<msg time="2025-12-23T23:14:08.988986" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\8d102860-36f2-48a2-b3ef-0aca6fcadcf6"}</msg>
+<msg time="2025-12-27T23:18:23.196098" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\5bd8496d-2422-4fe3-b19a-d71c3ff39ea6"}</msg>
+<msg time="2025-12-27T23:18:23.271266" level="INFO">Starting Browser process c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:60419</msg>
+<msg time="2025-12-27T23:18:24.995987" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\5bd8496d-2422-4fe3-b19a-d71c3ff39ea6"}</msg>
 <arg>browser=${BROWSER}</arg>
+<arg>executablePath=C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe</arg>
 <arg>headless=False</arg>
-<arg>executablePath=${CHROME_EXECUTABLE_PATH}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-12-23T23:14:07.887023" elapsed="1.102513"/>
+<status status="PASS" start="2025-12-27T23:18:23.195068" elapsed="1.800919"/>
 </kw>
-<status status="PASS" start="2025-12-23T23:14:07.886021" elapsed="1.103515"/>
-</branch>
-<branch type="ELSE IF" condition="$BROWSER == 'firefox'">
-<kw name="New Browser" owner="Browser">
-<arg>browser=${BROWSER}</arg>
-<arg>headless=False</arg>
-<arg>executablePath=${FIREFOX_EXECUTABLE_PATH}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<status status="NOT RUN" start="2025-12-23T23:14:08.990543" elapsed="0.000000"/>
-</kw>
-<status status="NOT RUN" start="2025-12-23T23:14:08.989536" elapsed="0.001527"/>
-</branch>
-<status status="PASS" start="2025-12-23T23:14:07.886021" elapsed="1.105042"/>
-</if>
-<if>
-<branch type="IF" condition="$WEB_URL">
 <kw name="New Page" owner="Browser">
-<msg time="2025-12-23T23:14:17.907957" level="INFO">Successfully initialized new page object and opened url: https://practice-automation.com/gestures/</msg>
-<msg time="2025-12-23T23:14:17.909471" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>${WEB_URL}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2025-12-23T23:14:08.992069" elapsed="8.920983"/>
-</kw>
-<status status="PASS" start="2025-12-23T23:14:08.991063" elapsed="8.923987"/>
-</branch>
-<branch type="ELSE">
-<kw name="New Page" owner="Browser">
+<msg time="2025-12-27T23:18:29.532918" level="INFO">Successfully initialized new page object and opened url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
+<msg time="2025-12-27T23:18:29.532918" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="NOT RUN" start="2025-12-23T23:14:17.919066" elapsed="0.000000"/>
-</kw>
-<status status="NOT RUN" start="2025-12-23T23:14:17.916069" elapsed="0.004526"/>
-</branch>
-<status status="PASS" start="2025-12-23T23:14:08.991063" elapsed="8.930107"/>
-</if>
-<kw name="Get Window Dimensions" owner="keywords">
-<kw name="Evaluate JavaScript" owner="Browser">
-<msg time="2025-12-23T23:14:17.947233" level="INFO">JavaScript executed successfully.</msg>
-<msg time="2025-12-23T23:14:17.948250" level="INFO">${width} = 1280</msg>
-<var>${width}</var>
-<arg>${None}</arg>
-<arg>() =&gt; window.screen.availWidth</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Executes given javascript on the selected element(s) or on page.</doc>
-<status status="PASS" start="2025-12-23T23:14:17.922834" elapsed="0.025416"/>
-</kw>
-<kw name="Evaluate JavaScript" owner="Browser">
-<msg time="2025-12-23T23:14:17.964689" level="INFO">JavaScript executed successfully.</msg>
-<msg time="2025-12-23T23:14:17.966708" level="INFO">${height} = 720</msg>
-<var>${height}</var>
-<arg>${None}</arg>
-<arg>() =&gt; window.screen.availHeight</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Executes given javascript on the selected element(s) or on page.</doc>
-<status status="PASS" start="2025-12-23T23:14:17.949267" elapsed="0.018423"/>
-</kw>
-<return>
-<value>${width}</value>
-<value>${height}</value>
-<status status="PASS" start="2025-12-23T23:14:17.968696" elapsed="0.003075"/>
-</return>
-<msg time="2025-12-23T23:14:17.972781" level="INFO">${width} = 1280</msg>
-<msg time="2025-12-23T23:14:17.973788" level="INFO">${height} = 720</msg>
-<var>${width}</var>
-<var>${height}</var>
-<doc>Retrieves the current window dimensions</doc>
-<status status="PASS" start="2025-12-23T23:14:17.921170" elapsed="0.052618"/>
+<status status="PASS" start="2025-12-27T23:18:24.997995" elapsed="4.535920"/>
 </kw>
 <kw name="Set Viewport Size" owner="Browser">
-<msg time="2025-12-23T23:14:18.042943" level="INFO">Set viewport size to: [object Object]</msg>
+<msg time="2025-12-27T23:18:29.550079" level="INFO">Set viewport size to: [object Object]</msg>
 <arg>width=1536</arg>
 <arg>height=816</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Sets current Pages viewport size to specified dimensions.</doc>
-<status status="PASS" start="2025-12-23T23:14:17.974789" elapsed="0.077199"/>
+<status status="PASS" start="2025-12-27T23:18:29.533915" elapsed="0.017222"/>
 </kw>
-<arg>chromium</arg>
-<arg>https://practice-automation.com/gestures/</arg>
 <doc>Opens the browser and navigates to the specified URL</doc>
-<status status="PASS" start="2025-12-23T23:14:07.885021" elapsed="10.167288"/>
+<status status="PASS" start="2025-12-27T23:18:23.193801" elapsed="6.358325"/>
 </kw>
-<kw name="Wait For Load State" owner="Browser">
-<msg time="2025-12-23T23:14:18.053969" level="INFO">Waiting page load to state to receive domcontentloaded in 60000.0</msg>
-<msg time="2025-12-23T23:14:18.090908" level="INFO">Load state domcontentloaded got in 60000</msg>
-<arg>domcontentloaded</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits that the page reaches the required load state.</doc>
-<status status="PASS" start="2025-12-23T23:14:18.052309" elapsed="0.040006"/>
-</kw>
-<doc>Loads the browser with specified viewport size</doc>
-<status status="PASS" start="2025-12-23T23:14:07.883023" elapsed="10.209897"/>
-</kw>
-<kw name="Get Element" owner="Browser">
-<msg time="2025-12-23T23:14:18.236075" level="INFO">Locator found successfully.</msg>
-<msg time="2025-12-23T23:14:18.237076" level="INFO">${draggable_container} = css=#div1</msg>
-<var>${draggable_container}</var>
-<arg>css=#div1</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-12-23T23:14:18.095534" elapsed="0.142542"/>
-</kw>
-<kw name="Get Element" owner="Browser">
-<msg time="2025-12-23T23:14:18.271862" level="INFO">Locator found successfully.</msg>
-<msg time="2025-12-23T23:14:18.273105" level="INFO">${draggable_image} = css=#dragMe</msg>
-<var>${draggable_image}</var>
-<arg>css=#dragMe</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-12-23T23:14:18.238076" elapsed="0.035029"/>
-</kw>
-<kw name="Verify Before Drag">
-<kw name="Get BoundingBox" owner="Browser">
-<msg time="2025-12-23T23:14:18.341081" level="INFO">${image_box} = {'x': 72, 'y': 785.1000366210938, 'width': 86.80000305175781, 'height': 55.2249755859375}</msg>
-<var>${image_box}</var>
-<arg>${draggable_image}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Gets elements size and location as an object ``{x: float, y: float, width: float, height: float}``.</doc>
-<status status="PASS" start="2025-12-23T23:14:18.278014" elapsed="0.064084"/>
-</kw>
-<kw name="Get BoundingBox" owner="Browser">
-<msg time="2025-12-23T23:14:18.366207" level="INFO">${parent_box} = {'x': 65.4000015258789, 'y': 778.5, 'width': 100.00000762939453, 'height': 70}</msg>
-<var>${parent_box}</var>
-<arg>${draggable_container}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Gets elements size and location as an object ``{x: float, y: float, width: float, height: float}``.</doc>
-<status status="PASS" start="2025-12-23T23:14:18.342098" elapsed="0.026138"/>
-</kw>
-<kw name="Scroll To Element" owner="Browser">
-<arg>${draggable_container}</arg>
+<kw name="Fill The Login Form" owner="login">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-12-27T23:18:29.552672" level="INFO">Fills the text '1234' in the given field.</msg>
+<arg>css=input[name="username"]</arg>
+<arg>${username}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>This method waits for actionability checks, then tries to scroll element into view,
-unless it is completely visible.</doc>
-<status status="PASS" start="2025-12-23T23:14:18.369238" elapsed="0.069642"/>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-12-27T23:18:29.552672" elapsed="0.899065"/>
 </kw>
-<kw name="Log Many" owner="BuiltIn">
-<msg time="2025-12-23T23:14:18.441425" level="INFO">{'x': 65.4000015258789, 'y': 778.5, 'width': 100.00000762939453, 'height': 70}</msg>
-<msg time="2025-12-23T23:14:18.441425" level="INFO">{'x': 72, 'y': 785.1000366210938, 'width': 86.80000305175781, 'height': 55.2249755859375}</msg>
-<arg>${parent_box}</arg>
-<arg>${image_box}</arg>
-<doc>Logs the given messages as separate entries using the INFO level.</doc>
-<status status="PASS" start="2025-12-23T23:14:18.440386" elapsed="0.002082"/>
-</kw>
-<kw name="Should Be True" owner="BuiltIn">
-<arg>${parent_box.x} &lt; ${image_box.x} and ${parent_box.y} &lt; ${image_box.y}</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-12-23T23:14:18.442468" elapsed="0.004628"/>
-</kw>
-<kw name="Should Be True" owner="BuiltIn">
-<arg>${parent_box.width} &gt; ${image_box.width} and ${parent_box.height} &gt; ${image_box.height}</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-12-23T23:14:18.447096" elapsed="0.007540"/>
-</kw>
-<arg>${draggable_image}</arg>
-<arg>${draggable_container}</arg>
-<doc>Verifies the position and size of the draggable image before drag and drop</doc>
-<status status="PASS" start="2025-12-23T23:14:18.276523" elapsed="0.178113"/>
-</kw>
-<kw name="Get Element" owner="Browser">
-<msg time="2025-12-23T23:14:18.485910" level="INFO">Locator found successfully.</msg>
-<msg time="2025-12-23T23:14:18.486901" level="INFO">${droppable_container} = css=#div2</msg>
-<var>${droppable_container}</var>
-<arg>css=#div2</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="PASS" start="2025-12-23T23:14:18.456249" elapsed="0.031838"/>
-</kw>
-<kw name="Drag And Drop" owner="Browser">
-<msg time="2025-12-23T23:14:18.578380" level="INFO">Moving mouse to x: 115.4000015258789, y: 779.9125061035156 coordinates.</msg>
-<msg time="2025-12-23T23:14:18.607127" level="INFO">Moving mouse to x: 225.4000015258789, y: 780.7000122070312 coordinates.</msg>
-<msg time="2025-12-23T23:14:18.643727" level="INFO">No coordinates where set. Action appears at current position.</msg>
-<arg>${draggable_image}</arg>
-<arg>${droppable_container}</arg>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-12-27T23:18:30.451737" level="INFO">Fills the text '45678' in the given field.</msg>
+<arg>css=input[name="password"]</arg>
+<arg>${password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Executes a Drag&amp;Drop operation from the element selected by ``selector_from``
-to the element selected by ``selector_to``.</doc>
-<status status="PASS" start="2025-12-23T23:14:18.490883" elapsed="0.168098"/>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-12-27T23:18:30.451737" elapsed="0.017956"/>
 </kw>
-<kw name="Verify After Drag">
-<kw name="Get BoundingBox" owner="Browser">
-<msg time="2025-12-23T23:14:18.690936" level="INFO">${new_image_box} = {'x': 182, 'y': 752.2999877929688, 'width': 86.80001831054688, 'height': 55.22503662109375}</msg>
-<var>${new_image_box}</var>
-<arg>${draggable_image}</arg>
+<kw name="Click" owner="Browser">
+<msg time="2025-12-27T23:18:30.471599" level="INFO">Clicks the element 'css=button[type="submit"]'.</msg>
+<arg>css=button[type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-27T23:18:30.469693" elapsed="0.045335"/>
+</kw>
+<arg>${INVALID_USERNAME}</arg>
+<arg>${INVALID_PASSWORD}</arg>
+<doc>Fill the login form with given username and password.</doc>
+<status status="PASS" start="2025-12-27T23:18:29.552672" elapsed="0.963365"/>
+</kw>
+<kw name="Verify The Error Message Is Correct" owner="login">
+<kw name="Get Text" owner="Browser">
+<msg time="2025-12-27T23:18:31.926231" level="INFO">Text: 'Invalid credentials'</msg>
+<arg>${LOGIN_ERROR_MESSAGE}</arg>
+<arg>==</arg>
+<arg>Invalid credentials</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Gets elements size and location as an object ``{x: float, y: float, width: float, height: float}``.</doc>
-<status status="PASS" start="2025-12-23T23:14:18.661040" elapsed="0.029896"/>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-27T23:18:30.517036" elapsed="1.410279"/>
 </kw>
-<kw name="Get BoundingBox" owner="Browser">
-<msg time="2025-12-23T23:14:18.725700" level="INFO">${new_parent_box} = {'x': 175.40000915527344, 'y': 745.7000122070312, 'width': 99.99998474121094, 'height': 70}</msg>
-<var>${new_parent_box}</var>
-<arg>${droppable_container}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Gets elements size and location as an object ``{x: float, y: float, width: float, height: float}``.</doc>
-<status status="PASS" start="2025-12-23T23:14:18.692275" elapsed="0.033425"/>
+<doc>Verify that the login error message matches the expected message.</doc>
+<status status="PASS" start="2025-12-27T23:18:30.516037" elapsed="1.411278"/>
 </kw>
-<kw name="Log Many" owner="BuiltIn">
-<msg time="2025-12-23T23:14:18.726715" level="INFO">{'x': 175.40000915527344, 'y': 745.7000122070312, 'width': 99.99998474121094, 'height': 70}</msg>
-<msg time="2025-12-23T23:14:18.728699" level="INFO">{'x': 182, 'y': 752.2999877929688, 'width': 86.80001831054688, 'height': 55.22503662109375}</msg>
-<arg>${new_parent_box}</arg>
-<arg>${new_image_box}</arg>
-<doc>Logs the given messages as separate entries using the INFO level.</doc>
-<status status="PASS" start="2025-12-23T23:14:18.725700" elapsed="0.002999"/>
-</kw>
-<kw name="Should Be True" owner="BuiltIn">
-<arg>${new_parent_box.x} &lt; ${new_image_box.x} and ${new_parent_box.y} &lt; ${new_image_box.y}</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-12-23T23:14:18.728699" elapsed="0.007579"/>
-</kw>
-<kw name="Should Be True" owner="BuiltIn">
-<arg>${new_parent_box.width} &gt; ${new_image_box.width} and ${new_parent_box.height} &gt; ${new_image_box.height}</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-12-23T23:14:18.737286" elapsed="0.003499"/>
-</kw>
-<arg>${draggable_image}</arg>
-<arg>${droppable_container}</arg>
-<doc>Verifies the position and size of the draggable image after drag and drop</doc>
-<status status="PASS" start="2025-12-23T23:14:18.658981" elapsed="0.081804"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-12-23T23:14:28.741788" level="INFO">Slept 10 seconds.</msg>
-<arg>10s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-12-23T23:14:18.741294" elapsed="10.001437"/>
-</kw>
-<kw name="Close Browser Session" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser Session" owner="generic" type="TEARDOWN">
 <kw name="Close Browser" owner="Browser">
-<msg time="2025-12-23T23:14:31.679497" level="INFO">Closed browser</msg>
-<arg>CURRENT</arg>
+<msg time="2025-12-27T23:18:32.347837" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-12-23T23:14:28.747970" elapsed="2.934051"/>
+<status status="PASS" start="2025-12-27T23:18:31.929231" elapsed="0.418606"/>
 </kw>
-<doc>Closes the browser's page, context and window</doc>
-<status status="PASS" start="2025-12-23T23:14:28.745980" elapsed="2.937069"/>
+<doc>Closes the browser session</doc>
+<status status="PASS" start="2025-12-27T23:18:31.928250" elapsed="0.419587"/>
 </kw>
-<doc>This test case verifies that the user can drag and drop a box successfully</doc>
-<status status="PASS" start="2025-12-23T23:14:03.893044" elapsed="27.794447"/>
+<doc>Test to validate unsuccessful login with invalid credentials.</doc>
+<status status="PASS" start="2025-12-27T23:18:23.182271" elapsed="9.167339"/>
 </test>
-<doc>To drag and drop a box</doc>
-<status status="PASS" start="2025-12-23T23:14:03.406042" elapsed="28.319848"/>
+<test id="s1-s1-s1-s1-t2" name="Validate Unsuccessful Login With Blank Username" line="20">
+<kw name="Open The Browser With URL" owner="generic" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-12-27T23:18:32.401528" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\9c6f835d-8331-486b-8689-401b4d072eda"}</msg>
+<msg time="2025-12-27T23:18:32.923987" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\9c6f835d-8331-486b-8689-401b4d072eda"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>executablePath=C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-12-27T23:18:32.400438" elapsed="0.525559"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-12-27T23:18:37.596731" level="INFO">Successfully initialized new page object and opened url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
+<msg time="2025-12-27T23:18:37.596731" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-12-27T23:18:32.926522" elapsed="4.671287"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2025-12-27T23:18:37.620058" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>width=1536</arg>
+<arg>height=816</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2025-12-27T23:18:37.597809" elapsed="0.022249"/>
+</kw>
+<doc>Opens the browser and navigates to the specified URL</doc>
+<status status="PASS" start="2025-12-27T23:18:32.399931" elapsed="5.220127"/>
+</kw>
+<kw name="Fill The Login Form" owner="login">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-12-27T23:18:37.623217" level="INFO">Fills the text '' in the given field.</msg>
+<arg>css=input[name="username"]</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-12-27T23:18:37.623217" elapsed="0.893058"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-12-27T23:18:38.517796" level="INFO">Fills the text 'admin123' in the given field.</msg>
+<arg>css=input[name="password"]</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-12-27T23:18:38.516785" elapsed="0.019176"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-12-27T23:18:38.536680" level="INFO">Clicks the element 'css=button[type="submit"]'.</msg>
+<arg>css=button[type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-27T23:18:38.536680" elapsed="0.039232"/>
+</kw>
+<arg>${BLANK_USERNAME}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Fill the login form with given username and password.</doc>
+<status status="PASS" start="2025-12-27T23:18:37.622069" elapsed="0.953843"/>
+</kw>
+<kw name="Verify Missing Username Error Message" owner="login">
+<kw name="Get Text" owner="Browser">
+<msg time="2025-12-27T23:18:38.618211" level="INFO">Text: 'Required'</msg>
+<arg>${MISSING_USERNAME_ERROR_MSG}</arg>
+<arg>==</arg>
+<arg>Required</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-27T23:18:38.577912" elapsed="0.041298"/>
+</kw>
+<doc>Verify that the missing username error message is displayed correctly.</doc>
+<status status="PASS" start="2025-12-27T23:18:38.577001" elapsed="0.042209"/>
+</kw>
+<kw name="Close Browser Session" owner="generic" type="TEARDOWN">
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-12-27T23:18:39.126384" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-27T23:18:38.621212" elapsed="0.505172"/>
+</kw>
+<doc>Closes the browser session</doc>
+<status status="PASS" start="2025-12-27T23:18:38.620210" elapsed="0.506174"/>
+</kw>
+<doc>Test to validate unsuccessful login with blank username.</doc>
+<status status="PASS" start="2025-12-27T23:18:32.375719" elapsed="6.752488"/>
+</test>
+<test id="s1-s1-s1-s1-t3" name="Validate Unsuccessful Login With Blank Password" line="25">
+<kw name="Open The Browser With URL" owner="generic" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-12-27T23:18:39.170902" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\9df02499-6b22-4376-8eb1-4328d926e77b"}</msg>
+<msg time="2025-12-27T23:18:39.781893" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\9df02499-6b22-4376-8eb1-4328d926e77b"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>executablePath=C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-12-27T23:18:39.170902" elapsed="0.610991"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-12-27T23:18:45.021344" level="INFO">Successfully initialized new page object and opened url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
+<msg time="2025-12-27T23:18:45.021344" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-12-27T23:18:39.783646" elapsed="5.238701"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2025-12-27T23:18:45.037447" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>width=1536</arg>
+<arg>height=816</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2025-12-27T23:18:45.022347" elapsed="0.017007"/>
+</kw>
+<doc>Opens the browser and navigates to the specified URL</doc>
+<status status="PASS" start="2025-12-27T23:18:39.170902" elapsed="5.868452"/>
+</kw>
+<kw name="Fill The Login Form" owner="login">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-12-27T23:18:45.040966" level="INFO">Fills the text 'Admin' in the given field.</msg>
+<arg>css=input[name="username"]</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-12-27T23:18:45.040966" elapsed="0.910331"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-12-27T23:18:45.954248" level="INFO">Fills the text '' in the given field.</msg>
+<arg>css=input[name="password"]</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-12-27T23:18:45.953309" elapsed="0.016586"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-12-27T23:18:45.971908" level="INFO">Clicks the element 'css=button[type="submit"]'.</msg>
+<arg>css=button[type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-27T23:18:45.971908" elapsed="0.142769"/>
+</kw>
+<arg>${VALID_USERNAME}</arg>
+<arg>${BLANK_PASSWORD}</arg>
+<doc>Fill the login form with given username and password.</doc>
+<status status="PASS" start="2025-12-27T23:18:45.039354" elapsed="1.078022"/>
+</kw>
+<kw name="Verify Missing Password Error Message" owner="login">
+<kw name="Get Text" owner="Browser">
+<msg time="2025-12-27T23:18:46.167409" level="INFO">Text: 'Required'</msg>
+<arg>${MISSING_PASSWORD_ERROR_MSG}</arg>
+<arg>==</arg>
+<arg>Required</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-27T23:18:46.126731" elapsed="0.040678"/>
+</kw>
+<doc>Verify that the missing password error message is displayed correctly.</doc>
+<status status="PASS" start="2025-12-27T23:18:46.124696" elapsed="0.042713"/>
+</kw>
+<kw name="Close Browser Session" owner="generic" type="TEARDOWN">
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-12-27T23:18:46.794820" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-27T23:18:46.170975" elapsed="0.623845"/>
+</kw>
+<doc>Closes the browser session</doc>
+<status status="PASS" start="2025-12-27T23:18:46.170975" elapsed="0.624674"/>
+</kw>
+<doc>Test to validate unsuccessful login with blank password.</doc>
+<status status="PASS" start="2025-12-27T23:18:39.156485" elapsed="7.639164"/>
+</test>
+<test id="s1-s1-s1-s1-t4" name="Validate Successful Login With Valid Credentials" line="30">
+<kw name="Open The Browser With URL" owner="generic" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-12-27T23:18:46.841523" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "executablePath": "C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe", "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\af13e0db-466f-46e8-a15a-1ef5bf9fe5fc"}</msg>
+<msg time="2025-12-27T23:18:47.355242" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"executablePath":"C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe","handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\Ikechukwu Agbarakwe\\Documents\\Learning\\learn-robotframework\\robotframework_demo\\results\\browser\\traces\\temp\\af13e0db-466f-46e8-a15a-1ef5bf9fe5fc"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>executablePath=C:\\Users\\Ikechukwu Agbarakwe\\AppData\\Local\\ms-playwright\\chromium-1179\\chrome-win\\chrome.exe</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-12-27T23:18:46.840571" elapsed="0.514671"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-12-27T23:18:52.035911" level="INFO">Successfully initialized new page object and opened url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
+<msg time="2025-12-27T23:18:52.035911" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-12-27T23:18:47.355242" elapsed="4.681668"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2025-12-27T23:18:52.052508" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>width=1536</arg>
+<arg>height=816</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2025-12-27T23:18:52.036910" elapsed="0.015598"/>
+</kw>
+<doc>Opens the browser and navigates to the specified URL</doc>
+<status status="PASS" start="2025-12-27T23:18:46.839571" elapsed="5.212937"/>
+</kw>
+<kw name="Fill The Login Form" owner="login">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-12-27T23:18:52.052508" level="INFO">Fills the text 'Admin' in the given field.</msg>
+<arg>css=input[name="username"]</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-12-27T23:18:52.052508" elapsed="0.880182"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-12-27T23:18:52.933670" level="INFO">Fills the text 'admin123' in the given field.</msg>
+<arg>css=input[name="password"]</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-12-27T23:18:52.933670" elapsed="0.018974"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-12-27T23:18:52.955056" level="INFO">Clicks the element 'css=button[type="submit"]'.</msg>
+<arg>css=button[type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-27T23:18:52.953971" elapsed="0.039173"/>
+</kw>
+<arg>${VALID_USERNAME}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Fill the login form with given username and password.</doc>
+<status status="PASS" start="2025-12-27T23:18:52.052508" elapsed="0.941849"/>
+</kw>
+<kw name="Verify Dashboard Page Is Open" owner="dashboard">
+<kw name="Get Text" owner="Browser">
+<msg time="2025-12-27T23:18:55.316174" level="INFO">Text: 'Dashboard'</msg>
+<arg>${DASHBOARD_TITLE}</arg>
+<arg>should be</arg>
+<arg>Dashboard</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-12-27T23:18:53.006101" elapsed="2.310073"/>
+</kw>
+<doc>Verify that the dashboard page is open by checking the dashboard title.</doc>
+<status status="PASS" start="2025-12-27T23:18:53.004087" elapsed="2.312087"/>
+</kw>
+<kw name="Close Browser Session" owner="generic" type="TEARDOWN">
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-12-27T23:18:56.040865" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-27T23:18:55.316174" elapsed="0.724691"/>
+</kw>
+<doc>Closes the browser session</doc>
+<status status="PASS" start="2025-12-27T23:18:55.316174" elapsed="0.726716"/>
+</kw>
+<doc>Test to validate successful login with valid credentials.</doc>
+<status status="PASS" start="2025-12-27T23:18:46.819599" elapsed="9.223291"/>
+</test>
+<doc>Tests to login to Login Page</doc>
+<status status="PASS" start="2025-12-27T23:18:22.835599" elapsed="33.237073"/>
 </suite>
-<status status="PASS" start="2025-12-23T23:14:03.400560" elapsed="28.367386"/>
+<status status="PASS" start="2025-12-27T23:18:22.823704" elapsed="33.261653"/>
 </suite>
-<status status="PASS" start="2025-12-23T23:14:03.364352" elapsed="28.415288"/>
+<status status="PASS" start="2025-12-27T23:18:22.811556" elapsed="33.279815"/>
+</suite>
+<status status="PASS" start="2025-12-27T23:18:22.754933" elapsed="33.341278"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Robotframework Demo" id="s1" pass="1" fail="0" skip="0">Robotframework Demo</stat>
-<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests</stat>
-<stat name="Drag And Drop Demo" id="s1-s1-s1" pass="1" fail="0" skip="0">Robotframework Demo.Tests.Drag And Drop Demo</stat>
+<stat name="Robotframework Demo" id="s1" pass="4" fail="0" skip="0">Robotframework Demo</stat>
+<stat name="Tests" id="s1-s1" pass="4" fail="0" skip="0">Robotframework Demo.Tests</stat>
+<stat name="Page Objects" id="s1-s1-s1" pass="4" fail="0" skip="0">Robotframework Demo.Tests.Page Objects</stat>
+<stat name="Login Page Tests" id="s1-s1-s1-s1" pass="4" fail="0" skip="0">Robotframework Demo.Tests.Page Objects.Login Page Tests</stat>
 </suite>
 </statistics>
 <errors>
