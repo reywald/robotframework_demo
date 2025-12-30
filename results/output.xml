@@ -1,89 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-30T13:07:28.755378" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-12-30T20:58:05.738547" rpa="false" schemaversion="5">
 <suite id="s1" name="Robotframework Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo">
 <suite id="s1-s1" name="Api" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\api">
 <suite id="s1-s1-s1" name="Api Demo" source="c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\api\api_demo.robot">
 <kw name="Create Session" owner="RequestsLibrary" type="SETUP">
-<msg time="2025-12-30T13:07:28.908736" level="INFO">Creating Session using : alias=airportgap, url=https://airportgap.com/api, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2025-12-30T20:58:06.450586" level="INFO">Creating Session using : alias=airportgap, url=https://airportgap.com/api, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>airportgap</arg>
 <arg>${BASE_URL}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2025-12-30T13:07:28.907737" elapsed="0.000999"/>
+<status status="PASS" start="2025-12-30T20:58:06.450586" elapsed="0.001006"/>
 </kw>
-<test id="s1-s1-s1-t1" name="POST Request Test" line="24">
+<test id="s1-s1-s1-t1" name="Create A Favorite Airport" line="38">
+<kw name="Airport IATA" owner="FakerAirport">
+<msg time="2025-12-30T20:58:06.458002" level="INFO">${id} = KUF</msg>
+<var>${id}</var>
+<doc>Generate a fake airport IATA code.</doc>
+<status status="PASS" start="2025-12-30T20:58:06.455999" elapsed="0.002003"/>
+</kw>
+<kw name="Sentence" owner="FakerLibrary">
+<msg time="2025-12-30T20:58:06.459999" level="INFO">${note} = Know push reach democratic character team grow few case foot.</msg>
+<var>${note}</var>
+<arg>nb_words=15</arg>
+<arg>variable_nb_words=True</arg>
+<doc>Generate a sentence.</doc>
+<status status="PASS" start="2025-12-30T20:58:06.459000" elapsed="0.000999"/>
+</kw>
+<kw name="Create Favorite Airport">
+<kw name="Get Airport Gap Token">
 <variable name="&amp;{params}">
-<msg time="2025-12-30T13:07:28.919148" level="INFO">&amp;{params} = { from=KIX | to=LOS }</msg>
-<var>from=KIX</var>
-<var>to=LOS</var>
-<status status="PASS" start="2025-12-30T13:07:28.919148" elapsed="0.000000"/>
+<msg time="2025-12-30T20:58:06.462999" level="INFO">&amp;{params} = { email=iaweepingsaint@gmail.com | password=veXL%q-^1n!^1ZUu }</msg>
+<var>email=iaweepingsaint@gmail.com</var>
+<var>password=veXL%q-^1n!^1ZUu</var>
+<status status="PASS" start="2025-12-30T20:58:06.461999" elapsed="0.001000"/>
 </variable>
 <kw name="POST On Session" owner="RequestsLibrary">
-<msg time="2025-12-30T13:07:29.847564" level="INFO">POST Request : url=https://airportgap.com/api/airports/distance?from=KIX&amp;to=LOS 
- path_url=/api/airports/distance?from=KIX&amp;to=LOS 
+<msg time="2025-12-30T20:58:07.536513" level="INFO">POST Request : url=https://airportgap.com/api/tokens?email=iaweepingsaint%40gmail.com&amp;password=veXL%25q-%5E1n%21%5E1ZUu 
+ path_url=/api/tokens?email=iaweepingsaint%40gmail.com&amp;password=veXL%25q-%5E1n%21%5E1ZUu 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
  body=None 
  </msg>
-<msg time="2025-12-30T13:07:29.847564" level="INFO">POST Response : url=https://airportgap.com/api/airports/distance?from=KIX&amp;to=LOS 
+<msg time="2025-12-30T20:58:07.537734" level="INFO">POST Response : url=https://airportgap.com/api/tokens?email=iaweepingsaint%40gmail.com&amp;password=veXL%25q-%5E1n%21%5E1ZUu 
  status=200, reason=OK 
- headers={'Cache-Control': 'max-age=0, private, must-revalidate', 'Content-Length': '588', 'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 30 Dec 2025 12:07:29 GMT', 'Etag': 'W/"a087817095250c5b2da421a504e38d6a"', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains', 'Vary': 'Accept-Encoding, Accept, Origin', 'X-Cache': 'bypass', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'SAMEORIGIN', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-Request-Id': '000df420-1647-40fb-ad25-f09c7fc6bac2', 'X-Runtime': '0.003752', 'X-Xss-Protection': '0'} 
- body={"data":{"id":"KIX-LOS","type":"airport_distance","attributes":{"from_airport":{"id":3158,"name":"Kansai International Airport","city":"Osaka","country":"Japan","iata":"KIX","icao":"RJBB","latitude":"34.427299","longitude":"135.244003","altitude":26,"timezone":"Asia/Tokyo"},"to_airport":{"id":260,"name":"Murtala Muhammed International Airport","city":"Lagos","country":"Nigeria","iata":"LOS","icao":"DNMM","latitude":"6.57737","longitude":"3.32116","altitude":135,"timezone":"Africa/Lagos"},"kilometers":13216.957157004674,"miles":8206.919245504707,"nautical_miles":7131.614422830347}}} 
+ headers={'Cache-Control': 'max-age=0, private, must-revalidate', 'Content-Length': '36', 'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 30 Dec 2025 19:58:07 GMT', 'Etag': 'W/"7a09720a501c5997ccc6861ec0f3641f"', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains', 'Vary': 'Accept-Encoding, Accept, Origin', 'X-Cache': 'bypass', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'SAMEORIGIN', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-Request-Id': 'a05809b0-b935-4ca6-8ffd-3e38f9e36fd0', 'X-Runtime': '0.254351', 'X-Xss-Protection': '0'} 
+ body={"token":"YBtzaav3cKFULqbNxtbp83xM"} 
  </msg>
-<msg time="2025-12-30T13:07:29.848581" level="INFO">c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'airportgap.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2025-12-30T20:58:07.537734" level="INFO">c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'airportgap.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2025-12-30T13:07:29.849583" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2025-12-30T20:58:07.538742" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>airportgap</arg>
-<arg>/airports/distance</arg>
+<arg>/tokens</arg>
 <arg>params=${params}</arg>
-<arg>expected_status=200</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2025-12-30T13:07:28.920146" elapsed="0.930446"/>
+<status status="PASS" start="2025-12-30T20:58:06.463997" elapsed="1.076183"/>
 </kw>
 <kw name="Status Should Be" owner="RequestsLibrary">
 <arg>200</arg>
 <arg>${response}</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" start="2025-12-30T13:07:29.850592" elapsed="0.001001"/>
+<status status="PASS" start="2025-12-30T20:58:07.540180" elapsed="0.000000"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${response.reason}</arg>
 <arg>OK</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2025-12-30T13:07:29.852583" elapsed="0.002003"/>
+<status status="PASS" start="2025-12-30T20:58:07.540180" elapsed="0.001296"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${response.json()}</arg>
+<arg>token</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2025-12-30T20:58:07.541476" elapsed="0.001008"/>
+</kw>
+<variable name="${TOKEN}" scope="SUITE">
+<msg time="2025-12-30T20:58:07.543484" level="INFO">${TOKEN} = YBtzaav3cKFULqbNxtbp83xM</msg>
+<var>${response.json()}[token]</var>
+<status status="PASS" start="2025-12-30T20:58:07.542484" elapsed="0.001000"/>
+</variable>
+<doc>Get the authorization token using valid credentials</doc>
+<status status="PASS" start="2025-12-30T20:58:06.461999" elapsed="1.081485"/>
+</kw>
+<variable name="&amp;{params}">
+<msg time="2025-12-30T20:58:07.544725" level="INFO">&amp;{params} = { airport_id=KUF | note=Know push reach democratic character team grow few case foot. }</msg>
+<var>airport_id=${id}</var>
+<var>note=${note}</var>
+<status status="PASS" start="2025-12-30T20:58:07.544725" elapsed="0.000000"/>
+</variable>
+<variable name="&amp;{headers}">
+<msg time="2025-12-30T20:58:07.545612" level="INFO">&amp;{headers} = { Authorization=Bearer YBtzaav3cKFULqbNxtbp83xM }</msg>
+<var>Authorization=Bearer ${TOKEN}</var>
+<status status="PASS" start="2025-12-30T20:58:07.544725" elapsed="0.000887"/>
+</variable>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2025-12-30T20:58:07.800424" level="INFO">POST Request : url=https://airportgap.com/api/favorites?airport_id=KUF&amp;note=Know+push+reach+democratic+character+team+grow+few+case+foot. 
+ path_url=/api/favorites?airport_id=KUF&amp;note=Know+push+reach+democratic+character+team+grow+few+case+foot. 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer YBtzaav3cKFULqbNxtbp83xM', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2025-12-30T20:58:07.800424" level="INFO">POST Response : url=https://airportgap.com/api/favorites?airport_id=KUF&amp;note=Know+push+reach+democratic+character+team+grow+few+case+foot. 
+ status=201, reason=Created 
+ headers={'Cache-Control': 'max-age=0, private, must-revalidate', 'Content-Length': '340', 'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 30 Dec 2025 19:58:07 GMT', 'Etag': 'W/"bfdcf67ad8445acc0bcb02d24b2042f4"', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains', 'Vary': 'Accept-Encoding, Accept, Origin', 'X-Cache': 'bypass', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'SAMEORIGIN', 'X-Permitted-Cross-Domain-Policies': 'none', 'X-Request-Id': '2c4658bf-1395-4069-805a-d47f4cacefa9', 'X-Runtime': '0.006461', 'X-Xss-Protection': '0'} 
+ body={"data":{"id":"40785","type":"favorite","attributes":{"airport":{"id":2288,"name":"Kurumoch International Airport","city":"Samara","country":"Russia","iata":"KUF","icao":"UWWW","latitude":"53.504902","longitude":"50.164299","altitude":477,"timezone":"Europe/Samara"},"note":"Know push reach democratic character team grow few case foot."}}} 
+ </msg>
+<msg time="2025-12-30T20:58:07.801424" level="INFO">c:\Users\Ikechukwu Agbarakwe\Documents\Learning\learn-robotframework\robotframework_demo\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'airportgap.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-12-30T20:58:07.803417" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<var>${response}</var>
+<arg>airportgap</arg>
+<arg>/favorites</arg>
+<arg>params=${params}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=anything</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-12-30T20:58:07.545612" elapsed="0.257805"/>
+</kw>
+<return>
+<value>${response}</value>
+<status status="PASS" start="2025-12-30T20:58:07.803417" elapsed="0.001000"/>
+</return>
+<msg time="2025-12-30T20:58:07.804417" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<var>${response}</var>
+<arg>${id}</arg>
+<arg>${note}</arg>
+<doc>Create an airport favorite</doc>
+<status status="PASS" start="2025-12-30T20:58:06.460999" elapsed="1.344416"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>201</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2025-12-30T20:58:07.808415" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${response.reason}</arg>
+<arg>Created</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-12-30T20:58:07.808415" elapsed="0.001449"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${response.json()}[data]</arg>
+<arg>id</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2025-12-30T20:58:07.809864" elapsed="0.001169"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${response.json()}[data]</arg>
+<arg>attributes</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2025-12-30T20:58:07.811033" elapsed="0.000000"/>
 </kw>
 <kw name="Dictionary Should Contain Item" owner="Collections">
 <arg>${response.json()}[data]</arg>
 <arg>type</arg>
-<arg>airport_distance</arg>
+<arg>favorite</arg>
 <doc>An item of ``key`` / ``value`` must be found in a ``dictionary``.</doc>
-<status status="PASS" start="2025-12-30T13:07:29.854586" elapsed="0.000996"/>
+<status status="PASS" start="2025-12-30T20:58:07.812033" elapsed="0.000000"/>
 </kw>
-<kw name="Dictionary Should Contain Key" owner="Collections">
+<kw name="Dictionary Should Contain Item" owner="Collections">
 <arg>${response.json()}[data][attributes]</arg>
-<arg>kilometers</arg>
-<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2025-12-30T13:07:29.856588" elapsed="0.000994"/>
+<arg>note</arg>
+<arg>${note}</arg>
+<doc>An item of ``key`` / ``value`` must be found in a ``dictionary``.</doc>
+<status status="PASS" start="2025-12-30T20:58:07.812033" elapsed="0.001002"/>
 </kw>
-<kw name="Dictionary Should Contain Key" owner="Collections">
-<arg>${response.json()}[data][attributes]</arg>
-<arg>miles</arg>
-<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2025-12-30T13:07:29.857582" elapsed="0.001005"/>
+<kw name="Dictionary Should Contain Item" owner="Collections">
+<arg>${response.json()}[data][attributes][airport]</arg>
+<arg>iata</arg>
+<arg>${id}</arg>
+<doc>An item of ``key`` / ``value`` must be found in a ``dictionary``.</doc>
+<status status="PASS" start="2025-12-30T20:58:07.813035" elapsed="0.001001"/>
 </kw>
-<doc>Run a POST Request to get the distance between two airports</doc>
-<status status="PASS" start="2025-12-30T13:07:28.908736" elapsed="0.949851"/>
+<doc>Create an airport favorite</doc>
+<status status="PASS" start="2025-12-30T20:58:06.451592" elapsed="1.362444"/>
 </test>
 <kw name="Delete All Sessions" owner="RequestsLibrary" type="TEARDOWN">
-<msg time="2025-12-30T13:07:29.894398" level="INFO">Deleting All Sessions</msg>
+<msg time="2025-12-30T20:58:07.820234" level="INFO">Deleting All Sessions</msg>
 <doc>Removes all the session objects</doc>
-<status status="PASS" start="2025-12-30T13:07:29.894398" elapsed="0.001146"/>
+<status status="PASS" start="2025-12-30T20:58:07.820234" elapsed="0.001002"/>
 </kw>
 <doc>This is a demo Robot Framework test suite for API testing.</doc>
-<status status="PASS" start="2025-12-30T13:07:28.801266" elapsed="1.094278"/>
+<status status="PASS" start="2025-12-30T20:58:05.797840" elapsed="2.023396"/>
 </suite>
-<status status="PASS" start="2025-12-30T13:07:28.791274" elapsed="1.113726"/>
+<status status="PASS" start="2025-12-30T20:58:05.786567" elapsed="2.040773"/>
 </suite>
-<status status="PASS" start="2025-12-30T13:07:28.761866" elapsed="1.149211"/>
+<status status="PASS" start="2025-12-30T20:58:05.749126" elapsed="2.082803"/>
 </suite>
 <statistics>
 <total>

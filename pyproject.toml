@@ -5,9 +5,11 @@ description = "Learn Robot Framework from the QA Automation Experts"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "faker-airtravel>=0.4",
     "robotframework>=7.3.2",
     "robotframework-browser>=19.12.0",
     "robotframework-datadriver>=1.11.2",
+    "robotframework-faker>=6.0.0",
     "robotframework-pabot>=5.1.0",
     "robotframework-robocop>=6.13.0",
 ]
